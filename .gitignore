@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+# NOTE: events.db and public/ are intentionally NOT ignored -- the GitHub
+# Action commits them so first_seen state and the published site persist.
+
+# Never commit credentials
+.env
+.env.*

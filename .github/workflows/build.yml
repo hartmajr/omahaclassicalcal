@@ -1,0 +1,75 @@
+name: Build calendar
+
+# Daily + manual. Fetches every source live, rebuilds .ics / RSS / site into
+# public/, commits state (events.db carries first_seen between runs), and
+# deploys public/ to GitHub Pages.
+on:
+  schedule:
+    - cron: "0 11 * * *"   # 11:00 UTC daily (~5-6am Central)
+  workflow_dispatch:
+    inputs:
+      fail_under:
+        description: "Abort without publishing if fewer than N events"
+        default: "10"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Never let two runs race each other on the git push.
+concurrency:
+  group: build-calendar
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Verify we're still allowed to fetch every source before fetching it.
+      # Sites change their robots.txt; a daily job shouldn't be the last to know.
+      - name: Test robots logic
+        run: python tests/test_robots.py
+
+      - name: Preflight - robots.txt
+        run: python scripts/check_robots.py
+
+      # --fail-under aborts BEFORE writing any output, so a broken source
+      # can't replace a good published site with an empty one.
+      - name: Build calendar (live fetch)
+        run: python main.py --fail-under ${{ github.event.inputs.fail_under || '10' }}
+        env:
+          # Needed for the LLM extraction steps (World Concert Hall,
+          # Omaha Chamber Music Society).
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Commit state (events.db, cache, outputs)
+        run: |
+          git config user.name "calendar-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A events.db public/ *_cache.json || true
+          git commit -m "Update calendar $(date -u +%Y-%m-%d)" || echo "no changes"
+          git push || echo "nothing to push"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

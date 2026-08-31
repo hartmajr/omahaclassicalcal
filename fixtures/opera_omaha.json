@@ -1,0 +1,58 @@
+{
+ "productions": [
+  {
+   "title": "Will Liverman in Concert",
+   "dates": [
+    "Sept. 27, 2026 | 7:00PM"
+   ],
+   "venue": "Slowdown",
+   "url": "https://operaomaha.org/production/will-liverman-in-concert/",
+   "composer": null,
+   "description": "GRAMMY-winning baritone Will Liverman performs his original music and classical favorites. Add-on performance."
+  },
+  {
+   "title": "La bohème",
+   "dates": [
+    "Nov. 13, 2026, 7:30PM",
+    "Nov. 15, 2026, 2PM"
+   ],
+   "venue": "Orpheum Theater",
+   "url": "https://operaomaha.org/production/la-boheme/",
+   "composer": "Giacomo Puccini",
+   "description": "Libretto by Luigi Illica and Giuseppe Giacosa. E. Loren Meeker's production, with Karen Chia-ling Ho and Demetrious Sampson."
+  },
+  {
+   "title": "The Pigeon Keeper",
+   "dates": [
+    "Jan. 28, 2027 | 6:30PM",
+    "Jan. 29, 2027 | 6:30PM",
+    "Jan. 30, 2027 | 2:00PM"
+   ],
+   "venue": "The Rose Theater",
+   "url": "https://operaomaha.org/production/the-pigeon-keeper/",
+   "composer": "David Hanlon",
+   "description": "Libretto by Stephanie Fleischmann. Part of the Family Opera Series; a new opera with cinematic projections and children's chorus."
+  },
+  {
+   "title": "Ariadne auf Naxos",
+   "dates": [
+    "Mar. 19, 2027 | 7:30PM",
+    "Mar. 21, 2027 | 2:00PM"
+   ],
+   "venue": "Orpheum Theater",
+   "url": "https://operaomaha.org/production/ariadne-auf-naxos/",
+   "composer": "Richard Strauss",
+   "description": "Libretto by Hugo von Hofmannsthal. Opera Omaha's first Strauss opera, conducted by Steven White, directed by Chas Rader-Shieber."
+  },
+  {
+   "title": "Alessandro",
+   "dates": [
+    "Apr. 30, 2027 | 7:30PM"
+   ],
+   "venue": "Holland Performing Arts Center",
+   "url": "https://operaomaha.org/production/alessandro/",
+   "composer": "George Frideric Handel",
+   "description": "Libretto by Thomas Broughton. The English Concert performs this rarely staged Handel opera on period instruments."
+  }
+ ]
+}

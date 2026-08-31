@@ -1,0 +1,136 @@
+{
+ "events": [
+  {
+   "title": "Peter Millett | Gestures",
+   "start_date": "2026-05-01 10:00:00",
+   "end_date": "2026-09-06 19:00:00",
+   "venue": {
+    "venue": "KANEKO"
+   },
+   "url": "https://kvno.org/event/peter-millett-gestures/",
+   "description": "Sculpture by Peter Millett, on view at KANEKO May 1 through September 6, 2026.",
+   "categories": []
+  },
+  {
+   "title": "Therman Statom | Colecciones de Estudio de Invierno",
+   "start_date": "2026-05-01 12:00:00",
+   "end_date": "2026-09-26 19:00:00",
+   "venue": {
+    "venue": "KANEKO"
+   },
+   "url": "https://kvno.org/event/therman-statom-colecciones-de-estudio-de-invierno/",
+   "description": "New and recent work by Omaha sculptor and glass artist Therman Statom.",
+   "categories": []
+  },
+  {
+   "title": "Art Exhibit: Nature's Palette by Omaha Artists, Inc.",
+   "start_date": "2026-07-01 09:00:00",
+   "end_date": "2026-08-05 20:00:00",
+   "venue": {
+    "venue": "Lauritzen Gardens"
+   },
+   "url": "https://kvno.org/event/art-exhibit-natures-palette-by-omaha-artists-inc/",
+   "description": "Artists united by a shared reverence for the natural world.",
+   "categories": []
+  },
+  {
+   "title": "Post-War Letterpress: Harry Duncan, Cummington Press and Abattoir Editions at UNO",
+   "start_date": "2026-08-30 08:00:00",
+   "end_date": "2026-08-30 17:00:00",
+   "venue": {
+    "venue": "Dr. C.C. and Mabel L. Criss Library, Osborne Family Gallery"
+   },
+   "url": "https://kvno.org/event/post-war-letterpress-harry-duncan-cummington-press-and-abattoir-editions-at-uno/2026-08-30/",
+   "description": "Fine arts press books from the UNO Fine Arts Press collection.",
+   "categories": []
+  },
+  {
+   "title": "Post-War Letterpress: Harry Duncan, Cummington Press and Abattoir Editions at UNO",
+   "start_date": "2026-08-31 08:00:00",
+   "end_date": "2026-08-31 17:00:00",
+   "venue": {
+    "venue": "Dr. C.C. and Mabel L. Criss Library, Osborne Family Gallery"
+   },
+   "url": "https://kvno.org/event/post-war-letterpress-harry-duncan-cummington-press-and-abattoir-editions-at-uno/2026-08-31/",
+   "description": "Fine arts press books from the UNO Fine Arts Press collection.",
+   "categories": []
+  },
+  {
+   "title": "Post-War Letterpress: Harry Duncan, Cummington Press and Abattoir Editions at UNO",
+   "start_date": "2026-09-01 08:00:00",
+   "end_date": "2026-09-01 17:00:00",
+   "venue": {
+    "venue": "Dr. C.C. and Mabel L. Criss Library, Osborne Family Gallery"
+   },
+   "url": "https://kvno.org/event/post-war-letterpress-harry-duncan-cummington-press-and-abattoir-editions-at-uno/2026-09-01/",
+   "description": "Fine arts press books from the UNO Fine Arts Press collection.",
+   "categories": []
+  },
+  {
+   "title": "Architecture on Tap",
+   "start_date": "2026-09-01 18:00:00",
+   "end_date": "2026-09-01 22:00:00",
+   "venue": {
+    "venue": "Joslyn Castle & Gardens"
+   },
+   "url": "https://kvno.org/event/architecture-on-tap/2026-09-01/",
+   "description": "A weekly happy hour history happening.",
+   "categories": []
+  },
+  {
+   "title": "Post-War Letterpress: Harry Duncan, Cummington Press and Abattoir Editions at UNO",
+   "start_date": "2026-09-02 08:00:00",
+   "end_date": "2026-09-02 17:00:00",
+   "venue": {
+    "venue": "Dr. C.C. and Mabel L. Criss Library, Osborne Family Gallery"
+   },
+   "url": "https://kvno.org/event/post-war-letterpress-harry-duncan-cummington-press-and-abattoir-editions-at-uno/2026-09-02/",
+   "description": "Fine arts press books from the UNO Fine Arts Press collection.",
+   "categories": []
+  },
+  {
+   "title": "Tea Workshop: Chai VarieTEA and Indian Tradition",
+   "start_date": "2026-09-02 18:00:00",
+   "end_date": "2026-09-02 19:30:00",
+   "venue": {
+    "venue": "Lauritzen Gardens"
+   },
+   "url": "https://kvno.org/event/tea-workshop-chai-varietea-and-indian-tradition/",
+   "description": "Explore the world of Chai with experts from The Tea Smith.",
+   "categories": []
+  },
+  {
+   "title": "Post-War Letterpress: Harry Duncan, Cummington Press and Abattoir Editions at UNO",
+   "start_date": "2026-09-03 08:00:00",
+   "end_date": "2026-09-03 17:00:00",
+   "venue": {
+    "venue": "Dr. C.C. and Mabel L. Criss Library, Osborne Family Gallery"
+   },
+   "url": "https://kvno.org/event/post-war-letterpress-harry-duncan-cummington-press-and-abattoir-editions-at-uno/2026-09-03/",
+   "description": "Fine arts press books from the UNO Fine Arts Press collection.",
+   "categories": []
+  },
+  {
+   "title": "Post-War Letterpress: Harry Duncan, Cummington Press and Abattoir Editions at UNO",
+   "start_date": "2026-09-04 08:00:00",
+   "end_date": "2026-09-04 17:00:00",
+   "venue": {
+    "venue": "Dr. C.C. and Mabel L. Criss Library, Osborne Family Gallery"
+   },
+   "url": "https://kvno.org/event/post-war-letterpress-harry-duncan-cummington-press-and-abattoir-editions-at-uno/2026-09-04/",
+   "description": "Fine arts press books from the UNO Fine Arts Press collection.",
+   "categories": []
+  },
+  {
+   "title": "First Friday Downtown Omaha Art Walk",
+   "start_date": "2026-09-04 17:00:00",
+   "end_date": "2026-09-04 21:00:00",
+   "venue": {
+    "venue": "The Old Market"
+   },
+   "url": "https://kvno.org/event/first-thursday-downtown-omaha-art-walk/2026-09-04/",
+   "description": "Celebrate the vibrant art scene on the first Friday of each month.",
+   "categories": []
+  }
+ ]
+}

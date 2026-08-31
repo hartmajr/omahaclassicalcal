@@ -1,0 +1,292 @@
+{
+ "concerts": [
+  {
+   "series": "Forte",
+   "title": "Sounds of the City",
+   "date_text": "September 18, 2026",
+   "venue": null,
+   "url": "https://www.omahasymphony.org/concerts/sound-of-the-city-26",
+   "description": "Presented by The RiverFront, Sounds of the City returns for its 5th annual performance, launching the One Community Culture Festival."
+  },
+  {
+   "series": "Masterworks",
+   "title": "Falletta Conducts Gershwin & Strauss",
+   "date_text": "September 25 - September 26, 2026",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/falletta-gershwin-strauss",
+   "description": "Maestro JoAnn Falletta and pianist Joyce Yang get jazzy with Gershwin's Piano Concerto in F in this celebratory season opener."
+  },
+  {
+   "series": "Family",
+   "title": "Symphony of Sports",
+   "date_text": "September 27, 2026",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/symphony-of-sports-2",
+   "description": "Symphony of Sports brings the excitement of the stadium to the Holland Center! A highly interactive family concert."
+  },
+  {
+   "series": "LIVE with the Omaha Symphony",
+   "title": "The Award-Winning Music of John Williams",
+   "date_text": "October 3 - October 4, 2026",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/live-1-movie-music",
+   "description": "Experience legendary film scores like never before in unforgettable performances of John Williams' most iconic music of the silver screen."
+  },
+  {
+   "series": "LIVE with the Omaha Symphony",
+   "title": "PetRock",
+   "date_text": "October 9, 2026",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/pet-rock",
+   "description": "Omaha's own '70s tribute band PetRock performs with your Omaha Symphony."
+  },
+  {
+   "series": "Symphony Cathedral",
+   "title": "Handel's Water Music",
+   "date_text": "October 10 - October 11, 2026",
+   "venue": "Saint Cecilia Cathedral",
+   "url": "https://www.omahasymphony.org/concerts/cathedral-baroque",
+   "description": "The Omaha Symphony in collaboration with Saint Cecilia Cathedral proudly presents Symphony Cathedral Baroque: Handel's Water Music."
+  },
+  {
+   "series": "Symphony Joslyn",
+   "title": "Bartok's Divertimento",
+   "date_text": "October 18, 2026",
+   "venue": "Joslyn Art Museum",
+   "url": "https://www.omahasymphony.org/concerts/divertimento",
+   "description": "The Symphony Joslyn series begins with a program showcasing triumphant 20th century pieces conducted by Lee Mills."
+  },
+  {
+   "series": "LIVE with the Omaha Symphony",
+   "title": "Tim Burton's The Nightmare Before Christmas",
+   "date_text": "October 24 - October 25, 2026",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/live-3-nightmare-before-christmas",
+   "description": "Pumpkin King Jack Skellington longs to spread the joy of Christmas, with the score performed live."
+  },
+  {
+   "series": "Masterworks",
+   "title": "Dvorak's Seventh",
+   "date_text": "October 30 - October 31, 2026",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/dvořáks-seventh",
+   "description": "Dvorak's exuberant Symphony No. 7 takes you on an epic adventure, led by Conductor Anna Rakitina and cellist Jaemin Han."
+  },
+  {
+   "series": "LIVE with the Omaha Symphony",
+   "title": "Carmina Burana",
+   "date_text": "November 8, 2026",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/carmina-burana-choral-collaborative",
+   "description": "A 350-person choir joins the Omaha Symphony and professional soloists for Orff's groundbreaking and timeless Carmina Burana."
+  },
+  {
+   "series": "LIVE with the Omaha Symphony",
+   "title": "The Machine Performs Pink Floyd",
+   "date_text": "November 14, 2026",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/live-4-the-machine-performs-pink-floyd",
+   "description": "The premier Pink Floyd experience comes to Omaha with classic hits and an immersive light show."
+  },
+  {
+   "series": "Symphony Joslyn",
+   "title": "Schubert's Symphony No. 4",
+   "date_text": "November 22, 2026",
+   "venue": "Joslyn Art Museum",
+   "url": "https://www.omahasymphony.org/concerts/schuberts-symphony-no.-4",
+   "description": "Schubert's Symphony No. 4 led by Maestro Jose Luis Gomez; Associate Principal Cello Gregory Clinton shines in Kabalevsky's Cello Concerto in G Minor."
+  },
+  {
+   "series": "LIVE with the Omaha Symphony",
+   "title": "Harry Potter and the Sorcerer's Stone in Concert",
+   "date_text": "November 28 - November 29, 2026",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/live-5-harry-potter-and-the-sorcerers-stone-in-concert",
+   "description": "Relive the film for its 25th anniversary while a live orchestra performs John Williams' iconic score."
+  },
+  {
+   "series": "LIVE with the Omaha Symphony",
+   "title": "Physicians Mutual Omaha Symphony Christmas Celebration",
+   "date_text": "December 10 - December 13, 2026",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/christmas-celebration",
+   "description": "Omaha's biggest annual holiday production, complete with Broadway singers and dancers."
+  },
+  {
+   "series": "Symphony Cathedral",
+   "title": "A Festival of Christmas Brass",
+   "date_text": "December 17 - December 20, 2026",
+   "venue": "Saint Cecilia Cathedral",
+   "url": "https://www.omahasymphony.org/concerts/christmas-brass",
+   "description": "The Omaha Symphony in collaboration with Saint Cecilia Cathedral proudly presents A Festival of Christmas Brass!"
+  },
+  {
+   "series": "LIVE with the Omaha Symphony",
+   "title": "Disney's The Muppet Christmas Carol in Concert",
+   "date_text": "December 19, 2026",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/muppet-christmas-carol",
+   "description": "The complete film with the score performed live-to-picture."
+  },
+  {
+   "series": "Symphony Joslyn",
+   "title": "Falletta & Mendelssohn's 'Italian'",
+   "date_text": "January 10, 2027",
+   "venue": "Joslyn Art Museum",
+   "url": "https://www.omahasymphony.org/concerts/falletta-mendelssohns-italian",
+   "description": "Be transported to the Italian countryside in this dynamic program conducted by Maestro JoAnn Falletta."
+  },
+  {
+   "series": "Masterworks",
+   "title": "Rachmaninoff's Symphonic Dances",
+   "date_text": "January 15 - January 16, 2027",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/rachmaninoffs-symphonic-dances",
+   "description": "Percussion propels this program from the dance clubs of Mexico to Rachmaninoff's frenzied Symphonic Dances."
+  },
+  {
+   "series": "LIVE with the Omaha Symphony",
+   "title": "Clouds in My Coffee: The Trailblazing Music of Joni Mitchell, Carole King, and Carly Simon",
+   "date_text": "January 23 - January 24, 2027",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/live-7-clouds-in-my-coffee-music-of-joni-mitchell-carole-king-carly-simon",
+   "description": "Songs by Joni Mitchell, Carole King and Carly Simon performed by Capathia Jenkins."
+  },
+  {
+   "series": "Family",
+   "title": "Adventure in the Deep, Dark Woods",
+   "date_text": "February 6, 2027",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/adventure-in-the-deep-dark-woods",
+   "description": "The Gruffalo comes to life with narrator, orchestra and projected illustrations in this all-ages family concert."
+  },
+  {
+   "series": "LIVE with the Omaha Symphony",
+   "title": "Cody Fry",
+   "date_text": "February 13, 2027",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/cody-fry",
+   "description": "GRAMMY-nominated singer-songwriter Cody Fry brings his genre-bending, cinematic hit songs to the Omaha Symphony."
+  },
+  {
+   "series": "Symphony Joslyn",
+   "title": "Mozart's Symphony No. 25",
+   "date_text": "February 21, 2027",
+   "venue": "Joslyn Art Museum",
+   "url": "https://www.omahasymphony.org/concerts/mozarts-symphony-no.-25",
+   "description": "Mozart's 'Little' G Minor headlines a program led by Jonathan Taylor Rush. Principal Trumpet Scott Quackenbush soars in Gregson's Trumpet Concerto."
+  },
+  {
+   "series": "Masterworks",
+   "title": "Mahler's Fourth",
+   "date_text": "February 26 - February 27, 2027",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/mahlers-fourth",
+   "description": "Mozart and Mahler's soprano-led masterpieces carry the audience through an evening full of opulent melodies."
+  },
+  {
+   "series": "LIVE with the Omaha Symphony",
+   "title": "The Wizard of Oz",
+   "date_text": "March 6 - March 7, 2027",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/the-wizard-of-oz",
+   "description": "The 1939 film classic returns to the big screen with the Omaha Symphony performing Herbert Stothart's score live to film."
+  },
+  {
+   "series": "LIVE with the Omaha Symphony",
+   "title": "Pink Martini",
+   "date_text": "March 12 - March 13, 2027",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/live-10-pink-martini",
+   "description": "Pink Martini, the genre-blurring 'little orchestra,' returns with a blend of jazz, '40s-'50s pop and more."
+  },
+  {
+   "series": "Masterworks",
+   "title": "Susanna Perry Gilmore Plays Mozart",
+   "date_text": "April 2 - April 3, 2027",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/susanna-perry-gilmore-plays-mozart",
+   "description": "Concertmaster Susanna Perry Gilmore shines in Mozart's intimate and elegant Violin Concerto No. 1."
+  },
+  {
+   "series": "Family",
+   "title": "Mermaids and Dragons",
+   "date_text": "April 4, 2027",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/mermaids-and-dragons",
+   "description": "Featuring music from How to Train Your Dragon and Disney's The Little Mermaid."
+  },
+  {
+   "series": "LIVE with the Omaha Symphony",
+   "title": "The Doo Wop Project",
+   "date_text": "April 10 - April 11, 2027",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/live-11-the-doo-wop-project",
+   "description": "A journey from the Crests and Belmonts through Smokey Robinson, The Temptations and The Four Seasons."
+  },
+  {
+   "series": "Symphony Joslyn",
+   "title": "Stravinsky's Pulcinella",
+   "date_text": "April 18, 2027",
+   "venue": "Joslyn Art Museum",
+   "url": "https://www.omahasymphony.org/concerts/stravinskys-pulcinella",
+   "description": "Stravinsky's mastery of neo-classical composition shines in his gorgeous Pulcinella suite for chamber orchestra."
+  },
+  {
+   "series": "LIVE with the Omaha Symphony",
+   "title": "7 Bridges: The Ultimate Eagles Experience",
+   "date_text": "April 23, 2027",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/live-12-7-bridges-the-ultimate-eagles-experience",
+   "description": "7 Bridges reimagines the Eagles' hit songs from the band's most prolific period."
+  },
+  {
+   "series": "Masterworks",
+   "title": "Sibelius' Second",
+   "date_text": "May 7 - May 8, 2027",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/sibelius-second",
+   "description": "Sibelius' Second Symphony and Beethoven's Fourth Piano Concerto, led by Earl Lee with pianist Janice Carissa."
+  },
+  {
+   "series": "LIVE with the Omaha Symphony",
+   "title": "Star Wars: The Empire Strikes Back in Concert",
+   "date_text": "May 14 - May 15, 2027",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/live-13-star-wars-the-empire-strikes-back-in-concert",
+   "description": "The orchestra performs the award-winning John Williams score live with the film."
+  },
+  {
+   "series": "Symphony Joslyn",
+   "title": "Beethoven & Haydn",
+   "date_text": "May 23, 2027",
+   "venue": "Joslyn Art Museum",
+   "url": "https://www.omahasymphony.org/concerts/beethoven-haydn",
+   "description": "Haydn and his reluctant protege Beethoven bookend this dramatic program led by conductor Katharina Wincor."
+  },
+  {
+   "series": "Masterworks",
+   "title": "Applied Underwriters Presents Beethoven's Ninth",
+   "date_text": "June 4 - June 5, 2027",
+   "venue": "Holland Performing Arts Center",
+   "url": "https://www.omahasymphony.org/concerts/beethovens-ninth",
+   "description": "The season concludes with Beethoven's Ninth, ending with the epic Ode to Joy."
+  },
+  {
+   "series": "Forte",
+   "title": "Issa Trap Symphony",
+   "date_text": "August 27, 2026",
+   "venue": null,
+   "url": "https://www.omahasymphony.org/concerts/issa-trap-symphony-2026",
+   "description": "Bars + beats + a professional string ensemble in a one-night-only genre-blending performance."
+  },
+  {
+   "series": "Community Concerts",
+   "title": "The RiverFront Fourth of July Celebration featuring the Omaha Symphony",
+   "date_text": "July 4, 2026",
+   "venue": "Gene Leahy Mall",
+   "url": "https://www.omahasymphony.org/concerts/the-riverfront-fourth-of-july-celebration-featuring-the-omaha-symphony-2",
+   "description": "A free, family-friendly evening in downtown Omaha at the Performance Pavilion."
+  }
+ ]
+}

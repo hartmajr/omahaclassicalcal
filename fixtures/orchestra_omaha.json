@@ -1,0 +1,37 @@
+{
+ "events": [
+  {
+   "title": "Orchestral Idylls",
+   "start_date": "2026-09-12 19:00:00",
+   "end_date": "2026-09-12 21:00:00",
+   "venue": {
+    "venue": "Simon Concert Hall at the Omaha Conservatory of Music"
+   },
+   "url": "https://orchestraomaha.org/event/orchestral-idylls/",
+   "description": "Orchestra Omaha opens the Stories in Sound season. Doors open at 6:30 PM.",
+   "categories": []
+  },
+  {
+   "title": "Scary Stories",
+   "start_date": "2026-10-30 19:00:00",
+   "end_date": "2026-10-30 21:00:00",
+   "venue": {
+    "venue": "Simon Concert Hall at the Omaha Conservatory of Music"
+   },
+   "url": "https://orchestraomaha.org/event/scary-stories/",
+   "description": "A Halloween-weekend program: Schubert Erlkonig, Mussorgsky Night on Bald Mountain, Saint-Saens Danse Macabre, selections from Lloyd Webber's The Phantom of the Opera, Grieg In the Hall of the Mountain King, and Holst Mars from The Planets. Doors open at 6:30 PM.",
+   "categories": []
+  },
+  {
+   "title": "Dvorak Symphony No. 6",
+   "start_date": "2027-02-06 19:00:00",
+   "end_date": "2027-02-06 21:00:00",
+   "venue": {
+    "venue": "Simon Concert Hall at the Omaha Conservatory of Music"
+   },
+   "url": "https://orchestraomaha.org/event/dvorak-symphony-no-6/",
+   "description": "Orchestra Omaha performs Dvorak's Symphony No. 6. Doors open at 6:30 PM.",
+   "categories": []
+  }
+ ]
+}

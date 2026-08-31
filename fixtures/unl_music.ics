@@ -1,0 +1,71 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//UNL Events//Music Calendar//EN
+X-WR-CALNAME:UNL Music Events
+BEGIN:VEVENT
+UID:200748@events.unl.edu
+SUMMARY:Guest Artist - Nicholas May\, Saxophone
+DTSTART:20260901T193000
+LOCATION:Westbrook Music Building\, Room 130
+URL:https://events.unl.edu/music/2026/09/01/200748/
+DESCRIPTION:This event is free and open to the public.
+CATEGORIES:Performing Arts - Music
+END:VEVENT
+BEGIN:VEVENT
+UID:201766-0928@events.unl.edu
+SUMMARY:2026 American Liszt Society Festival
+DTSTART:20260928T093000
+DTEND:20260928T180000
+LOCATION:Westbrook Music Building
+URL:https://events.unl.edu/music/2026/09/28/201766/
+DESCRIPTION:Towards Re-Enchantment: Music as a Portal to the Sacred.
+CATEGORIES:Conference/Symposium
+END:VEVENT
+BEGIN:VEVENT
+UID:201770@events.unl.edu
+SUMMARY:Symphony Orchestra with University Singers
+DTSTART:20260928T193000
+LOCATION:Kimball Recital Hall
+URL:https://events.unl.edu/music/2026/09/28/201770/
+DESCRIPTION:Part of the 2026 American Liszt Society Festival. Free and open to the public.
+CATEGORIES:Performing Arts - Music
+END:VEVENT
+BEGIN:VEVENT
+UID:200803@events.unl.edu
+SUMMARY:University Orchestra with University Singers
+DTSTART:20260928T193000
+LOCATION:Kimball Recital Hall
+URL:https://events.unl.edu/music/2026/09/28/200803/
+DESCRIPTION:Liszt Festival 2026. Free and open to the public.
+CATEGORIES:Performing Arts - Music
+END:VEVENT
+BEGIN:VEVENT
+UID:201766-0929@events.unl.edu
+SUMMARY:2026 American Liszt Society Festival
+DTSTART:20260929T093000
+DTEND:20260929T180000
+LOCATION:Westbrook Music Building
+URL:https://events.unl.edu/music/2026/09/29/201766/
+DESCRIPTION:Towards Re-Enchantment: Music as a Portal to the Sacred.
+CATEGORIES:Conference/Symposium
+END:VEVENT
+BEGIN:VEVENT
+UID:201766-0930@events.unl.edu
+SUMMARY:2026 American Liszt Society Festival
+DTSTART:20260930T093000
+DTEND:20260930T180000
+LOCATION:Westbrook Music Building
+URL:https://events.unl.edu/music/2026/09/30/201766/
+DESCRIPTION:Towards Re-Enchantment: Music as a Portal to the Sacred.
+CATEGORIES:Conference/Symposium
+END:VEVENT
+BEGIN:VEVENT
+UID:200134@events.unl.edu
+SUMMARY:Westbrook Music Building Dedication
+DTSTART:20261001T160000
+LOCATION:Westbrook Music Building\, Atrium
+URL:https://events.unl.edu/music/2026/10/01/200134/
+DESCRIPTION:The new Westbrook Music Building will be formally dedicated. A reception will follow.
+CATEGORIES:Special Event
+END:VEVENT
+END:VCALENDAR

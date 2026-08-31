@@ -1,0 +1,581 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Omaha Classical Calendar//EN
+X-WR-CALNAME:Omaha Classical Calendar — In Omaha
+X-WR-TIMEZONE:America/Chicago
+BEGIN:VEVENT
+SUMMARY:Emanuel Ax\, piano
+DTSTART:20260908T190000
+DTEND:20260908T190000
+DTSTAMP:20260831T235316Z
+UID:82ad0734a3bc10f7@omaha-classical-calendar
+CATEGORIES:Chamber Music
+DESCRIPTION:Limited number of tickets released Monday\, August 31. Free an
+ d open to the public.\n\nSource: Vesper Concerts\nhttps://vesperconcerts.o
+ rg/emanuel-ax/
+LOCATION:Presbyterian Church of the Cross
+URL:https://vesperconcerts.org/emanuel-ax/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bach's Lunch with the Valencia Baryton Project
+DTSTART;TZID="UTC-05:00":20260910T120000
+DTEND;TZID="UTC-05:00":20260910T125000
+DTSTAMP:20260831T235316Z
+UID:4efe8174b4cda969@omaha-classical-calendar
+CATEGORIES:Concert/Performance
+DESCRIPTION:Source: UNO School of Music\nhttps://events.unomaha.edu/event/
+ bachs-lunch-with-the-valencia-baryton-project
+LOCATION:Strauss Performing Arts Center\, Concert Hall
+URL:https://events.unomaha.edu/event/bachs-lunch-with-the-valencia-baryton
+ -project
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Valencia Baryton Project
+DTSTART;TZID="UTC-05:00":20260910T193000
+DTEND;TZID="UTC-05:00":20260910T213000
+DTSTAMP:20260831T235316Z
+UID:6fdeb733f9abb997@omaha-classical-calendar
+CATEGORIES:Concert/Performance
+DESCRIPTION:Source: UNO School of Music\nhttps://events.unomaha.edu/event/
+ the-valencia-baryton-project
+LOCATION:Strauss Performing Arts Center\, Concert Hall
+URL:https://events.unomaha.edu/event/the-valencia-baryton-project
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Orchestral Idylls
+DTSTART:20260912T190000
+DTEND:20260912T210000
+DTSTAMP:20260831T235316Z
+UID:e4f3fb1e75edb12b@omaha-classical-calendar
+DESCRIPTION:Orchestra Omaha opens the Stories in Sound season. Doors open 
+ at 6:30 PM.\n\nSource: Orchestra Omaha\nhttps://orchestraomaha.org/event/o
+ rchestral-idylls/
+LOCATION:Simon Concert Hall at the Omaha Conservatory of Music
+URL:https://orchestraomaha.org/event/orchestral-idylls/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Falletta Conducts Gershwin & Strauss
+DTSTART:20260925T000000
+DTEND:20260926T000000
+DTSTAMP:20260831T235316Z
+UID:3c8266d2194246ef@omaha-classical-calendar
+CATEGORIES:Masterworks
+DESCRIPTION:Maestro JoAnn Falletta and pianist Joyce Yang get jazzy with G
+ ershwin's Piano Concerto in F in this celebratory season opener.\n\nSource
+ : Omaha Symphony\nhttps://www.omahasymphony.org/concerts/falletta-gershwin
+ -strauss
+LOCATION:Holland Performing Arts Center
+URL:https://www.omahasymphony.org/concerts/falletta-gershwin-strauss
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Masterclass with Joyce Yang\, Piano
+DTSTART;TZID="UTC-05:00":20260926T130000
+DTEND;TZID="UTC-05:00":20260926T130000
+DTSTAMP:20260831T235316Z
+UID:be6d3c32680d747f@omaha-classical-calendar
+CATEGORIES:Concert/Performance
+DESCRIPTION:Source: UNO School of Music\nhttps://events.unomaha.edu/event/
+ masterclass-with-joyce-yang-piano
+LOCATION:Strauss Performing Arts Center\, Recital Hall
+URL:https://events.unomaha.edu/event/masterclass-with-joyce-yang-piano
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Will Liverman in Concert
+DTSTART:20260927T190000
+DTEND:20260927T190000
+DTSTAMP:20260831T235316Z
+UID:3b99db246b3334f1@omaha-classical-calendar
+CATEGORIES:Opera
+DESCRIPTION:GRAMMY-winning baritone Will Liverman performs his original mu
+ sic and classical favorites. Add-on performance.\n\nSource: Opera Omaha\nh
+ ttps://operaomaha.org/production/will-liverman-in-concert/
+LOCATION:Slowdown
+URL:https://operaomaha.org/production/will-liverman-in-concert/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:PROJECT Trio - Outdoor Concert
+DTSTART:20261004T163000
+DTEND:20261004T163000
+DTSTAMP:20260831T235316Z
+UID:c272d44514d4d917@omaha-classical-calendar
+CATEGORIES:Chamber Music
+DESCRIPTION:Free and open to the public.\n\nSource: Vesper Concerts\nhttps
+ ://vesperconcerts.org/project-trio/
+URL:https://vesperconcerts.org/project-trio/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Handel's Water Music
+DTSTART:20261010T000000
+DTEND:20261011T000000
+DTSTAMP:20260831T235316Z
+UID:e0892e90dd28875b@omaha-classical-calendar
+CATEGORIES:Symphony Cathedral
+DESCRIPTION:The Omaha Symphony in collaboration with Saint Cecilia Cathedr
+ al proudly presents Symphony Cathedral Baroque: Handel's Water Music.\n\nS
+ ource: Omaha Symphony\nhttps://www.omahasymphony.org/concerts/cathedral-ba
+ roque
+LOCATION:Saint Cecilia Cathedral
+URL:https://www.omahasymphony.org/concerts/cathedral-baroque
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:UNO Choirs Concert
+DTSTART;TZID="UTC-05:00":20261013T193000
+DTEND;TZID="UTC-05:00":20261013T193000
+DTSTAMP:20260831T235316Z
+UID:af5d6cc62403219a@omaha-classical-calendar
+CATEGORIES:Concert/Performance
+DESCRIPTION:Source: UNO School of Music\nhttps://events.unomaha.edu/event/
+ uno-choirs-concert-101326
+LOCATION:Strauss Performing Arts Center\, Concert Hall
+URL:https://events.unomaha.edu/event/uno-choirs-concert-101326
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bartok's Divertimento
+DTSTART:20261018T000000
+DTEND:20261018T000000
+DTSTAMP:20260831T235316Z
+UID:bb0fa5f79afb0b4a@omaha-classical-calendar
+CATEGORIES:Symphony Joslyn
+DESCRIPTION:The Symphony Joslyn series begins with a program showcasing tr
+ iumphant 20th century pieces conducted by Lee Mills.\n\nSource: Omaha Symp
+ hony\nhttps://www.omahasymphony.org/concerts/divertimento
+LOCATION:Joslyn Art Museum
+URL:https://www.omahasymphony.org/concerts/divertimento
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Christine Beard\, Flute Recital
+DTSTART;TZID="UTC-05:00":20261018T113000
+DTEND;TZID="UTC-05:00":20261018T113000
+DTSTAMP:20260831T235316Z
+UID:daa44e9fd1306e1c@omaha-classical-calendar
+CATEGORIES:Concert/Performance
+DESCRIPTION:Source: UNO School of Music\nhttps://events.unomaha.edu/event/
+ christine-beard-flute-recital
+LOCATION:Gallery 1516
+URL:https://events.unomaha.edu/event/christine-beard-flute-recital
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:UNO Keyboard Area Project Recital
+DTSTART;TZID="UTC-05:00":20261026T193000
+DTEND;TZID="UTC-05:00":20261026T193000
+DTSTAMP:20260831T235316Z
+UID:8862c39cb20f0956@omaha-classical-calendar
+CATEGORIES:Concert/Performance
+DESCRIPTION:Source: UNO School of Music\nhttps://events.unomaha.edu/event/
+ uno-keyboard-area-project-recital-102626
+LOCATION:Strauss Performing Arts Center\, Concert Hall
+URL:https://events.unomaha.edu/event/uno-keyboard-area-project-recital-102
+ 626
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dvorak's Seventh
+DTSTART:20261030T000000
+DTEND:20261031T000000
+DTSTAMP:20260831T235316Z
+UID:785d110fe7226033@omaha-classical-calendar
+CATEGORIES:Masterworks
+DESCRIPTION:Dvorak's exuberant Symphony No. 7 takes you on an epic adventu
+ re\, led by Conductor Anna Rakitina and cellist Jaemin Han.\n\nSource: Oma
+ ha Symphony\nhttps://www.omahasymphony.org/concerts/dvoÅ™Ã¡ks-seventh
+LOCATION:Holland Performing Arts Center
+URL:https://www.omahasymphony.org/concerts/dvoÅ™Ã¡ks-seventh
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Scary Stories
+DTSTART:20261030T190000
+DTEND:20261030T210000
+DTSTAMP:20260831T235316Z
+UID:9897258ea922b019@omaha-classical-calendar
+DESCRIPTION:A Halloween-weekend program: Schubert Erlkonig\, Mussorgsky Ni
+ ght on Bald Mountain\, Saint-Saens Danse Macabre\, selections from Lloyd W
+ ebber's The Phantom of the Opera\, Grieg In the Hall of the Mountain King
+ \, and Holst Mars from The Planets.…\n\nSource: Orchestra Omaha\nhttps:/
+ /orchestraomaha.org/event/scary-stories/
+LOCATION:Simon Concert Hall at the Omaha Conservatory of Music
+URL:https://orchestraomaha.org/event/scary-stories/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Carmina Burana
+DTSTART:20261108T000000
+DTEND:20261108T000000
+DTSTAMP:20260831T235316Z
+UID:fb3145642f10ccf5@omaha-classical-calendar
+CATEGORIES:LIVE with the Omaha Symphony
+DESCRIPTION:A 350-person choir joins the Omaha Symphony and professional s
+ oloists for Orff's groundbreaking and timeless Carmina Burana.\n\nSource: 
+ Omaha Symphony\nhttps://www.omahasymphony.org/concerts/carmina-burana-chor
+ al-collaborative
+LOCATION:Holland Performing Arts Center
+URL:https://www.omahasymphony.org/concerts/carmina-burana-choral-collabora
+ tive
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:La bohÃ¨me (Nov 13)
+DTSTART:20261113T193000
+DTEND:20261113T193000
+DTSTAMP:20260831T235316Z
+UID:e8025ee81fdf024e@omaha-classical-calendar
+CATEGORIES:Opera
+DESCRIPTION:Music by Giacomo Puccini. Libretto by Luigi Illica and Giusepp
+ e Giacosa. E. Loren Meeker's production\, with Karen Chia-ling Ho and Deme
+ trious Sampson.\n\nSource: Opera Omaha\nhttps://operaomaha.org/production/
+ la-boheme/
+LOCATION:Orpheum Theater
+URL:https://operaomaha.org/production/la-boheme/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:La bohÃ¨me (Nov 15)
+DTSTART:20261115T140000
+DTEND:20261115T140000
+DTSTAMP:20260831T235316Z
+UID:bf37b36e24a4578e@omaha-classical-calendar
+CATEGORIES:Opera
+DESCRIPTION:Music by Giacomo Puccini. Libretto by Luigi Illica and Giusepp
+ e Giacosa. E. Loren Meeker's production\, with Karen Chia-ling Ho and Deme
+ trious Sampson.\n\nSource: Opera Omaha\nhttps://operaomaha.org/production/
+ la-boheme/
+LOCATION:Orpheum Theater
+URL:https://operaomaha.org/production/la-boheme/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Adam Hu\, piano
+DTSTART:20261115T190000
+DTEND:20261115T190000
+DTSTAMP:20260831T235316Z
+UID:bd12608b4751103d@omaha-classical-calendar
+CATEGORIES:Chamber Music
+DESCRIPTION:Free and open to the public.\n\nSource: Vesper Concerts\nhttps
+ ://vesperconcerts.org/adam-hu/
+LOCATION:Presbyterian Church of the Cross
+URL:https://vesperconcerts.org/adam-hu/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Schubert's Symphony No. 4
+DTSTART:20261122T000000
+DTEND:20261122T000000
+DTSTAMP:20260831T235316Z
+UID:0bae409cc94edcd1@omaha-classical-calendar
+CATEGORIES:Symphony Joslyn
+DESCRIPTION:Schubert's Symphony No. 4 led by Maestro Jose Luis Gomez\; Ass
+ ociate Principal Cello Gregory Clinton shines in Kabalevsky's Cello Concer
+ to in G Minor.\n\nSource: Omaha Symphony\nhttps://www.omahasymphony.org/co
+ ncerts/schuberts-symphony-no.-4
+LOCATION:Joslyn Art Museum
+URL:https://www.omahasymphony.org/concerts/schuberts-symphony-no.-4
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Cantus
+DTSTART:20261201T190000
+DTEND:20261201T190000
+DTSTAMP:20260831T235316Z
+UID:c17322cf879e81b8@omaha-classical-calendar
+CATEGORIES:Chamber Music
+DESCRIPTION:Free and open to the public.\n\nSource: Vesper Concerts\nhttps
+ ://vesperconcerts.org/cantus/
+LOCATION:Presbyterian Church of the Cross
+URL:https://vesperconcerts.org/cantus/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:A Festival of Christmas Brass
+DTSTART:20261217T000000
+DTEND:20261220T000000
+DTSTAMP:20260831T235316Z
+UID:52b9a59dc444d085@omaha-classical-calendar
+CATEGORIES:Symphony Cathedral
+DESCRIPTION:The Omaha Symphony in collaboration with Saint Cecilia Cathedr
+ al proudly presents A Festival of Christmas Brass!\n\nSource: Omaha Sympho
+ ny\nhttps://www.omahasymphony.org/concerts/christmas-brass
+LOCATION:Saint Cecilia Cathedral
+URL:https://www.omahasymphony.org/concerts/christmas-brass
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Falletta & Mendelssohn's 'Italian'
+DTSTART:20270110T000000
+DTEND:20270110T000000
+DTSTAMP:20260831T235316Z
+UID:dba06ec66f3a875f@omaha-classical-calendar
+CATEGORIES:Symphony Joslyn
+DESCRIPTION:Be transported to the Italian countryside in this dynamic prog
+ ram conducted by Maestro JoAnn Falletta.\n\nSource: Omaha Symphony\nhttps:
+ //www.omahasymphony.org/concerts/falletta-mendelssohns-italian
+LOCATION:Joslyn Art Museum
+URL:https://www.omahasymphony.org/concerts/falletta-mendelssohns-italian
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Rachmaninoff's Symphonic Dances
+DTSTART:20270115T000000
+DTEND:20270116T000000
+DTSTAMP:20260831T235316Z
+UID:756e5478c8890547@omaha-classical-calendar
+CATEGORIES:Masterworks
+DESCRIPTION:Percussion propels this program from the dance clubs of Mexico
+  to Rachmaninoff's frenzied Symphonic Dances.\n\nSource: Omaha Symphony\nh
+ ttps://www.omahasymphony.org/concerts/rachmaninoffs-symphonic-dances
+LOCATION:Holland Performing Arts Center
+URL:https://www.omahasymphony.org/concerts/rachmaninoffs-symphonic-dances
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sterling Elliott\, cello
+DTSTART:20270126T190000
+DTEND:20270126T190000
+DTSTAMP:20260831T235316Z
+UID:94d77afab1a009e4@omaha-classical-calendar
+CATEGORIES:Chamber Music
+DESCRIPTION:Free and open to the public.\n\nSource: Vesper Concerts\nhttps
+ ://vesperconcerts.org/sterling-elliott-cello/
+LOCATION:Presbyterian Church of the Cross
+URL:https://vesperconcerts.org/sterling-elliott-cello/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Pigeon Keeper (Jan 28)
+DTSTART:20270128T183000
+DTEND:20270128T183000
+DTSTAMP:20260831T235316Z
+UID:8bc500833c3d9b80@omaha-classical-calendar
+CATEGORIES:Opera
+DESCRIPTION:Music by David Hanlon. Libretto by Stephanie Fleischmann. Part
+  of the Family Opera Series\; a new opera with cinematic projections and c
+ hildren's chorus.\n\nSource: Opera Omaha\nhttps://operaomaha.org/productio
+ n/the-pigeon-keeper/
+LOCATION:The Rose Theater
+URL:https://operaomaha.org/production/the-pigeon-keeper/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Pigeon Keeper (Jan 29)
+DTSTART:20270129T183000
+DTEND:20270129T183000
+DTSTAMP:20260831T235316Z
+UID:e27f76e55891f807@omaha-classical-calendar
+CATEGORIES:Opera
+DESCRIPTION:Music by David Hanlon. Libretto by Stephanie Fleischmann. Part
+  of the Family Opera Series\; a new opera with cinematic projections and c
+ hildren's chorus.\n\nSource: Opera Omaha\nhttps://operaomaha.org/productio
+ n/the-pigeon-keeper/
+LOCATION:The Rose Theater
+URL:https://operaomaha.org/production/the-pigeon-keeper/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Pigeon Keeper (Jan 30)
+DTSTART:20270130T140000
+DTEND:20270130T140000
+DTSTAMP:20260831T235316Z
+UID:a8ddd07993118e99@omaha-classical-calendar
+CATEGORIES:Opera
+DESCRIPTION:Music by David Hanlon. Libretto by Stephanie Fleischmann. Part
+  of the Family Opera Series\; a new opera with cinematic projections and c
+ hildren's chorus.\n\nSource: Opera Omaha\nhttps://operaomaha.org/productio
+ n/the-pigeon-keeper/
+LOCATION:The Rose Theater
+URL:https://operaomaha.org/production/the-pigeon-keeper/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Heritage Series 2027: Concert I
+DTSTART:20270131T150000
+DTEND:20270131T150000
+DTSTAMP:20260831T235316Z
+UID:65664585aa0f5ef9@omaha-classical-calendar
+CATEGORIES:Chamber Music
+DESCRIPTION:First of the three-concert Heritage Series\, Thomas Kluge arti
+ stic director. Program and musicians to be announced.\n\nSource: Omaha Cha
+ mber Music Society\nhttps://www.omahachambermusic.org/heritage-series
+LOCATION:Omaha Conservatory of Music\, 7023 Cass Street
+URL:https://www.omahachambermusic.org/heritage-series
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dvorak Symphony No. 6
+DTSTART:20270206T190000
+DTEND:20270206T210000
+DTSTAMP:20260831T235316Z
+UID:1efe775118700c08@omaha-classical-calendar
+DESCRIPTION:Orchestra Omaha performs Dvorak's Symphony No. 6. Doors open a
+ t 6:30 PM.\n\nSource: Orchestra Omaha\nhttps://orchestraomaha.org/event/dv
+ orak-symphony-no-6/
+LOCATION:Simon Concert Hall at the Omaha Conservatory of Music
+URL:https://orchestraomaha.org/event/dvorak-symphony-no-6/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Christine Beard\, flute
+DTSTART:20270214T150000
+DTEND:20270214T150000
+DTSTAMP:20260831T235316Z
+UID:2230f3cb5be5ec8a@omaha-classical-calendar
+CATEGORIES:Chamber Music
+DESCRIPTION:Free and open to the public.\n\nSource: Vesper Concerts\nhttps
+ ://vesperconcerts.org/christine-beard/
+LOCATION:Presbyterian Church of the Cross
+URL:https://vesperconcerts.org/christine-beard/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mozart's Symphony No. 25
+DTSTART:20270221T000000
+DTEND:20270221T000000
+DTSTAMP:20260831T235316Z
+UID:983538c92aeae904@omaha-classical-calendar
+CATEGORIES:Symphony Joslyn
+DESCRIPTION:Mozart's 'Little' G Minor headlines a program led by Jonathan 
+ Taylor Rush. Principal Trumpet Scott Quackenbush soars in Gregson's Trumpe
+ t Concerto.\n\nSource: Omaha Symphony\nhttps://www.omahasymphony.org/conce
+ rts/mozarts-symphony-no.-25
+LOCATION:Joslyn Art Museum
+URL:https://www.omahasymphony.org/concerts/mozarts-symphony-no.-25
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mahler's Fourth
+DTSTART:20270226T000000
+DTEND:20270227T000000
+DTSTAMP:20260831T235316Z
+UID:3874442202566d26@omaha-classical-calendar
+CATEGORIES:Masterworks
+DESCRIPTION:Mozart and Mahler's soprano-led masterpieces carry the audienc
+ e through an evening full of opulent melodies.\n\nSource: Omaha Symphony\n
+ https://www.omahasymphony.org/concerts/mahlers-fourth
+LOCATION:Holland Performing Arts Center
+URL:https://www.omahasymphony.org/concerts/mahlers-fourth
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Heritage Series 2027: Concert II
+DTSTART:20270314T150000
+DTEND:20270314T150000
+DTSTAMP:20260831T235316Z
+UID:ac80e98cdc46bb35@omaha-classical-calendar
+CATEGORIES:Chamber Music
+DESCRIPTION:Second of the three-concert Heritage Series\, Thomas Kluge art
+ istic director. Program and musicians to be announced.\n\nSource: Omaha Ch
+ amber Music Society\nhttps://www.omahachambermusic.org/heritage-series
+LOCATION:Omaha Conservatory of Music\, 7023 Cass Street
+URL:https://www.omahachambermusic.org/heritage-series
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ariadne auf Naxos (Mar 19)
+DTSTART:20270319T193000
+DTEND:20270319T193000
+DTSTAMP:20260831T235316Z
+UID:36109bd131ac7316@omaha-classical-calendar
+CATEGORIES:Opera
+DESCRIPTION:Music by Richard Strauss. Libretto by Hugo von Hofmannsthal. O
+ pera Omaha's first Strauss opera\, conducted by Steven White\, directed by
+  Chas Rader-Shieber.\n\nSource: Opera Omaha\nhttps://operaomaha.org/produc
+ tion/ariadne-auf-naxos/
+LOCATION:Orpheum Theater
+URL:https://operaomaha.org/production/ariadne-auf-naxos/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ariadne auf Naxos (Mar 21)
+DTSTART:20270321T140000
+DTEND:20270321T140000
+DTSTAMP:20260831T235316Z
+UID:af4a277566d79837@omaha-classical-calendar
+CATEGORIES:Opera
+DESCRIPTION:Music by Richard Strauss. Libretto by Hugo von Hofmannsthal. O
+ pera Omaha's first Strauss opera\, conducted by Steven White\, directed by
+  Chas Rader-Shieber.\n\nSource: Opera Omaha\nhttps://operaomaha.org/produc
+ tion/ariadne-auf-naxos/
+LOCATION:Orpheum Theater
+URL:https://operaomaha.org/production/ariadne-auf-naxos/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Susanna Perry Gilmore Plays Mozart
+DTSTART:20270402T000000
+DTEND:20270403T000000
+DTSTAMP:20260831T235316Z
+UID:be2c5d9d9d992f50@omaha-classical-calendar
+CATEGORIES:Masterworks
+DESCRIPTION:Concertmaster Susanna Perry Gilmore shines in Mozart's intimat
+ e and elegant Violin Concerto No. 1.\n\nSource: Omaha Symphony\nhttps://ww
+ w.omahasymphony.org/concerts/susanna-perry-gilmore-plays-mozart
+LOCATION:Holland Performing Arts Center
+URL:https://www.omahasymphony.org/concerts/susanna-perry-gilmore-plays-moz
+ art
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Stravinsky's Pulcinella
+DTSTART:20270418T000000
+DTEND:20270418T000000
+DTSTAMP:20260831T235316Z
+UID:a9b7af714de84ec5@omaha-classical-calendar
+CATEGORIES:Symphony Joslyn
+DESCRIPTION:Stravinsky's mastery of neo-classical composition shines in hi
+ s gorgeous Pulcinella suite for chamber orchestra.\n\nSource: Omaha Sympho
+ ny\nhttps://www.omahasymphony.org/concerts/stravinskys-pulcinella
+LOCATION:Joslyn Art Museum
+URL:https://www.omahasymphony.org/concerts/stravinskys-pulcinella
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Texas Guitar Quartet
+DTSTART:20270423T190000
+DTEND:20270423T190000
+DTSTAMP:20260831T235316Z
+UID:aa25c6ea514c5bf2@omaha-classical-calendar
+CATEGORIES:Chamber Music
+DESCRIPTION:Free and open to the public.\n\nSource: Vesper Concerts\nhttps
+ ://vesperconcerts.org/texas-guitar-quartet/
+LOCATION:Presbyterian Church of the Cross
+URL:https://vesperconcerts.org/texas-guitar-quartet/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Alessandro
+DTSTART:20270430T193000
+DTEND:20270430T193000
+DTSTAMP:20260831T235316Z
+UID:fc47b6373a820a5f@omaha-classical-calendar
+CATEGORIES:Opera
+DESCRIPTION:Music by George Frideric Handel. Libretto by Thomas Broughton.
+  The English Concert performs this rarely staged Handel opera on period in
+ struments.\n\nSource: Opera Omaha\nhttps://operaomaha.org/production/aless
+ andro/
+LOCATION:Holland Performing Arts Center
+URL:https://operaomaha.org/production/alessandro/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sibelius' Second
+DTSTART:20270507T000000
+DTEND:20270508T000000
+DTSTAMP:20260831T235316Z
+UID:28587df473125d24@omaha-classical-calendar
+CATEGORIES:Masterworks
+DESCRIPTION:Sibelius' Second Symphony and Beethoven's Fourth Piano Concert
+ o\, led by Earl Lee with pianist Janice Carissa.\n\nSource: Omaha Symphony
+ \nhttps://www.omahasymphony.org/concerts/sibelius-second
+LOCATION:Holland Performing Arts Center
+URL:https://www.omahasymphony.org/concerts/sibelius-second
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Heritage Series 2027: Concert III
+DTSTART:20270516T150000
+DTEND:20270516T150000
+DTSTAMP:20260831T235316Z
+UID:dcf9eb709977574d@omaha-classical-calendar
+CATEGORIES:Chamber Music
+DESCRIPTION:Third of the three-concert Heritage Series\, Thomas Kluge arti
+ stic director. Program and musicians to be announced.\n\nSource: Omaha Cha
+ mber Music Society\nhttps://www.omahachambermusic.org/heritage-series
+LOCATION:Omaha Conservatory of Music\, 7023 Cass Street
+URL:https://www.omahachambermusic.org/heritage-series
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Beethoven & Haydn
+DTSTART:20270523T000000
+DTEND:20270523T000000
+DTSTAMP:20260831T235316Z
+UID:3167dccd59694b9a@omaha-classical-calendar
+CATEGORIES:Symphony Joslyn
+DESCRIPTION:Haydn and his reluctant protege Beethoven bookend this dramati
+ c program led by conductor Katharina Wincor.\n\nSource: Omaha Symphony\nht
+ tps://www.omahasymphony.org/concerts/beethoven-haydn
+LOCATION:Joslyn Art Museum
+URL:https://www.omahasymphony.org/concerts/beethoven-haydn
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Applied Underwriters Presents Beethoven's Ninth
+DTSTART:20270604T000000
+DTEND:20270605T000000
+DTSTAMP:20260831T235316Z
+UID:9a49cdf1ed972a22@omaha-classical-calendar
+CATEGORIES:Masterworks
+DESCRIPTION:The season concludes with Beethoven's Ninth\, ending with the 
+ epic Ode to Joy.\n\nSource: Omaha Symphony\nhttps://www.omahasymphony.org/
+ concerts/beethovens-ninth
+LOCATION:Holland Performing Arts Center
+URL:https://www.omahasymphony.org/concerts/beethovens-ninth
+END:VEVENT
+END:VCALENDAR

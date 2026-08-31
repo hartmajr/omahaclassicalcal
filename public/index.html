@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Omaha Classical Calendar</title><style>
+:root { --ink:#1a1a1a; --muted:#6b6b6b; --line:#e6e3dc; --accent:#7a3b2e; --bg:#faf8f4; }
+* { box-sizing:border-box; }
+body { font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+       color:var(--ink); background:var(--bg); margin:0; padding:0 20px 60px; }
+.wrap { max-width:720px; margin:0 auto; }
+header { padding:48px 0 20px; border-bottom:2px solid var(--ink); }
+h1 { font-size:30px; margin:0 0 6px; letter-spacing:-.01em; }
+.sub { color:var(--muted); margin:0; }
+.tabs { display:flex; gap:6px; margin:24px 0 0; flex-wrap:wrap; }
+.tab { border:1px solid var(--line); background:none; font:inherit; font-weight:600;
+       color:var(--muted); padding:8px 16px; border-radius:8px 8px 0 0; cursor:pointer; }
+.tab[aria-selected=true] { color:var(--ink); border-bottom-color:var(--bg); background:#fff; }
+.panel { display:none; }
+.panel.active { display:block; }
+.subscribe { margin:16px 0 0; font-size:14px; }
+.subscribe a { color:var(--accent); text-decoration:none; border:1px solid var(--line);
+       padding:6px 12px; border-radius:6px; margin-right:8px; display:inline-block; }
+.intro { font-size:14px; color:var(--muted); margin:12px 0 0; }
+h2 { font-size:14px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted);
+     margin:32px 0 0; padding-bottom:8px; border-bottom:1px solid var(--line); }
+.event { padding:18px 0; border-bottom:1px solid var(--line); display:flex; gap:18px; }
+.date { flex:0 0 64px; text-align:center; }
+.date .d { font-size:24px; font-weight:600; line-height:1; }
+.date .m { font-size:12px; text-transform:uppercase; color:var(--muted); }
+.body { flex:1; }
+.title { font-weight:600; margin:0 0 2px; }
+.title a { color:var(--ink); text-decoration:none; }
+.title a:hover { color:var(--accent); }
+.meta { font-size:14px; color:var(--muted); }
+.src { font-size:12px; color:var(--accent); }
+.pill { font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:#3a6b5f;
+        border:1px solid #cfe3dc; border-radius:4px; padding:1px 6px; margin-left:6px; }
+.banner { background:#fdf3e3; border:1px solid #ecd9b0; color:#7a5b1e; border-radius:8px;
+          padding:10px 14px; font-size:14px; margin:20px 0 0; }
+footer { margin-top:48px; font-size:13px; color:var(--muted); }
+</style></head>
+<body><div class="wrap">
+<header>
+  <h1>Omaha Classical Calendar</h1>
+  <p class="sub">Classical concerts in Omaha, streamed performances, and live broadcasts worldwide.</p>
+  <p class="banner"><strong>Demo build.</strong> This page was generated from offline sample data (fixtures). Some events are illustrative and links may not work. Run the pipeline without <code>--offline</code> to publish real, live events.</p>
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" aria-selected="true" data-panel="p-local">In Omaha (44)</button><button class="tab" role="tab" aria-selected="false" data-panel="p-online">Online (4)</button><button class="tab" role="tab" aria-selected="false" data-panel="p-lincoln">In Lincoln (15)</button><button class="tab" role="tab" aria-selected="false" data-panel="p-broadcast">Broadcasts (0)</button>
+  </div>
+</header>
+
+<div class="panel active" id="p-local">
+  <p class="subscribe"><a href="calendar.ics">Subscribe (iCal)</a><a href="feed.xml">RSS</a></p>
+  <p class="intro">Classical concerts happening in person around Omaha.</p>
+  <h2>September 2026</h2>
+            <div class="event">
+              <div class="date"><div class="d">8</div>
+                <div class="m">Sep</div></div>
+              <div class="body">
+                <p class="title"><a href="https://vesperconcerts.org/emanuel-ax/">Emanuel Ax, piano</a></p>
+                <p class="meta">Tue · 7:00 PM · Presbyterian Church of the Cross</p>
+                <p class="src">Vesper Concerts</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">10</div>
+                <div class="m">Sep</div></div>
+              <div class="body">
+                <p class="title"><a href="https://events.unomaha.edu/event/bachs-lunch-with-the-valencia-baryton-project">Bach&#x27;s Lunch with the Valencia Baryton Project</a></p>
+                <p class="meta">Thu · 12:00 PM · Strauss Performing Arts Center, Concert Hall</p>
+                <p class="src">UNO School of Music</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">10</div>
+                <div class="m">Sep</div></div>
+              <div class="body">
+                <p class="title"><a href="https://events.unomaha.edu/event/the-valencia-baryton-project">The Valencia Baryton Project</a></p>
+                <p class="meta">Thu · 7:30 PM · Strauss Performing Arts Center, Concert Hall</p>
+                <p class="src">UNO School of Music</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">12</div>
+                <div class="m">Sep</div></div>
+              <div class="body">
+                <p class="title"><a href="https://orchestraomaha.org/event/orchestral-idylls/">Orchestral Idylls</a></p>
+                <p class="meta">Sat · 7:00 PM · Simon Concert Hall at the Omaha Conservatory of Music</p>
+                <p class="src">Orchestra Omaha</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">25</div>
+                <div class="m">Sep</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahasymphony.org/concerts/falletta-gershwin-strauss">Falletta Conducts Gershwin &amp; Strauss</a></p>
+                <p class="meta">Fri · 12:00 AM · Holland Performing Arts Center</p>
+                <p class="src">Omaha Symphony</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">26</div>
+                <div class="m">Sep</div></div>
+              <div class="body">
+                <p class="title"><a href="https://events.unomaha.edu/event/masterclass-with-joyce-yang-piano">Masterclass with Joyce Yang, Piano</a></p>
+                <p class="meta">Sat · 1:00 PM · Strauss Performing Arts Center, Recital Hall</p>
+                <p class="src">UNO School of Music</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">27</div>
+                <div class="m">Sep</div></div>
+              <div class="body">
+                <p class="title"><a href="https://operaomaha.org/production/will-liverman-in-concert/">Will Liverman in Concert</a></p>
+                <p class="meta">Sun · 7:00 PM · Slowdown</p>
+                <p class="src">Opera Omaha</p>
+              </div>
+            </div><h2>October 2026</h2>
+            <div class="event">
+              <div class="date"><div class="d">4</div>
+                <div class="m">Oct</div></div>
+              <div class="body">
+                <p class="title"><a href="https://vesperconcerts.org/project-trio/">PROJECT Trio - Outdoor Concert</a></p>
+                <p class="meta">Sun · 4:30 PM</p>
+                <p class="src">Vesper Concerts</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">10</div>
+                <div class="m">Oct</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahasymphony.org/concerts/cathedral-baroque">Handel&#x27;s Water Music</a></p>
+                <p class="meta">Sat · 12:00 AM · Saint Cecilia Cathedral</p>
+                <p class="src">Omaha Symphony</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">13</div>
+                <div class="m">Oct</div></div>
+              <div class="body">
+                <p class="title"><a href="https://events.unomaha.edu/event/uno-choirs-concert-101326">UNO Choirs Concert</a></p>
+                <p class="meta">Tue · 7:30 PM · Strauss Performing Arts Center, Concert Hall</p>
+                <p class="src">UNO School of Music</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">18</div>
+                <div class="m">Oct</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahasymphony.org/concerts/divertimento">Bartok&#x27;s Divertimento</a></p>
+                <p class="meta">Sun · 12:00 AM · Joslyn Art Museum</p>
+                <p class="src">Omaha Symphony</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">18</div>
+                <div class="m">Oct</div></div>
+              <div class="body">
+                <p class="title"><a href="https://events.unomaha.edu/event/christine-beard-flute-recital">Christine Beard, Flute Recital</a></p>
+                <p class="meta">Sun · 11:30 AM · Gallery 1516</p>
+                <p class="src">UNO School of Music</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">26</div>
+                <div class="m">Oct</div></div>
+              <div class="body">
+                <p class="title"><a href="https://events.unomaha.edu/event/uno-keyboard-area-project-recital-102626">UNO Keyboard Area Project Recital</a></p>
+                <p class="meta">Mon · 7:30 PM · Strauss Performing Arts Center, Concert Hall</p>
+                <p class="src">UNO School of Music</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">30</div>
+                <div class="m">Oct</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahasymphony.org/concerts/dvoÅ™Ã¡ks-seventh">Dvorak&#x27;s Seventh</a></p>
+                <p class="meta">Fri · 12:00 AM · Holland Performing Arts Center</p>
+                <p class="src">Omaha Symphony</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">30</div>
+                <div class="m">Oct</div></div>
+              <div class="body">
+                <p class="title"><a href="https://orchestraomaha.org/event/scary-stories/">Scary Stories</a></p>
+                <p class="meta">Fri · 7:00 PM · Simon Concert Hall at the Omaha Conservatory of Music</p>
+                <p class="src">Orchestra Omaha</p>
+              </div>
+            </div><h2>November 2026</h2>
+            <div class="event">
+              <div class="date"><div class="d">8</div>
+                <div class="m">Nov</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahasymphony.org/concerts/carmina-burana-choral-collaborative">Carmina Burana</a></p>
+                <p class="meta">Sun · 12:00 AM · Holland Performing Arts Center</p>
+                <p class="src">Omaha Symphony</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">13</div>
+                <div class="m">Nov</div></div>
+              <div class="body">
+                <p class="title"><a href="https://operaomaha.org/production/la-boheme/">La bohÃ¨me (Nov 13)</a></p>
+                <p class="meta">Fri · 7:30 PM · Orpheum Theater</p>
+                <p class="src">Opera Omaha</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">15</div>
+                <div class="m">Nov</div></div>
+              <div class="body">
+                <p class="title"><a href="https://operaomaha.org/production/la-boheme/">La bohÃ¨me (Nov 15)</a></p>
+                <p class="meta">Sun · 2:00 PM · Orpheum Theater</p>
+                <p class="src">Opera Omaha</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">15</div>
+                <div class="m">Nov</div></div>
+              <div class="body">
+                <p class="title"><a href="https://vesperconcerts.org/adam-hu/">Adam Hu, piano</a></p>
+                <p class="meta">Sun · 7:00 PM · Presbyterian Church of the Cross</p>
+                <p class="src">Vesper Concerts</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">22</div>
+                <div class="m">Nov</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahasymphony.org/concerts/schuberts-symphony-no.-4">Schubert&#x27;s Symphony No. 4</a></p>
+                <p class="meta">Sun · 12:00 AM · Joslyn Art Museum</p>
+                <p class="src">Omaha Symphony</p>
+              </div>
+            </div><h2>December 2026</h2>
+            <div class="event">
+              <div class="date"><div class="d">1</div>
+                <div class="m">Dec</div></div>
+              <div class="body">
+                <p class="title"><a href="https://vesperconcerts.org/cantus/">Cantus</a></p>
+                <p class="meta">Tue · 7:00 PM · Presbyterian Church of the Cross</p>
+                <p class="src">Vesper Concerts</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">17</div>
+                <div class="m">Dec</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahasymphony.org/concerts/christmas-brass">A Festival of Christmas Brass</a></p>
+                <p class="meta">Thu · 12:00 AM · Saint Cecilia Cathedral</p>
+                <p class="src">Omaha Symphony</p>
+              </div>
+            </div><h2>January 2027</h2>
+            <div class="event">
+              <div class="date"><div class="d">10</div>
+                <div class="m">Jan</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahasymphony.org/concerts/falletta-mendelssohns-italian">Falletta &amp; Mendelssohn&#x27;s &#x27;Italian&#x27;</a></p>
+                <p class="meta">Sun · 12:00 AM · Joslyn Art Museum</p>
+                <p class="src">Omaha Symphony</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">15</div>
+                <div class="m">Jan</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahasymphony.org/concerts/rachmaninoffs-symphonic-dances">Rachmaninoff&#x27;s Symphonic Dances</a></p>
+                <p class="meta">Fri · 12:00 AM · Holland Performing Arts Center</p>
+                <p class="src">Omaha Symphony</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">26</div>
+                <div class="m">Jan</div></div>
+              <div class="body">
+                <p class="title"><a href="https://vesperconcerts.org/sterling-elliott-cello/">Sterling Elliott, cello</a></p>
+                <p class="meta">Tue · 7:00 PM · Presbyterian Church of the Cross</p>
+                <p class="src">Vesper Concerts</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">28</div>
+                <div class="m">Jan</div></div>
+              <div class="body">
+                <p class="title"><a href="https://operaomaha.org/production/the-pigeon-keeper/">The Pigeon Keeper (Jan 28)</a></p>
+                <p class="meta">Thu · 6:30 PM · The Rose Theater</p>
+                <p class="src">Opera Omaha</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">29</div>
+                <div class="m">Jan</div></div>
+              <div class="body">
+                <p class="title"><a href="https://operaomaha.org/production/the-pigeon-keeper/">The Pigeon Keeper (Jan 29)</a></p>
+                <p class="meta">Fri · 6:30 PM · The Rose Theater</p>
+                <p class="src">Opera Omaha</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">30</div>
+                <div class="m">Jan</div></div>
+              <div class="body">
+                <p class="title"><a href="https://operaomaha.org/production/the-pigeon-keeper/">The Pigeon Keeper (Jan 30)</a></p>
+                <p class="meta">Sat · 2:00 PM · The Rose Theater</p>
+                <p class="src">Opera Omaha</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">31</div>
+                <div class="m">Jan</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahachambermusic.org/heritage-series">Heritage Series 2027: Concert I</a></p>
+                <p class="meta">Sun · 3:00 PM · Omaha Conservatory of Music, 7023 Cass Street</p>
+                <p class="src">Omaha Chamber Music Society</p>
+              </div>
+            </div><h2>February 2027</h2>
+            <div class="event">
+              <div class="date"><div class="d">6</div>
+                <div class="m">Feb</div></div>
+              <div class="body">
+                <p class="title"><a href="https://orchestraomaha.org/event/dvorak-symphony-no-6/">Dvorak Symphony No. 6</a></p>
+                <p class="meta">Sat · 7:00 PM · Simon Concert Hall at the Omaha Conservatory of Music</p>
+                <p class="src">Orchestra Omaha</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">14</div>
+                <div class="m">Feb</div></div>
+              <div class="body">
+                <p class="title"><a href="https://vesperconcerts.org/christine-beard/">Christine Beard, flute</a></p>
+                <p class="meta">Sun · 3:00 PM · Presbyterian Church of the Cross</p>
+                <p class="src">Vesper Concerts</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">21</div>
+                <div class="m">Feb</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahasymphony.org/concerts/mozarts-symphony-no.-25">Mozart&#x27;s Symphony No. 25</a></p>
+                <p class="meta">Sun · 12:00 AM · Joslyn Art Museum</p>
+                <p class="src">Omaha Symphony</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">26</div>
+                <div class="m">Feb</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahasymphony.org/concerts/mahlers-fourth">Mahler&#x27;s Fourth</a></p>
+                <p class="meta">Fri · 12:00 AM · Holland Performing Arts Center</p>
+                <p class="src">Omaha Symphony</p>
+              </div>
+            </div><h2>March 2027</h2>
+            <div class="event">
+              <div class="date"><div class="d">14</div>
+                <div class="m">Mar</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahachambermusic.org/heritage-series">Heritage Series 2027: Concert II</a></p>
+                <p class="meta">Sun · 3:00 PM · Omaha Conservatory of Music, 7023 Cass Street</p>
+                <p class="src">Omaha Chamber Music Society</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">19</div>
+                <div class="m">Mar</div></div>
+              <div class="body">
+                <p class="title"><a href="https://operaomaha.org/production/ariadne-auf-naxos/">Ariadne auf Naxos (Mar 19)</a></p>
+                <p class="meta">Fri · 7:30 PM · Orpheum Theater</p>
+                <p class="src">Opera Omaha</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">21</div>
+                <div class="m">Mar</div></div>
+              <div class="body">
+                <p class="title"><a href="https://operaomaha.org/production/ariadne-auf-naxos/">Ariadne auf Naxos (Mar 21)</a></p>
+                <p class="meta">Sun · 2:00 PM · Orpheum Theater</p>
+                <p class="src">Opera Omaha</p>
+              </div>
+            </div><h2>April 2027</h2>
+            <div class="event">
+              <div class="date"><div class="d">2</div>
+                <div class="m">Apr</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahasymphony.org/concerts/susanna-perry-gilmore-plays-mozart">Susanna Perry Gilmore Plays Mozart</a></p>
+                <p class="meta">Fri · 12:00 AM · Holland Performing Arts Center</p>
+                <p class="src">Omaha Symphony</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">18</div>
+                <div class="m">Apr</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahasymphony.org/concerts/stravinskys-pulcinella">Stravinsky&#x27;s Pulcinella</a></p>
+                <p class="meta">Sun · 12:00 AM · Joslyn Art Museum</p>
+                <p class="src">Omaha Symphony</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">23</div>
+                <div class="m">Apr</div></div>
+              <div class="body">
+                <p class="title"><a href="https://vesperconcerts.org/texas-guitar-quartet/">Texas Guitar Quartet</a></p>
+                <p class="meta">Fri · 7:00 PM · Presbyterian Church of the Cross</p>
+                <p class="src">Vesper Concerts</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">30</div>
+                <div class="m">Apr</div></div>
+              <div class="body">
+                <p class="title"><a href="https://operaomaha.org/production/alessandro/">Alessandro</a></p>
+                <p class="meta">Fri · 7:30 PM · Holland Performing Arts Center</p>
+                <p class="src">Opera Omaha</p>
+              </div>
+            </div><h2>May 2027</h2>
+            <div class="event">
+              <div class="date"><div class="d">7</div>
+                <div class="m">May</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahasymphony.org/concerts/sibelius-second">Sibelius&#x27; Second</a></p>
+                <p class="meta">Fri · 12:00 AM · Holland Performing Arts Center</p>
+                <p class="src">Omaha Symphony</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">16</div>
+                <div class="m">May</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahachambermusic.org/heritage-series">Heritage Series 2027: Concert III</a></p>
+                <p class="meta">Sun · 3:00 PM · Omaha Conservatory of Music, 7023 Cass Street</p>
+                <p class="src">Omaha Chamber Music Society</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">23</div>
+                <div class="m">May</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahasymphony.org/concerts/beethoven-haydn">Beethoven &amp; Haydn</a></p>
+                <p class="meta">Sun · 12:00 AM · Joslyn Art Museum</p>
+                <p class="src">Omaha Symphony</p>
+              </div>
+            </div><h2>June 2027</h2>
+            <div class="event">
+              <div class="date"><div class="d">4</div>
+                <div class="m">Jun</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.omahasymphony.org/concerts/beethovens-ninth">Applied Underwriters Presents Beethoven&#x27;s Ninth</a></p>
+                <p class="meta">Fri · 12:00 AM · Holland Performing Arts Center</p>
+                <p class="src">Omaha Symphony</p>
+              </div>
+            </div>
+</div>
+<div class="panel" id="p-online">
+  <p class="subscribe"><a href="online.ics">Subscribe (iCal)</a></p>
+  <p class="intro">Streamed performances you can watch from anywhere.</p>
+  <h2>September 2026</h2>
+            <div class="event">
+              <div class="date"><div class="d">18</div>
+                <div class="m">Sep</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.juilliard.edu/event/185721/x">Juilliard415 Directed by Rachel Podger | Shakespeare Restored: Music from the London Theaters</a><span class="pill">stream</span></p>
+                <p class="meta">Fri · 7:30 PM · Online / Livestream</p>
+                <p class="src">Juilliard</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">19</div>
+                <div class="m">Sep</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.juilliard.edu/event/185776/x">Juilliard Orchestra Conducted by Teddy Abrams</a><span class="pill">stream</span></p>
+                <p class="meta">Sat · 7:30 PM · Online / Livestream</p>
+                <p class="src">Juilliard</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">22</div>
+                <div class="m">Sep</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.juilliard.edu/event/185781/x">The New Series | Steve Reich @ 90</a><span class="pill">stream</span></p>
+                <p class="meta">Tue · 7:30 PM · Online / Livestream</p>
+                <p class="src">Juilliard</p>
+              </div>
+            </div><h2>October 2026</h2>
+            <div class="event">
+              <div class="date"><div class="d">1</div>
+                <div class="m">Oct</div></div>
+              <div class="body">
+                <p class="title"><a href="https://www.juilliard.edu/event/185731/x">AXIOM</a><span class="pill">stream</span></p>
+                <p class="meta">Thu · 7:30 PM · Online / Livestream</p>
+                <p class="src">Juilliard</p>
+              </div>
+            </div>
+</div>
+<div class="panel" id="p-lincoln">
+  <p class="subscribe"><a href="lincoln.ics">Subscribe (iCal)</a></p>
+  <p class="intro">Classical concerts in Lincoln, about an hour down I-80.</p>
+  <h2>September 2026</h2>
+            <div class="event">
+              <div class="date"><div class="d">1</div>
+                <div class="m">Sep</div></div>
+              <div class="body">
+                <p class="title"><a href="https://events.unl.edu/music/2026/09/01/200748/">Guest Artist - Nicholas May, Saxophone</a></p>
+                <p class="meta">Tue · 7:30 PM · Westbrook Music Building, Room 130</p>
+                <p class="src">UNL Glenn Korff School of Music</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">11</div>
+                <div class="m">Sep</div></div>
+              <div class="body">
+                <p class="title"><a href="https://lincolnsymphony.com/emanuel-ax/">Emanuel Ax</a></p>
+                <p class="meta">Fri · 7:30 PM · Lied Center for Performing Arts</p>
+                <p class="src">Lincoln&#x27;s Symphony Orchestra</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">28</div>
+                <div class="m">Sep</div></div>
+              <div class="body">
+                <p class="title"><a href="https://events.unl.edu/music/2026/09/28/201766/">2026 American Liszt Society Festival</a></p>
+                <p class="meta">Mon · 9:30 AM · Westbrook Music Building</p>
+                <p class="src">UNL Glenn Korff School of Music</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">28</div>
+                <div class="m">Sep</div></div>
+              <div class="body">
+                <p class="title"><a href="https://events.unl.edu/music/2026/09/28/201770/">Symphony Orchestra with University Singers</a></p>
+                <p class="meta">Mon · 7:30 PM · Kimball Recital Hall</p>
+                <p class="src">UNL Glenn Korff School of Music</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">28</div>
+                <div class="m">Sep</div></div>
+              <div class="body">
+                <p class="title"><a href="https://events.unl.edu/music/2026/09/28/200803/">University Orchestra with University Singers</a></p>
+                <p class="meta">Mon · 7:30 PM · Kimball Recital Hall</p>
+                <p class="src">UNL Glenn Korff School of Music</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">29</div>
+                <div class="m">Sep</div></div>
+              <div class="body">
+                <p class="title"><a href="https://events.unl.edu/music/2026/09/29/201766/">2026 American Liszt Society Festival</a></p>
+                <p class="meta">Tue · 9:30 AM · Westbrook Music Building</p>
+                <p class="src">UNL Glenn Korff School of Music</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">30</div>
+                <div class="m">Sep</div></div>
+              <div class="body">
+                <p class="title"><a href="https://events.unl.edu/music/2026/09/30/201766/">2026 American Liszt Society Festival</a></p>
+                <p class="meta">Wed · 9:30 AM · Westbrook Music Building</p>
+                <p class="src">UNL Glenn Korff School of Music</p>
+              </div>
+            </div><h2>October 2026</h2>
+            <div class="event">
+              <div class="date"><div class="d">9</div>
+                <div class="m">Oct</div></div>
+              <div class="body">
+                <p class="title"><a href="https://lincolnsymphony.com/mozart-haydn/">Mozart &amp; Haydn</a></p>
+                <p class="meta">Fri · 7:30 PM · Saint Paul United Methodist Church</p>
+                <p class="src">Lincoln&#x27;s Symphony Orchestra</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">11</div>
+                <div class="m">Oct</div></div>
+              <div class="body">
+                <p class="title"><a href="https://lincolnsymphony.com/baby-dinosaur/">Lou, the Baby Dinosaur</a></p>
+                <p class="meta">Sun · 4:00 PM · Kimball Recital Hall</p>
+                <p class="src">Lincoln&#x27;s Symphony Orchestra</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">30</div>
+                <div class="m">Oct</div></div>
+              <div class="body">
+                <p class="title"><a href="https://lincolnsymphony.com/violin-fantasy/">Violin Fantasy</a></p>
+                <p class="meta">Fri · 7:30 PM · Lied Center for Performing Arts</p>
+                <p class="src">Lincoln&#x27;s Symphony Orchestra</p>
+              </div>
+            </div><h2>January 2027</h2>
+            <div class="event">
+              <div class="date"><div class="d">23</div>
+                <div class="m">Jan</div></div>
+              <div class="body">
+                <p class="title"><a href="https://lincolnsymphony.com/tchaikovskys-fourth/">Tchaikovsky&#x27;s Fourth</a></p>
+                <p class="meta">Sat · 7:30 PM · Lied Center for Performing Arts</p>
+                <p class="src">Lincoln&#x27;s Symphony Orchestra</p>
+              </div>
+            </div><h2>March 2027</h2>
+            <div class="event">
+              <div class="date"><div class="d">5</div>
+                <div class="m">Mar</div></div>
+              <div class="body">
+                <p class="title"><a href="https://lincolnsymphony.com/rachmaninoffs-triumph/">Rachmaninoff&#x27;s Triumph</a></p>
+                <p class="meta">Fri · 7:30 PM · Lied Center for Performing Arts</p>
+                <p class="src">Lincoln&#x27;s Symphony Orchestra</p>
+              </div>
+            </div><h2>April 2027</h2>
+            <div class="event">
+              <div class="date"><div class="d">9</div>
+                <div class="m">Apr</div></div>
+              <div class="body">
+                <p class="title"><a href="https://lincolnsymphony.com/beethovens-ninth-27/">Beethoven&#x27;s Ninth</a></p>
+                <p class="meta">Fri · 7:30 PM · Lied Center for Performing Arts</p>
+                <p class="src">Lincoln&#x27;s Symphony Orchestra</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="date"><div class="d">30</div>
+                <div class="m">Apr</div></div>
+              <div class="body">
+                <p class="title"><a href="https://lincolnsymphony.com/organ-celebration/">Organ Celebration (Apr 30, 7:30pm)</a></p>
+                <p class="meta">Fri · 7:30 PM · First-Plymouth Church</p>
+                <p class="src">Lincoln&#x27;s Symphony Orchestra</p>
+              </div>
+            </div><h2>May 2027</h2>
+            <div class="event">
+              <div class="date"><div class="d">1</div>
+                <div class="m">May</div></div>
+              <div class="body">
+                <p class="title"><a href="https://lincolnsymphony.com/organ-celebration/">Organ Celebration (May 1, 7:30pm)</a></p>
+                <p class="meta">Sat · 7:30 PM · First-Plymouth Church</p>
+                <p class="src">Lincoln&#x27;s Symphony Orchestra</p>
+              </div>
+            </div>
+</div>
+<div class="panel" id="p-broadcast">
+  <p class="subscribe"><a href="broadcasts.ics">Subscribe (iCal)</a></p>
+  <p class="intro">Curated live classical broadcasts from concert halls worldwide.</p>
+  <p>No upcoming events.</p>
+</div>
+<footer>Updated August 31, 2026 · 44 in omaha · 4 online · 15 in lincoln · 0 broadcasts ·
+  Each event links back to its source.</footer>
+</div><script>
+document.querySelectorAll('.tab').forEach(function(t){
+  t.addEventListener('click', function(){
+    document.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-selected','false');});
+    document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active');});
+    t.setAttribute('aria-selected','true');
+    document.getElementById(t.dataset.panel).classList.add('active');
+  });
+});
+</script></body></html>

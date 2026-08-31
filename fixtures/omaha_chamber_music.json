@@ -1,0 +1,28 @@
+{
+ "events": [
+  {
+   "title": "Heritage Series 2027: Concert I",
+   "date": "2027-01-31",
+   "time": "15:00",
+   "venue": "Omaha Conservatory of Music, 7023 Cass Street",
+   "description": "First of the three-concert Heritage Series, Thomas Kluge artistic director. Program and musicians to be announced.",
+   "url": "https://www.omahachambermusic.org/heritage-series"
+  },
+  {
+   "title": "Heritage Series 2027: Concert II",
+   "date": "2027-03-14",
+   "time": "15:00",
+   "venue": "Omaha Conservatory of Music, 7023 Cass Street",
+   "description": "Second of the three-concert Heritage Series, Thomas Kluge artistic director. Program and musicians to be announced.",
+   "url": "https://www.omahachambermusic.org/heritage-series"
+  },
+  {
+   "title": "Heritage Series 2027: Concert III",
+   "date": "2027-05-16",
+   "time": "15:00",
+   "venue": "Omaha Conservatory of Music, 7023 Cass Street",
+   "description": "Third of the three-concert Heritage Series, Thomas Kluge artistic director. Program and musicians to be announced.",
+   "url": "https://www.omahachambermusic.org/heritage-series"
+  }
+ ]
+}

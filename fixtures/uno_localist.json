@@ -1,0 +1,102 @@
+{
+ "events": [
+  {
+   "event": {
+    "title": "Bach's Lunch with the Valencia Baryton Project",
+    "location_name": "Strauss Performing Arts Center, Concert Hall",
+    "localist_url": "https://events.unomaha.edu/event/bachs-lunch-with-the-valencia-baryton-project",
+    "description_text": "",
+    "event_type": "Concert/Performance",
+    "event_instances": [
+     {
+      "event_instance": {
+       "start": "2026-09-10T12:00:00-05:00",
+       "end": "2026-09-10T12:50:00-05:00"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "event": {
+    "title": "The Valencia Baryton Project",
+    "location_name": "Strauss Performing Arts Center, Concert Hall",
+    "localist_url": "https://events.unomaha.edu/event/the-valencia-baryton-project",
+    "description_text": "",
+    "event_type": "Concert/Performance",
+    "event_instances": [
+     {
+      "event_instance": {
+       "start": "2026-09-10T19:30:00-05:00",
+       "end": "2026-09-10T21:30:00-05:00"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "event": {
+    "title": "Masterclass with Joyce Yang, Piano",
+    "location_name": "Strauss Performing Arts Center, Recital Hall",
+    "localist_url": "https://events.unomaha.edu/event/masterclass-with-joyce-yang-piano",
+    "description_text": "",
+    "event_type": "Concert/Performance",
+    "event_instances": [
+     {
+      "event_instance": {
+       "start": "2026-09-26T13:00:00-05:00"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "event": {
+    "title": "UNO Choirs Concert",
+    "location_name": "Strauss Performing Arts Center, Concert Hall",
+    "localist_url": "https://events.unomaha.edu/event/uno-choirs-concert-101326",
+    "description_text": "",
+    "event_type": "Concert/Performance",
+    "event_instances": [
+     {
+      "event_instance": {
+       "start": "2026-10-13T19:30:00-05:00"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "event": {
+    "title": "Christine Beard, Flute Recital",
+    "location_name": "Gallery 1516",
+    "localist_url": "https://events.unomaha.edu/event/christine-beard-flute-recital",
+    "description_text": "",
+    "event_type": "Concert/Performance",
+    "event_instances": [
+     {
+      "event_instance": {
+       "start": "2026-10-18T11:30:00-05:00"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "event": {
+    "title": "UNO Keyboard Area Project Recital",
+    "location_name": "Strauss Performing Arts Center, Concert Hall",
+    "localist_url": "https://events.unomaha.edu/event/uno-keyboard-area-project-recital-102626",
+    "description_text": "",
+    "event_type": "Concert/Performance",
+    "event_instances": [
+     {
+      "event_instance": {
+       "start": "2026-10-26T19:30:00-05:00"
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

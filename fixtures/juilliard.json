@@ -1,0 +1,497 @@
+{
+ "events": [
+  {
+   "title": "Juilliard Convocation",
+   "url": "/event/187256/x",
+   "venue": "Livestream",
+   "types": [
+    "Live Streaming",
+    "Music",
+    "Special Event"
+   ],
+   "date_text": "Sep 02 Wed",
+   "time": "4:30PM"
+  },
+  {
+   "title": "Jazz on the Plaza | Back to School Edition: Juilliard Jazz Ensemble",
+   "url": "/event/187296/x",
+   "venue": "Saint Peter's Church",
+   "types": [
+    "Free",
+    "Music",
+    "Jazz"
+   ],
+   "date_text": "Sep 03 Thu",
+   "time": "12:30PM"
+  },
+  {
+   "title": "CANCELED: Rush Hour Performance",
+   "url": "/event/187391/x",
+   "venue": "Juilliard Station",
+   "types": [
+    "Free",
+    "Music"
+   ],
+   "date_text": "Sep 03 Thu",
+   "time": "5:30PM"
+  },
+  {
+   "title": "CANCELED: Rush Hour Performance",
+   "url": "/event/187396/x",
+   "venue": "Juilliard Station",
+   "types": [
+    "Free",
+    "Music"
+   ],
+   "date_text": "Sep 04 Fri",
+   "time": "6:00PM"
+  },
+  {
+   "title": "Rush Hour Performance",
+   "url": "/event/187401/x",
+   "venue": "Juilliard Station",
+   "types": [
+    "Free",
+    "Music"
+   ],
+   "date_text": "Sep 08 Tue",
+   "time": "5:30PM"
+  },
+  {
+   "title": "Rush Hour Performance",
+   "url": "/event/187406/x",
+   "venue": "Juilliard Station",
+   "types": [
+    "Free",
+    "Music"
+   ],
+   "date_text": "Sep 09 Wed",
+   "time": "5:30PM"
+  },
+  {
+   "title": "Concerto Competition Finals",
+   "url": "/event/187106/x",
+   "venue": "Paul Hall",
+   "types": [
+    "Free",
+    "Music"
+   ],
+   "date_text": "Sep 10 Thu",
+   "time": "4:00PM"
+  },
+  {
+   "title": "Rush Hour Performance",
+   "url": "/event/187411/x",
+   "venue": "Juilliard Station",
+   "types": [
+    "Free",
+    "Music"
+   ],
+   "date_text": "Sep 10 Thu",
+   "time": "5:30PM"
+  },
+  {
+   "title": "Rush Hour Performance",
+   "url": "/event/187416/x",
+   "venue": "Juilliard Station",
+   "types": [
+    "Free",
+    "Music"
+   ],
+   "date_text": "Sep 11 Fri",
+   "time": "6:00PM"
+  },
+  {
+   "title": "Concerto Competition Finals",
+   "url": "/event/187111/x",
+   "venue": "Paul Hall",
+   "types": [
+    "Free",
+    "Music"
+   ],
+   "date_text": "Sep 15 Tue",
+   "time": "3:00PM"
+  },
+  {
+   "title": "Rush Hour Performance",
+   "url": "/event/187421/x",
+   "venue": "Juilliard Station",
+   "types": [
+    "Free",
+    "Music"
+   ],
+   "date_text": "Sep 15 Tue",
+   "time": "5:30PM"
+  },
+  {
+   "title": "Rush Hour Performance",
+   "url": "/event/187426/x",
+   "venue": "Juilliard Station",
+   "types": [
+    "Free",
+    "Music"
+   ],
+   "date_text": "Sep 16 Wed",
+   "time": "5:30PM"
+  },
+  {
+   "title": "Opening Night: A Centennial Celebration of Miles Davis",
+   "url": "/event/186636/x",
+   "venue": "Peter Jay Sharp Theater",
+   "types": [
+    "Live Streaming",
+    "Music",
+    "Jazz",
+    "Juilliard Fall Festival"
+   ],
+   "date_text": "Sep 16 Wed",
+   "time": "7:30PM"
+  },
+  {
+   "title": "Rush Hour Performance",
+   "url": "/event/187431/x",
+   "venue": "Juilliard Station",
+   "types": [
+    "Free",
+    "Music"
+   ],
+   "date_text": "Sep 17 Thu",
+   "time": "5:30PM"
+  },
+  {
+   "title": "\"The Atlantic\" and Juilliard Present: A Soundtrack of a Nation",
+   "url": "/event/186641/x",
+   "venue": "Zuccotti Theater at Perelman Performing Arts Center",
+   "types": [
+    "Music",
+    "Jazz",
+    "Orchestra",
+    "Chamber Music",
+    "Juilliard Fall Festival"
+   ],
+   "date_text": "Sep 17 Thu",
+   "time": "7:30PM"
+  },
+  {
+   "title": "Rush Hour Performance",
+   "url": "/event/187436/x",
+   "venue": "Juilliard Station",
+   "types": [
+    "Free",
+    "Music"
+   ],
+   "date_text": "Sep 18 Fri",
+   "time": "6:00PM"
+  },
+  {
+   "title": "Juilliard415 Directed by Rachel Podger | Shakespeare Restored: Music from the London Theaters",
+   "url": "/event/185721/x",
+   "venue": "Alice Tully Hall",
+   "types": [
+    "Live Streaming",
+    "Music",
+    "Historical Performance",
+    "Juilliard Fall Festival"
+   ],
+   "date_text": "Sep 18 Fri",
+   "time": "7:30PM"
+  },
+  {
+   "title": "Juilliard Outdoors: PLAZAWORK 2026",
+   "url": "/event/186646/x",
+   "venue": "Hearst Plaza",
+   "types": [
+    "Free",
+    "Music",
+    "Dance",
+    "Juilliard Fall Festival"
+   ],
+   "date_text": "Sep 19 Sat",
+   "time": "11:00AM"
+  },
+  {
+   "title": "Pop-Up Classes at the Station With Juilliard Extension",
+   "url": "/event/186651/x",
+   "venue": "Juilliard Station",
+   "types": [
+    "Free",
+    "Special Event",
+    "Juilliard Fall Festival"
+   ],
+   "date_text": "Sep 19 Sat",
+   "time": "1:30PM"
+  },
+  {
+   "title": "Juilliard Orchestra Conducted by Teddy Abrams",
+   "url": "/event/185776/x",
+   "venue": "Alice Tully Hall",
+   "types": [
+    "Live Streaming",
+    "Music",
+    "Orchestra",
+    "Contemporary / New Work",
+    "Juilliard Fall Festival"
+   ],
+   "date_text": "Sep 19 Sat",
+   "time": "7:30PM"
+  },
+  {
+   "title": "Creative Aging: From Inspiration to Implementation",
+   "url": "/event/186656/x",
+   "venue": "Francesca Beale Theater, Film at Lincoln Center",
+   "types": [
+    "Free",
+    "Special Event",
+    "Juilliard Fall Festival"
+   ],
+   "date_text": "Sep 20 Sun",
+   "time": "10:00AM"
+  },
+  {
+   "title": "Rush Hour Performance | Pursuits of Happiness: Match Merge Support Soar",
+   "url": "/event/186661/x",
+   "venue": "Juilliard Station",
+   "types": [
+    "Free",
+    "Music",
+    "Juilliard Fall Festival",
+    "Juilliard Station"
+   ],
+   "date_text": "Sep 22 Tue",
+   "time": "5:30PM"
+  },
+  {
+   "title": "The New Series | Steve Reich @ 90",
+   "url": "/event/185781/x",
+   "venue": "Rosemary and Meredith Willson Theater",
+   "types": [
+    "Live Streaming",
+    "Music",
+    "Free",
+    "The New Series",
+    "Contemporary / New Work",
+    "Juilliard Fall Festival"
+   ],
+   "date_text": "Sep 22 Tue",
+   "time": "7:30PM"
+  },
+  {
+   "title": "Wednesdays at One | Chamber Music",
+   "url": "/event/185726/x",
+   "venue": "Alice Tully Hall",
+   "types": [
+    "Music",
+    "Chamber Music",
+    "Juilliard Fall Festival",
+    "Free"
+   ],
+   "date_text": "Sep 23 Wed",
+   "time": "1:00PM"
+  },
+  {
+   "title": "Rush Hour Performance | Pursuits of Happiness: For Anna Magdalena Bach",
+   "url": "/event/186666/x",
+   "venue": "Juilliard Station",
+   "types": [
+    "Free",
+    "Music",
+    "Juilliard Fall Festival",
+    "Juilliard Station",
+    "Historical Performance",
+    "Opera / Voice"
+   ],
+   "date_text": "Sep 23 Wed",
+   "time": "5:30PM"
+  },
+  {
+   "title": "Juilliard Drama Presents Scenes by Recent Playwriting Alums",
+   "url": "/event/186671/x",
+   "venue": "Paul Hall",
+   "types": [
+    "Drama",
+    "Contemporary / New Work",
+    "Juilliard Fall Festival"
+   ],
+   "date_text": "Sep 23 Wed",
+   "time": "7:30PM"
+  },
+  {
+   "title": "Rush Hour Performance | Pursuits of Happiness: Canticle of the Sun",
+   "url": "/event/186676/x",
+   "venue": "Juilliard Station",
+   "types": [
+    "Free",
+    "Music",
+    "Juilliard Fall Festival",
+    "Juilliard Station"
+   ],
+   "date_text": "Sep 24 Thu",
+   "time": "5:30PM"
+  },
+  {
+   "title": "An Evening of Opera, Song, and Musical Theater",
+   "url": "/event/186681/x",
+   "venue": "Paul Hall",
+   "types": [
+    "Music",
+    "Juilliard Fall Festival",
+    "Opera / Voice"
+   ],
+   "date_text": "Sep 24 Thu",
+   "time": "7:30PM"
+  },
+  {
+   "title": "Closing Night With Juilliard Music, Dance, and Drama",
+   "url": "/event/186686/x",
+   "venue": "Peter Jay Sharp Theater",
+   "types": [
+    "Live Streaming",
+    "Music",
+    "Jazz",
+    "Dance",
+    "Drama",
+    "Opera / Voice",
+    "Orchestra",
+    "Chamber Music",
+    "Historical Performance",
+    "Contemporary / New Work",
+    "Juilliard Fall Festival",
+    "Preparatory Education"
+   ],
+   "date_text": "Sep 25 Fri",
+   "time": "7:30PM"
+  },
+  {
+   "title": "Concerto Competition Finals",
+   "url": "/event/187116/x",
+   "venue": "Paul Hall",
+   "types": [
+    "Free",
+    "Music"
+   ],
+   "date_text": "Sep 29 Tue",
+   "time": "4:00PM"
+  },
+  {
+   "title": "Rush Hour Performance",
+   "url": "/event/187441/x",
+   "venue": "Juilliard Station",
+   "types": [
+    "Free",
+    "Music",
+    "Juilliard Station"
+   ],
+   "date_text": "Sep 29 Tue",
+   "time": "5:30PM"
+  },
+  {
+   "title": "Rush Hour Performance",
+   "url": "/event/187446/x",
+   "venue": "Juilliard Station",
+   "types": [
+    "Free",
+    "Music",
+    "Juilliard Station"
+   ],
+   "date_text": "Sep 30 Wed",
+   "time": "5:30PM"
+  },
+  {
+   "title": "Sonatenabend",
+   "url": "/event/186421/x",
+   "venue": "Paul Hall",
+   "types": [
+    "Free",
+    "Music",
+    "Chamber Music",
+    "Recital",
+    "Classical"
+   ],
+   "date_text": "Sep 30 Wed",
+   "time": "6:00PM"
+  },
+  {
+   "title": "Rush Hour Performance",
+   "url": "/event/187451/x",
+   "venue": "Juilliard Station",
+   "types": [
+    "Free",
+    "Music",
+    "Juilliard Station"
+   ],
+   "date_text": "Oct 01 Thu",
+   "time": "5:30PM"
+  },
+  {
+   "title": "AXIOM",
+   "url": "/event/185731/x",
+   "venue": "Peter Jay Sharp Theater",
+   "types": [
+    "Live Streaming",
+    "Orchestra",
+    "Contemporary / New Work",
+    "Free",
+    "Music"
+   ],
+   "date_text": "Oct 01 Thu",
+   "time": "7:30PM"
+  },
+  {
+   "title": "Rush Hour Performance",
+   "url": "/event/187456/x",
+   "venue": "Juilliard Station",
+   "types": [
+    "Free",
+    "Music",
+    "Juilliard Station"
+   ],
+   "date_text": "Oct 02 Fri",
+   "time": "6:00PM"
+  },
+  {
+   "title": "Preparatory Division Faculty Recital Series | Amy Barston, Cello",
+   "url": "/event/186941/x",
+   "venue": "Paul Hall",
+   "types": [
+    "Free",
+    "Music",
+    "Preparatory Education",
+    "Recital"
+   ],
+   "date_text": "Oct 03 Sat",
+   "time": "6:00PM"
+  },
+  {
+   "title": "Juilliard Wind Orchestra",
+   "url": "/event/185736/x",
+   "venue": "Paul Hall",
+   "types": [
+    "Music",
+    "Orchestra"
+   ],
+   "date_text": "Oct 04 Sun",
+   "time": "7:00PM"
+  },
+  {
+   "title": "Juilliard Jazz Ensembles | The Music of Jelly Roll Morton and Joe Oliver",
+   "url": "/event/185786/x",
+   "venue": "Paul Hall",
+   "types": [
+    "Music",
+    "Jazz"
+   ],
+   "date_text": "Oct 06 Tue",
+   "time": "7:30PM"
+  },
+  {
+   "title": "Juilliard Drama Presents August Wilson's \"The Piano Lesson\"",
+   "url": "/event/185521/x",
+   "venue": "Stephanie P. McClelland Theater",
+   "types": [
+    "Drama"
+   ],
+   "date_text": "Oct 07 Wed",
+   "time": "7:30PM"
+  }
+ ]
+}
