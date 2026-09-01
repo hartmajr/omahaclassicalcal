@@ -1,11 +1,11 @@
 name: Build calendar
 
-# Daily + manual. Fetches every source live, rebuilds .ics / RSS / site into
+# Weekly + manual. Fetches every source live, rebuilds .ics / RSS / site into
 # public/, commits state (events.db carries first_seen between runs), and
 # deploys public/ to GitHub Pages.
 on:
   schedule:
-    - cron: "0 11 * * *"   # 11:00 UTC daily (~5-6am Central)
+    - cron: "0 11 * * 1"   # 11:00 UTC Mondays (~5-6am Central)
   workflow_dispatch:
     inputs:
       fail_under:

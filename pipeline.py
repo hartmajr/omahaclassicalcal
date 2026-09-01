@@ -18,7 +18,7 @@ from adapters.lincoln_symphony import LincolnSymphonyAdapter
 from adapters.opera_omaha import OperaOmahaAdapter
 from adapters.symphony import SymphonyAdapter
 from adapters.vesper import VesperAdapter
-from adapters.world_concert_hall import WorldConcertHallAdapter
+from adapters.world_concert_hall import WorldConcertHallAdapter  # noqa: F401 (retired source, see SOURCES)
 from config import CHANNELS
 from normalize import classify, dedupe
 from publish.ics import write_ics
@@ -106,8 +106,13 @@ SOURCES = [
     # ),
     JuilliardAdapter(online_only=True),
 
-    # --- Broadcasts (curated global live streams) ---
-    WorldConcertHallAdapter(),
+    # --- Broadcasts: RETIRED 2026-09-01 ---
+    # World Concert Hall curates same-day/near-term broadcasts, which only
+    # make sense with a daily build. The calendar now updates weekly, so the
+    # channel was dropped rather than publish mostly-stale listings.
+    # Re-enable by restoring this line, the "broadcast" entry in
+    # config.CHANNELS, and the daily cron in .github/workflows/build.yml.
+    # WorldConcertHallAdapter(),
 ]
 
 

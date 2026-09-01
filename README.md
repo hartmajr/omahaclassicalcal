@@ -79,7 +79,7 @@ adding a source is just writing one more adapter and adding a line to
 | Lincoln's Symphony Orchestra | season-page HTML parse | In Lincoln | live adapter (verified 2026-08-31) |
 | Oberlin Conservatory | Localist JSON API (webcast types) | Online | live adapter |
 | Juilliard | Drupal calendar HTML parse (paginated) | Online | live adapter (verify selectors) |
-| World Concert Hall | Mastodon RSS + LLM extraction | Broadcasts | live adapter (needs `ANTHROPIC_API_KEY`) |
+| World Concert Hall | Mastodon RSS + LLM extraction | Broadcasts | **retired 2026-09-01** — same-day broadcasts don't fit a weekly build |
 | Creighton (Music) | their `.ics`/RSS feed | In Omaha | **TODO** — robots.txt blocks the HTML listing; use the sanctioned feed once confirmed |
 | Omaha Chamber Music Society | LLM page extraction (`llm_extract`) | In Omaha | live adapter (needs `ANTHROPIC_API_KEY`) |
 
@@ -111,8 +111,10 @@ one-line config change plus tagging a source with it.
   `lincoln.ics`. A separate tab so the Omaha calendar isn't diluted by
   events an hour away, while still being one subscribe click for those who
   make the drive.
-- **Broadcasts** (`broadcast`) — curated global live broadcasts from World
-  Concert Hall, `broadcasts.ics`.
+- **Broadcasts** (`broadcast`) — *retired 2026-09-01.* Carried World Concert
+  Hall's curated same-day broadcast picks, which only made sense while the
+  build ran daily. The adapter and channel are commented out in
+  `pipeline.py` / `config.py` for easy revival alongside a daily cron.
 
 ### Juilliard pagination
 
@@ -229,6 +231,9 @@ with placeholder titles and a TBA note rather than being dropped.
 
 ### World Concert Hall / LLM extraction
 
+*Source retired 2026-09-01 with the Broadcasts channel (weekly build); the
+mechanism below still describes the adapter, which remains in the tree.*
+
 worldconcerthall.com publishes no feed and blocks scraping, but WCH posts
 every pick to Mastodon, whose accounts expose a built-in RSS feed
 (`https://mastodon.world/@WConcertHall.rss`). Those posts are free text, so
@@ -255,7 +260,7 @@ smarter classifier (or an LLM call) slots in. Tune the lists in `config.py`.
   relies on. If a site redesigns, the parser returns `[]` and the prune
   guard keeps the stored events safe.
 - **Be a good citizen**: the HTTP client sends an identifying User-Agent, the
-  schedule polls once a day, and every published event links back to its
+  schedule polls once a week, and every published event links back to its
   source. Respect each site's robots.txt (notably Creighton's) and prefer
   official feeds over scraping.
 

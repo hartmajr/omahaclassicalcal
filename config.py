@@ -38,7 +38,9 @@ CHANNELS: list[tuple[str, str, str]] = [
     ("local",     "In Omaha",   "calendar.ics"),
     ("online",    "Online",     "online.ics"),
     ("lincoln",   "In Lincoln", "lincoln.ics"),
-    ("broadcast", "Broadcasts", "broadcasts.ics"),
+    # Broadcasts retired 2026-09-01 with the World Concert Hall source --
+    # same-day broadcast picks don't fit a weekly build (see pipeline.SOURCES).
+    # ("broadcast", "Broadcasts", "broadcasts.ics"),
 ]
 
 # Series/categories that are unambiguously classical, by source.
@@ -49,6 +51,12 @@ CLASSICAL_CATEGORIES = {
 # HARD: always non-classical, no rescue.
 NON_CLASSICAL_CATEGORIES = {
     "Omaha Symphony": {"Family", "Community Concerts", "Forte"},
+    # KVNO carries venue programming that is not music at all (Lauritzen
+    # Gardens craft workshops, Samuel Bak Museum lectures). Category rules
+    # run before keyword matching, so a stray musical word in a blurb can't
+    # rescue a candlemaking class. Live data 2026-09-01 showed exactly that.
+    "KVNO Arts Calendar": {"Workshop", "Crafts", "Education", "Lecture",
+                           "Photography", "Art Gallery", "Animals"},
 }
 # SOFT: non-classical unless a composer name appears (see module docstring).
 SOFT_NON_CLASSICAL_CATEGORIES = {
@@ -67,7 +75,10 @@ COMPOSER_KEYWORDS = {
     "shostakovich", "prokofiev", "debussy", "ravel", "elgar", "grieg",
     "franck", "monteverdi", "purcell", "bruckner", "berlioz", "bizet",
     "buxtehude", "byrd", "gibbons", "kabalevsky", "gregson", "reich",
-    "glass", "adams", "part", "messiaen", "ligeti", "britten", "copland",
+    # Arvo Pärt: NOT bare "part", which substring-matches "participants"
+    # and rescued craft workshops on the live KVNO feed (2026-09-01).
+    "glass", "adams", "pärt", "arvo part", "messiaen", "ligeti", "britten",
+    "copland",
 }
 
 # Instrument/form keywords -- positive signal (cannot rescue SOFT categories).
@@ -90,7 +101,7 @@ NON_CLASSICAL_KEYWORDS = {
     "star wars", "harry potter", "jurassic", "hollywood", "movie music",
     "film music", "video game", "deck the halls", "holiday pops",
     "volunteer", "letterpress", "art show", "open mic", "yoga",
-    "photography",
+    "photography", "book club", "reading series",
 }
 # Soft vetoes: exclude unless a classical keyword co-occurs
 # (e.g. "Budapest Festival Orchestra" survives, "Family Festival" doesn't).

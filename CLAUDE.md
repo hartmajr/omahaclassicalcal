@@ -38,18 +38,20 @@ Adapter families, in order of preference:
    the live pages 2026-08-31 and verified (37 / 7 / 9 events); Lincoln's
    Symphony worked live as written. Juilliard still 403s (see below).
 3. **LLM extraction** — `LLMPageExtractAdapter` (Omaha Chamber Music),
-   `WorldConcertHallAdapter` (Mastodon RSS). Needs `ANTHROPIC_API_KEY`.
-   Content-hash cached, so re-runs are free.
+   `WorldConcertHallAdapter` (Mastodon RSS; retired with the Broadcasts
+   channel 2026-09-01). Needs `ANTHROPIC_API_KEY`. Content-hash cached,
+   so re-runs are free.
 
 ## State: what is and isn't verified
 
 **Deployed and live since 2026-09-01** at
 https://hartmajr.github.io/omahaclassicalcal/ (repo
 `hartmajr/omahaclassicalcal`, public; Pages source "GitHub Actions";
-`ANTHROPIC_API_KEY` secret configured; daily build at 11:00 UTC). First
-live publish: In Omaha 52, Online 0 (Juilliard 403), In Lincoln 9,
-Broadcasts 13. The workflow commits `events.db`, the LLM caches, and
-`public/` back to the repo each run.
+`ANTHROPIC_API_KEY` secret configured; weekly build Mondays 11:00 UTC).
+The workflow commits `events.db`, the LLM caches, and `public/` back to
+the repo each run. The Broadcasts channel + World Concert Hall source
+were retired 2026-09-01 when the build went weekly (same-day broadcast
+picks need a daily build); both are commented out for easy revival.
 
 A live per-source smoke test on 2026-08-31 exercised every non-LLM source:
 all pass except Juilliard (403, expected). The Symphony, Vesper, and Opera
