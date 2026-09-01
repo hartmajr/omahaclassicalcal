@@ -4,23 +4,10 @@ PRODID:-//Omaha Classical Calendar//EN
 X-WR-CALNAME:Omaha Classical Calendar — In Lincoln
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VEVENT
-SUMMARY:Guest Artist - Nicholas May\, Saxophone
-DTSTART:20260901T193000
-DTEND:20260901T193000
-DTSTAMP:20260831T235316Z
-UID:3cb707ad79d83e5f@omaha-classical-calendar
-CATEGORIES:vCategory([vText(b'Performing Arts - Music')]\, params=Paramete
- rs({}))
-DESCRIPTION:This event is free and open to the public.\n\nSource: UNL Glen
- n Korff School of Music\nhttps://events.unl.edu/music/2026/09/01/200748/
-LOCATION:Westbrook Music Building\, Room 130
-URL:https://events.unl.edu/music/2026/09/01/200748/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Emanuel Ax
 DTSTART:20260911T193000
 DTEND:20260911T193000
-DTSTAMP:20260831T235316Z
+DTSTAMP:20260901T000338Z
 UID:0078ea93dfe3a4bf@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/emanuel-ax/
@@ -28,80 +15,10 @@ LOCATION:Lied Center for Performing Arts
 URL:https://lincolnsymphony.com/emanuel-ax/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:2026 American Liszt Society Festival
-DTSTART:20260928T093000
-DTEND:20260928T180000
-DTSTAMP:20260831T235316Z
-UID:315de53aa9dd14e4@omaha-classical-calendar
-CATEGORIES:vCategory([vText(b'Conference/Symposium')]\, params=Parameters(
- {}))
-DESCRIPTION:Towards Re-Enchantment: Music as a Portal to the Sacred.\n\nSo
- urce: UNL Glenn Korff School of Music\nhttps://events.unl.edu/music/2026/0
- 9/28/201766/
-LOCATION:Westbrook Music Building
-URL:https://events.unl.edu/music/2026/09/28/201766/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Symphony Orchestra with University Singers
-DTSTART:20260928T193000
-DTEND:20260928T193000
-DTSTAMP:20260831T235316Z
-UID:3fa47424ec359dac@omaha-classical-calendar
-CATEGORIES:vCategory([vText(b'Performing Arts - Music')]\, params=Paramete
- rs({}))
-DESCRIPTION:Part of the 2026 American Liszt Society Festival. Free and ope
- n to the public.\n\nSource: UNL Glenn Korff School of Music\nhttps://event
- s.unl.edu/music/2026/09/28/201770/
-LOCATION:Kimball Recital Hall
-URL:https://events.unl.edu/music/2026/09/28/201770/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:University Orchestra with University Singers
-DTSTART:20260928T193000
-DTEND:20260928T193000
-DTSTAMP:20260831T235316Z
-UID:42a71f0097b6d4e3@omaha-classical-calendar
-CATEGORIES:vCategory([vText(b'Performing Arts - Music')]\, params=Paramete
- rs({}))
-DESCRIPTION:Liszt Festival 2026. Free and open to the public.\n\nSource: U
- NL Glenn Korff School of Music\nhttps://events.unl.edu/music/2026/09/28/20
- 0803/
-LOCATION:Kimball Recital Hall
-URL:https://events.unl.edu/music/2026/09/28/200803/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:2026 American Liszt Society Festival
-DTSTART:20260929T093000
-DTEND:20260929T180000
-DTSTAMP:20260831T235316Z
-UID:27901f961487e08a@omaha-classical-calendar
-CATEGORIES:vCategory([vText(b'Conference/Symposium')]\, params=Parameters(
- {}))
-DESCRIPTION:Towards Re-Enchantment: Music as a Portal to the Sacred.\n\nSo
- urce: UNL Glenn Korff School of Music\nhttps://events.unl.edu/music/2026/0
- 9/29/201766/
-LOCATION:Westbrook Music Building
-URL:https://events.unl.edu/music/2026/09/29/201766/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:2026 American Liszt Society Festival
-DTSTART:20260930T093000
-DTEND:20260930T180000
-DTSTAMP:20260831T235316Z
-UID:9f2eb896eb29ff32@omaha-classical-calendar
-CATEGORIES:vCategory([vText(b'Conference/Symposium')]\, params=Parameters(
- {}))
-DESCRIPTION:Towards Re-Enchantment: Music as a Portal to the Sacred.\n\nSo
- urce: UNL Glenn Korff School of Music\nhttps://events.unl.edu/music/2026/0
- 9/30/201766/
-LOCATION:Westbrook Music Building
-URL:https://events.unl.edu/music/2026/09/30/201766/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Mozart & Haydn
 DTSTART:20261009T193000
 DTEND:20261009T193000
-DTSTAMP:20260831T235316Z
+DTSTAMP:20260901T000338Z
 UID:7b595eb11125f1d1@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/mozart-haydn/
@@ -112,7 +29,7 @@ BEGIN:VEVENT
 SUMMARY:Lou\, the Baby Dinosaur
 DTSTART:20261011T160000
 DTEND:20261011T160000
-DTSTAMP:20260831T235316Z
+DTSTAMP:20260901T000338Z
 UID:8223777f831b4d21@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/baby-dinosaur/
@@ -123,7 +40,7 @@ BEGIN:VEVENT
 SUMMARY:Violin Fantasy
 DTSTART:20261030T193000
 DTEND:20261030T193000
-DTSTAMP:20260831T235316Z
+DTSTAMP:20260901T000338Z
 UID:59d17b15f0ac5f7a@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/violin-fantasy/
@@ -131,10 +48,10 @@ LOCATION:Lied Center for Performing Arts
 URL:https://lincolnsymphony.com/violin-fantasy/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Tchaikovsky's Fourth
+SUMMARY:Tchaikovsky’s Fourth
 DTSTART:20270123T193000
 DTEND:20270123T193000
-DTSTAMP:20260831T235316Z
+DTSTAMP:20260901T000338Z
 UID:a69fc554c9715ea7@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/tchaikovskys-fourth/
@@ -142,10 +59,10 @@ LOCATION:Lied Center for Performing Arts
 URL:https://lincolnsymphony.com/tchaikovskys-fourth/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Rachmaninoff's Triumph
+SUMMARY:Rachmaninoff’s Triumph
 DTSTART:20270305T193000
 DTEND:20270305T193000
-DTSTAMP:20260831T235316Z
+DTSTAMP:20260901T000338Z
 UID:342578dfefc69c49@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/rachmaninoffs-triumph/
@@ -153,10 +70,10 @@ LOCATION:Lied Center for Performing Arts
 URL:https://lincolnsymphony.com/rachmaninoffs-triumph/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Beethoven's Ninth
+SUMMARY:Beethoven’s Ninth
 DTSTART:20270409T193000
 DTEND:20270409T193000
-DTSTAMP:20260831T235316Z
+DTSTAMP:20260901T000338Z
 UID:6cc9130027e3d229@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/beethovens-ninth-27/
@@ -167,7 +84,7 @@ BEGIN:VEVENT
 SUMMARY:Organ Celebration (Apr 30\, 7:30pm)
 DTSTART:20270430T193000
 DTEND:20270430T193000
-DTSTAMP:20260831T235316Z
+DTSTAMP:20260901T000338Z
 UID:3bf9c348378a60e1@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/organ-celebration/
@@ -178,7 +95,7 @@ BEGIN:VEVENT
 SUMMARY:Organ Celebration (May 1\, 7:30pm)
 DTSTART:20270501T193000
 DTEND:20270501T193000
-DTSTAMP:20260831T235316Z
+DTSTAMP:20260901T000338Z
 UID:e65e311c23935c62@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/organ-celebration/
