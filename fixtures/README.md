@@ -26,14 +26,11 @@ reminder that recurring exhibits dominate this feed. Categories are not in
 the rendered list, so `categories` is empty. KVNO's `?ical=1` export remains
 robots-disallowed even though the HTML list is not.
 
-**omaha_conservatory.ics** — Deliberately EMPTY. omahacm.org states
-"Currently no upcoming events"; the six July events have all passed.
-
-**juilliard.json** — 20 real fall events (Sep 2–19) with verbatim venues and
-performance-type tags. Unlike July (all in-person), the fall season includes
-genuine "Live Streaming" events. Two are titled "CANCELED: Rush Hour
-Performance" — real cancellations, now filtered. Event URLs use real event
-IDs with reconstructed slugs.
+**omaha_conservatory.ics** — Deliberately EMPTY (a valid VCALENDAR with no
+events). omahacm.org states "Currently no upcoming events"; the six July
+events have all passed. The live feed goes further and answers HTTP 200 with
+a completely empty body when nothing is listed, which the adapter treats as
+zero events.
 
 **world_concert_hall.json** — The 3 real broadcasts listed for Aug 30
 (Schleswig Holstein Festival with Paavo Järvi; Benjamin Appl singing
@@ -99,11 +96,6 @@ pages 3+ could not be captured because the capture tooling collapsed
 `?page=3` onto `?page=1`. The live adapter has no such limit
 (MAX_PAGES=20, ~a full season) and will pick up the October streams. Verify
 with `python main.py --only juilliard`.
-
-**omaha_conservatory.json** — Replaces the former `.ics` fixture. The site's
-robots.txt (`Disallow: /*?`) forbids the `?ical=1` export, so the adapter now
-uses the query-free REST endpoint. omahacm.org currently lists no upcoming
-events, so this fixture is legitimately empty.
 
 **lied_center.json** — All 49 event cards from liedcenter.org/events-page,
 captured live September 1, 2026 (titles, day-precision dates, teaser prose,

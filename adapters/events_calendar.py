@@ -107,6 +107,10 @@ class ICSFeedAdapter(Adapter):
         return self._get(self.feed_url).text
 
     def parse(self, raw: Any) -> list[Event]:
+        # A feed with nothing to publish may answer 200 with an empty body
+        # (omahacm.org does this off-season); that's zero events, not an error.
+        if not str(raw or "").strip():
+            return []
         cal = Calendar.from_ical(raw)
         events: list[Event] = []
         for comp in cal.walk("VEVENT"):
