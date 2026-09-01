@@ -7,7 +7,7 @@ BEGIN:VEVENT
 SUMMARY:Guest Artist - Nicholas May\, Saxophone
 DTSTART:20260902T003000Z
 DTEND:20260902T003000Z
-DTSTAMP:20260901T001852Z
+DTSTAMP:20260901T003838Z
 UID:1c029e5d311e1af0@omaha-classical-calendar
 DESCRIPTION:This event is free and open to the public.\n\nSource: UNL Glen
  n Korff School of Music\nhttp://events.unl.edu/music/2026/09/01/200748/
@@ -18,7 +18,7 @@ BEGIN:VEVENT
 SUMMARY:Emanuel Ax
 DTSTART:20260911T193000
 DTEND:20260911T193000
-DTSTAMP:20260901T001852Z
+DTSTAMP:20260901T003838Z
 UID:0078ea93dfe3a4bf@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/emanuel-ax/
@@ -29,7 +29,7 @@ BEGIN:VEVENT
 SUMMARY:2026 American Liszt Society Festival
 DTSTART:20260928T143000Z
 DTEND:20260928T230000Z
-DTSTAMP:20260901T001852Z
+DTSTAMP:20260901T003838Z
 UID:a36fc6a75ec1ec77@omaha-classical-calendar
 DESCRIPTION:Towards Re-Enchantment: Music as a Portal to the Sacred\n\nSou
  rce: UNL Glenn Korff School of Music\nhttp://events.unl.edu/music/2026/09/
@@ -38,10 +38,25 @@ LOCATION:Westbrook Music Building Room
 URL:http://events.unl.edu/music/2026/09/28/201766/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Angel Stanislav Wang
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+DTSTAMP:20260901T003838Z
+UID:bce5aa05ab85cca0@omaha-classical-calendar
+CATEGORIES:Season Event
+DESCRIPTION:Praised for his expressive depth\, commanding technique\, and 
+ artistic individuality\, 23-year-old rising virtuoso Angel Stanislav Wa
+ ng has quickly drawn international attention as a rare and compelling new
+  pianist. His major accolades…\n\nSource: Lied Center for Performing Ar
+ ts\nhttps://www.liedcenter.org/event/angel-stanislav-wang
+LOCATION:Lied Center for Performing Arts
+URL:https://www.liedcenter.org/event/angel-stanislav-wang
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Symphony Orchestra with University Singers
 DTSTART:20260929T003000Z
 DTEND:20260929T003000Z
-DTSTAMP:20260901T001852Z
+DTSTAMP:20260901T003838Z
 UID:4db8e85ef0856ef1@omaha-classical-calendar
 DESCRIPTION:This event is free and open to the public.\n\nSource: UNL Glen
  n Korff School of Music\nhttp://events.unl.edu/music/2026/09/28/201770/
@@ -52,7 +67,7 @@ BEGIN:VEVENT
 SUMMARY:University Orchestra with University Singers
 DTSTART:20260929T003000Z
 DTEND:20260929T003000Z
-DTSTAMP:20260901T001852Z
+DTSTAMP:20260901T003838Z
 UID:2175dcb2dc403817@omaha-classical-calendar
 DESCRIPTION:This event is free and open to the public.\n\nSource: UNL Glen
  n Korff School of Music\nhttp://events.unl.edu/music/2026/09/28/200803/
@@ -63,7 +78,7 @@ BEGIN:VEVENT
 SUMMARY:2026 American Liszt Society Festival
 DTSTART:20260929T143000Z
 DTEND:20260929T230000Z
-DTSTAMP:20260901T001852Z
+DTSTAMP:20260901T003838Z
 UID:86326701387aec5e@omaha-classical-calendar
 DESCRIPTION:Towards Re-Enchantment: Music as a Portal to the Sacred\n\nSou
  rce: UNL Glenn Korff School of Music\nhttp://events.unl.edu/music/2026/09/
@@ -75,7 +90,7 @@ BEGIN:VEVENT
 SUMMARY:2026 American Liszt Society Festival
 DTSTART:20260930T143000Z
 DTEND:20260930T230000Z
-DTSTAMP:20260901T001852Z
+DTSTAMP:20260901T003838Z
 UID:5310d00ef813944b@omaha-classical-calendar
 DESCRIPTION:Towards Re-Enchantment: Music as a Portal to the Sacred\n\nSou
  rce: UNL Glenn Korff School of Music\nhttp://events.unl.edu/music/2026/09/
@@ -87,7 +102,7 @@ BEGIN:VEVENT
 SUMMARY:Mozart & Haydn
 DTSTART:20261009T193000
 DTEND:20261009T193000
-DTSTAMP:20260901T001852Z
+DTSTAMP:20260901T003838Z
 UID:7b595eb11125f1d1@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/mozart-haydn/
@@ -98,7 +113,7 @@ BEGIN:VEVENT
 SUMMARY:Lou\, the Baby Dinosaur
 DTSTART:20261011T160000
 DTEND:20261011T160000
-DTSTAMP:20260901T001852Z
+DTSTAMP:20260901T003838Z
 UID:8223777f831b4d21@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/baby-dinosaur/
@@ -106,10 +121,37 @@ LOCATION:Kimball Recital Hall
 URL:https://lincolnsymphony.com/baby-dinosaur/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:World Ballet Company: Swan Lake
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+DTSTAMP:20260901T003838Z
+UID:9a1e96e8182bc370@omaha-classical-calendar
+CATEGORIES:Rental Event
+DESCRIPTION:The World’s MOST Iconic Ballet - With a LIVE Orchestra!\n\nS
+ ource: Lied Center for Performing Arts\nhttps://www.liedcenter.org/event/w
+ orld-ballet-company-swan-lake
+LOCATION:Lied Center for Performing Arts
+URL:https://www.liedcenter.org/event/world-ballet-company-swan-lake
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:An Afternoon of French Romantic Chamber Music
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+DTSTAMP:20260901T003838Z
+UID:5da58b83fddc3f71@omaha-classical-calendar
+CATEGORIES:Season Event
+DESCRIPTION:Presented by Lincoln Friends of Chamber Music\n\nSource: Lied
+  Center for Performing Arts\nhttps://www.liedcenter.org/event/afternoon-fr
+ ench-romantic-chamber-music
+LOCATION:Lied Center for Performing Arts
+URL:https://www.liedcenter.org/event/afternoon-french-romantic-chamber-mus
+ ic
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Violin Fantasy
 DTSTART:20261030T193000
 DTEND:20261030T193000
-DTSTAMP:20260901T001852Z
+DTSTAMP:20260901T003838Z
 UID:59d17b15f0ac5f7a@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/violin-fantasy/
@@ -120,7 +162,7 @@ BEGIN:VEVENT
 SUMMARY:Tchaikovsky’s Fourth
 DTSTART:20270123T193000
 DTEND:20270123T193000
-DTSTAMP:20260901T001852Z
+DTSTAMP:20260901T003838Z
 UID:a69fc554c9715ea7@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/tchaikovskys-fourth/
@@ -128,10 +170,40 @@ LOCATION:Lied Center for Performing Arts
 URL:https://lincolnsymphony.com/tchaikovskys-fourth/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:CARMEN.maquia Ballet Hispánico
+DTSTART;VALUE=DATE:20270204
+DTEND;VALUE=DATE:20270205
+DTSTAMP:20260901T003838Z
+UID:6289cbca51ad721c@omaha-classical-calendar
+CATEGORIES:Season Event
+DESCRIPTION:Bizet's Carmen has seen countless interpretations over the p
+ ast 150 years\, but never one like this. Acclaimed choreographer Gustavo R
+ amírez Sansano brings this full-length ballet to the stage\, inspired by 
+ tauromaquia – the art of…\n\nSource: Lied Center for Performing Arts
+ \nhttps://www.liedcenter.org/event/carmenmaquia-ballet-hisp%C3%A1nico
+LOCATION:Lied Center for Performing Arts
+URL:https://www.liedcenter.org/event/carmenmaquia-ballet-hisp%C3%A1nico
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Orpheus Chamber Orchestra
+DTSTART;VALUE=DATE:20270217
+DTEND;VALUE=DATE:20270218
+DTSTAMP:20260901T003838Z
+UID:8e81ab92e5139fc2@omaha-classical-calendar
+CATEGORIES:Season Event
+DESCRIPTION:GRAMMY® award-winning Orpheus Chamber Orchestra returns to t
+ he Lied with British virtuoso pianist Isata Kanneh-Mason for an evening
+  of elegance and vitality. The program pairs classical favorites by Mozart
+  and Haydn with selections from…\n\nSource: Lied Center for Performing A
+ rts\nhttps://www.liedcenter.org/event/orpheus-chamber-orchestra
+LOCATION:Lied Center for Performing Arts
+URL:https://www.liedcenter.org/event/orpheus-chamber-orchestra
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Rachmaninoff’s Triumph
 DTSTART:20270305T193000
 DTEND:20270305T193000
-DTSTAMP:20260901T001852Z
+DTSTAMP:20260901T003838Z
 UID:342578dfefc69c49@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/rachmaninoffs-triumph/
@@ -139,10 +211,40 @@ LOCATION:Lied Center for Performing Arts
 URL:https://lincolnsymphony.com/rachmaninoffs-triumph/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Piano Battle
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+DTSTAMP:20260901T003838Z
+UID:e32e590166236c83@omaha-classical-calendar
+CATEGORIES:Season Event
+DESCRIPTION:It’s classical music like you’ve never seen it before
+ ! In Piano Battle\, virtuoso pianists Andreas Kern and Paul Cibis go he
+ ad-to-head in a thrilling\, interactive competition where the audience de
+ cides the winner of each round. Blending…\n\nSource: Lied Center for Pe
+ rforming Arts\nhttps://www.liedcenter.org/event/piano-battle
+LOCATION:Lied Center for Performing Arts
+URL:https://www.liedcenter.org/event/piano-battle
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Daniil Trifonov
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270323
+DTSTAMP:20260901T003838Z
+UID:03810eea8ea8e0a4@omaha-classical-calendar
+CATEGORIES:Season Event
+DESCRIPTION:Praised as “the most astounding pianist of our age” by Lon
+ don’s The Times\, GRAMMY® Award-winning pianist Daniil Trifonov makes
+  his Lied Center debut with a program showcasing extraordinary range. Ha
+ ndel’s Suite No. 5 in E Major (“The…\n\nSource: Lied Center for Perf
+ orming Arts\nhttps://www.liedcenter.org/event/daniil-trifonov
+LOCATION:Lied Center for Performing Arts
+URL:https://www.liedcenter.org/event/daniil-trifonov
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Beethoven’s Ninth
 DTSTART:20270409T193000
 DTEND:20270409T193000
-DTSTAMP:20260901T001852Z
+DTSTAMP:20260901T003838Z
 UID:6cc9130027e3d229@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/beethovens-ninth-27/
@@ -153,7 +255,7 @@ BEGIN:VEVENT
 SUMMARY:Organ Celebration (Apr 30\, 7:30pm)
 DTSTART:20270430T193000
 DTEND:20270430T193000
-DTSTAMP:20260901T001852Z
+DTSTAMP:20260901T003838Z
 UID:3bf9c348378a60e1@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/organ-celebration/
@@ -164,7 +266,7 @@ BEGIN:VEVENT
 SUMMARY:Organ Celebration (May 1\, 7:30pm)
 DTSTART:20270501T193000
 DTEND:20270501T193000
-DTSTAMP:20260901T001852Z
+DTSTAMP:20260901T003838Z
 UID:e65e311c23935c62@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/organ-celebration/
