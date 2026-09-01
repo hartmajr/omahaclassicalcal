@@ -17,6 +17,7 @@ should be able to consume either:
 
 from __future__ import annotations
 
+from html import unescape as html_unescape
 from typing import Any
 
 from dateutil import parser as dtparse
@@ -70,11 +71,15 @@ class EventsCalendarRest(Adapter):
     def parse(self, raw: Any) -> list[Event]:
         events: list[Event] = []
         for e in raw.get("events", []):
-            title = (e.get("title") or "").strip()
+            # The API returns titles/venues HTML-encoded ("Bach&#8217;s
+            # Lunch"). Unescape them, or dedupe against a primary source's
+            # plain-text copy of the same concert can never match.
+            title = html_unescape((e.get("title") or "").strip())
             if not title or not e.get("start_date"):
                 continue
             venue = (e.get("venue") or {}).get("venue") if isinstance(
                 e.get("venue"), dict) else None
+            venue = html_unescape(venue) if venue else None
             cats = e.get("categories") or []
             category = cats[0]["name"] if cats and isinstance(cats[0], dict) else None
             events.append(
@@ -147,4 +152,4 @@ def _to_dt(value):
 
 def _strip_html(text: str) -> str:
     import re
-    return re.sub(r"<[^>]+>", "", text).strip()
+    return html_unescape(re.sub(r"<[^>]+>", "", text)).strip()

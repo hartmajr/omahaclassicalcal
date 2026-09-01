@@ -112,7 +112,13 @@ class Store:
                                   microsecond=0, tzinfo=None).isoformat()
         params: tuple = (today,) if channel is None else (today, channel)
         rows = self.conn.execute(q, params).fetchall()
-        return [_row_to_event(r) for r in rows]
+        events = [_row_to_event(r) for r in rows]
+        # Re-sort in Python on local wall-clock time: the SQL ORDER BY is
+        # a text sort, which interleaves wrongly while the db still holds a
+        # mix of naive-local and UTC-offset start strings (pre-2026-09-01
+        # rows). New rows are normalized to naive local by normalize.dedupe.
+        events.sort(key=_local_naive)
+        return events
 
     def prune_missing(self, sources_ok: list[str], run_started: str,
                       exclude_channels: tuple[str, ...] = ("broadcast",)) -> int:
@@ -149,6 +155,16 @@ class Store:
             uids,
         ).fetchall()
         return [_row_to_event(r) for r in rows]
+
+
+def _local_naive(ev: Event) -> datetime:
+    if ev.start.tzinfo is None:
+        return ev.start
+    try:
+        from zoneinfo import ZoneInfo
+        return ev.start.astimezone(ZoneInfo("America/Chicago")).replace(tzinfo=None)
+    except Exception:  # pragma: no cover
+        return ev.start.replace(tzinfo=None)
 
 
 def _row_to_event(r: sqlite3.Row) -> Event:
