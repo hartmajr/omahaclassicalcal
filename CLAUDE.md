@@ -43,10 +43,13 @@ Adapter families, in order of preference:
 
 ## State: what is and isn't verified
 
-Everything so far was built and tested **offline against fixtures captured
-by hand on 2026-08-30**. The published snapshot is real data, but the live
-network path is largely unexercised. Current counts: In Omaha 44, Online 4,
-In Lincoln 15, Broadcasts 3.
+**Deployed and live since 2026-09-01** at
+https://hartmajr.github.io/omahaclassicalcal/ (repo
+`hartmajr/omahaclassicalcal`, public; Pages source "GitHub Actions";
+`ANTHROPIC_API_KEY` secret configured; daily build at 11:00 UTC). First
+live publish: In Omaha 52, Online 0 (Juilliard 403), In Lincoln 9,
+Broadcasts 13. The workflow commits `events.db`, the LLM caches, and
+`public/` back to the repo each run.
 
 A live per-source smoke test on 2026-08-31 exercised every non-LLM source:
 all pass except Juilliard (403, expected). The Symphony, Vesper, and Opera
@@ -60,8 +63,9 @@ into `events.db`.
 
 - **Juilliard returns 403** to our User-Agent. robots.txt *permits* the path,
   so this is a WAF, not policy. Do **not** spoof a browser User-Agent — see
-  the note below. Fix by putting a real contact in `USER_AGENT` and emailing
-  boxoffice@juilliard.edu for an allowance.
+  the note below. The User-Agent now carries a real contact; next step is
+  emailing boxoffice@juilliard.edu for an allowance. Until then the Online
+  channel publishes 0 events (Juilliard is its only enabled source).
 - **Placeholders**: resolved 2026-08-31. `USER_AGENT` (`adapters/base.py`)
   carries mailto:omahaadultpianoclub@gmail.com and `SITE_URL` (`pipeline.py`)
   is https://hartmajr.github.io/omahaclassicalcal (GitHub user `hartmajr`,
@@ -74,8 +78,12 @@ into `events.db`.
   Chorus, Papillion Area Concert Band, Soli Deo Gloria Cantorum, 1st
   Nebraska Volunteers Brass Band. Omaha Area Youth Orchestra's site is stale
   (2016). Omaha Symphonic Chorus lists only a gala right now.
-- **Deploy**: repo → Settings → Pages → Source "GitHub Actions" → add the
-  `ANTHROPIC_API_KEY` secret → run the workflow manually once.
+- **Deploy**: done 2026-09-01 (see State above). Nothing left to configure;
+  the daily schedule keeps it fresh.
+- **In Lincoln looks thin** (9 of 19 collected events classified classical).
+  LSO publishes no series labels, so pops/film nights are vetoed by title
+  keywords only — audit the verdicts against LSO's season and tune
+  `config.py` if real concerts are being dropped.
 
 ## Conventions that matter
 
