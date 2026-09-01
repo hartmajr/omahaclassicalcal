@@ -66,6 +66,8 @@ URLS = [
      "https://events.unl.edu/music/upcoming/?format=ics&limit=-1"),
     ("Lincoln's Symphony (season page)",
      "https://lincolnsymphony.com/season-at-a-glance/"),
+    ("Lied Center (events listing)",
+     "https://www.liedcenter.org/events-page"),
     ("Juilliard (calendar, as requested)",
      "https://www.juilliard.edu/stage-beyond/performance/calendar?page=1"),
     ("World Concert Hall (Mastodon RSS)",

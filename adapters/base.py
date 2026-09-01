@@ -49,7 +49,9 @@ class Adapter(ABC):
         return FIXTURES / f"{self.name}.{self.fixture_ext}"
 
     def load_fixture(self) -> Any:
-        text = self.fixture_path().read_text()
+        # Explicit UTF-8: Windows defaults read_text to cp1252, which chokes
+        # on curly quotes in captured prose.
+        text = self.fixture_path().read_text(encoding="utf-8")
         return json.loads(text) if self.fixture_ext == "json" else text
 
     def collect(self, offline: bool = False) -> list[Event]:

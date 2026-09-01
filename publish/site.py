@@ -105,7 +105,9 @@ def _events_html(events: list[Event], pill_label: str | None) -> str:
             open_a = f'<a href="{html.escape(ev.url)}">' if ev.url else ""
             close_a = "</a>" if ev.url else ""
             pill = f'<span class="pill">{pill_label}</span>' if pill_label else ""
-            meta = [fmt(start, "%a · %-I:%M %p")]
+            # All-day events have no meaningful clock time -- show just the
+            # weekday and let the linked page carry the showtime.
+            meta = [fmt(start, "%a") if ev.all_day else fmt(start, "%a · %-I:%M %p")]
             if ev.venue:
                 meta.append(html.escape(ev.venue))
             rows.append(f"""

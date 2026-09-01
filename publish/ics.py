@@ -8,7 +8,7 @@ replace entries in place instead of piling up duplicates.
 
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from icalendar import Calendar, Event as ICalEvent
@@ -27,8 +27,15 @@ def write_ics(events: list[Event], out: Path, calendar_name: str) -> Path:
         ie = ICalEvent()
         ie.add("uid", ev.uid)
         ie.add("summary", ev.title)
-        ie.add("dtstart", ev.start)
-        ie.add("dtend", ev.end or ev.start)
+        if ev.all_day:
+            # Day-precision events (e.g. Lied Center listings, where the
+            # showtime lives behind the linked page). iCalendar all-day
+            # DTEND is exclusive, hence the +1 day.
+            ie.add("dtstart", ev.start.date())
+            ie.add("dtend", (ev.end or ev.start).date() + timedelta(days=1))
+        else:
+            ie.add("dtstart", ev.start)
+            ie.add("dtend", ev.end or ev.start)
         ie.add("dtstamp", datetime.now(timezone.utc))
         if ev.venue:
             ie.add("location", ev.venue)

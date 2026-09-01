@@ -77,6 +77,7 @@ adding a source is just writing one more adapter and adding a line to
 | Opera Omaha | season-page HTML parse | In Omaha | live adapter (verified 2026-08-31) |
 | UNL Glenn Korff School of Music | official UNL Events `?format=ics` feed | In Lincoln | live adapter |
 | Lincoln's Symphony Orchestra | season-page HTML parse | In Lincoln | live adapter (verified 2026-08-31) |
+| Lied Center for Performing Arts | events-page HTML parse (Drupal Views) | In Lincoln | live adapter (verified 2026-09-01; all-day events, mixed presenter so the classifier filters hard) |
 | Oberlin Conservatory | Localist JSON API (webcast types) | Online | live adapter |
 | Juilliard | Drupal calendar HTML parse (paginated) | Online | live adapter (verify selectors) |
 | World Concert Hall | Mastodon RSS + LLM extraction | Broadcasts | **retired 2026-09-01** — same-day broadcasts don't fit a weekly build |

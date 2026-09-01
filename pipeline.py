@@ -14,6 +14,7 @@ from adapters.events_calendar import EventsCalendarRest, ICSFeedAdapter
 from adapters.juilliard import JuilliardAdapter
 from adapters.llm_extract import LLMPageExtractAdapter
 from adapters.localist import LocalistAdapter
+from adapters.lied_center import LiedCenterAdapter
 from adapters.lincoln_symphony import LincolnSymphonyAdapter
 from adapters.opera_omaha import OperaOmahaAdapter
 from adapters.symphony import SymphonyAdapter
@@ -90,6 +91,12 @@ SOURCES = [
         channel="lincoln",
     ),
     LincolnSymphonyAdapter(),
+    # UNL's presenting venue: touring classical acts mixed with Broadway,
+    # comedy, and pop, so the classifier filters hard here (default verdict
+    # is non-classical -- see SOURCE_PRIORITY). Day-precision dates publish
+    # as all-day events; LSO co-presentations are skipped in favour of
+    # LSO's own adapter.
+    LiedCenterAdapter(),
 
     # --- Online (streamed institutional performances) ---
     # Oberlin is DISABLED, not forgotten: calendar.oberlin.edu's robots.txt

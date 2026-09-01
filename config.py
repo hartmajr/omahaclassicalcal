@@ -29,6 +29,10 @@ SOURCE_PRIORITY: dict[str, int] = {
     "UNL Glenn Korff School of Music": 0,
     "Lincoln's Symphony Orchestra": 0,
     "World Concert Hall": 0,        # curated classical-only broadcasts
+    # Mixed presenter (Broadway/comedy/pop alongside classical): nonzero so
+    # unmatched events default to NON-classical, and so a dedicated source's
+    # copy of the same concert wins any dedupe tie.
+    "Lied Center for Performing Arts": 2,
     "KVNO Arts Calendar": 5,        # aggregator -> lowest priority
 }
 DEFAULT_PRIORITY = 3
@@ -75,10 +79,12 @@ COMPOSER_KEYWORDS = {
     "shostakovich", "prokofiev", "debussy", "ravel", "elgar", "grieg",
     "franck", "monteverdi", "purcell", "bruckner", "berlioz", "bizet",
     "buxtehude", "byrd", "gibbons", "kabalevsky", "gregson", "reich",
-    # Arvo Pärt: NOT bare "part", which substring-matches "participants"
-    # and rescued craft workshops on the live KVNO feed (2026-09-01).
-    "glass", "adams", "pärt", "arvo part", "messiaen", "ligeti", "britten",
-    "copland",
+    # Composers whose surnames are everyday words carry their first names:
+    # even with word-boundary matching (normalize._pattern), live data caught
+    # "a glass of wine" (Philip Glass) and "participants" (Arvo Pärt)
+    # rescuing non-concerts on the KVNO feed.
+    "philip glass", "john adams", "pärt", "arvo part", "messiaen", "ligeti",
+    "britten", "copland",
 }
 
 # Instrument/form keywords -- positive signal (cannot rescue SOFT categories).
@@ -94,7 +100,9 @@ CLASSICAL_KEYWORDS = {
 
 # Firm vetoes: always exclude, no rescue by incidental musical words.
 NON_CLASSICAL_KEYWORDS = {
-    "tribute", "rock", "pop ", "hip hop", "trap", "country", "dj", "jazz",
+    # (word-boundary matched -- see normalize._pattern -- so "pop" no longer
+    # needs a trailing space to dodge "popular")
+    "tribute", "rock", "pop", "hip hop", "trap", "country", "dj", "jazz",
     "storytime", "scavenger", "birding", "mural", "exhibit", "gallery",
     "fireworks", "gala", "trivia", "comedy", "drag", "karaoke",
     "canceled:", "cancelled:", "postponed:", "convocation", "dedication",

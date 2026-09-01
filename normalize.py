@@ -20,6 +20,9 @@ exact seam where you'd later drop in an LLM call for the messy sources
 
 from __future__ import annotations
 
+import re
+from functools import lru_cache
+
 from config import (
     CLASSICAL_CATEGORIES,
     CLASSICAL_KEYWORDS,
@@ -55,11 +58,29 @@ def _priority(ev: Event) -> int:
     return SOURCE_PRIORITY.get(ev.source, DEFAULT_PRIORITY)
 
 
+@lru_cache(maxsize=None)
+def _pattern(keywords: frozenset[str]) -> re.Pattern:
+    """One compiled alternation per keyword set, matched at word boundaries.
+
+    Plain substring matching kept misfiring on real data: 'part' (Arvo Pärt)
+    matched 'participants', 'glass' (Philip Glass) matched 'Douglass',
+    'new music' matched 'new musical', 'organ' matched 'organization'.
+    (?<!\\w)/(?!\\w) instead of \\b so keywords ending in punctuation
+    ('canceled:') still work.
+    """
+    alternation = "|".join(sorted(re.escape(k) for k in keywords))
+    return re.compile(r"(?<!\w)(?:" + alternation + r")(?!\w)")
+
+
+def _has_any(keywords: set[str], haystack: str) -> bool:
+    return _pattern(frozenset(keywords)).search(haystack) is not None
+
+
 def _is_classical(ev: Event) -> bool:
     cat = (ev.category or "").strip()
     haystack = f"{ev.title} {ev.category or ''} {ev.description or ''}".lower()
-    has_composer = any(c in haystack for c in COMPOSER_KEYWORDS)
-    has_classical_kw = any(good in haystack for good in CLASSICAL_KEYWORDS)
+    has_composer = _has_any(COMPOSER_KEYWORDS, haystack)
+    has_classical_kw = _has_any(CLASSICAL_KEYWORDS, haystack)
 
     # 1. Trust an explicit, known category first.
     if cat in CLASSICAL_CATEGORIES.get(ev.source, set()):
@@ -72,10 +93,10 @@ def _is_classical(ev: Event) -> bool:
     if cat in SOFT_NON_CLASSICAL_CATEGORIES.get(ev.source, set()):
         return has_composer
     # 3. Firm keyword vetoes.
-    if any(bad in haystack for bad in NON_CLASSICAL_KEYWORDS):
+    if _has_any(NON_CLASSICAL_KEYWORDS, haystack):
         return False
     # 4. Soft keyword vetoes, rescuable by any classical signal.
-    if any(soft in haystack for soft in SOFT_NON_CLASSICAL_KEYWORDS) and not has_classical_kw:
+    if _has_any(SOFT_NON_CLASSICAL_KEYWORDS, haystack) and not has_classical_kw:
         return False
     # 5. Positive signal.
     if has_classical_kw:

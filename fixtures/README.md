@@ -104,3 +104,11 @@ with `python main.py --only juilliard`.
 robots.txt (`Disallow: /*?`) forbids the `?ical=1` export, so the adapter now
 uses the query-free REST endpoint. omahacm.org currently lists no upcoming
 events, so this fixture is legitimately empty.
+
+**lied_center.json** — All 49 event cards from liedcenter.org/events-page,
+captured live September 1, 2026 (titles, day-precision dates, teaser prose,
+event-type labels and URLs exactly as parsed from the listing). Includes the
+seven Lincoln's Symphony co-presentations so the adapter's skip rule is
+exercised, plus one card the site itself dates in the past ("Metro Jazz
+Quintet: Hot Latin Nights, January 22-23, 2026" — their typo, kept
+verbatim). The listing page carries no showtimes, so events publish all-day.

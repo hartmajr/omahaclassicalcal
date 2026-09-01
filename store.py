@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS events (
     source       TEXT NOT NULL,
     is_classical INTEGER,
     channel      TEXT DEFAULT 'local',
+    all_day      INTEGER DEFAULT 0,
     tags         TEXT,
     first_seen   TEXT NOT NULL,
     last_seen    TEXT NOT NULL
@@ -51,6 +52,9 @@ class Store:
         if "channel" not in cols:
             self.conn.execute("ALTER TABLE events ADD COLUMN channel TEXT DEFAULT 'local'")
             self.conn.commit()
+        if "all_day" not in cols:
+            self.conn.execute("ALTER TABLE events ADD COLUMN all_day INTEGER DEFAULT 0")
+            self.conn.commit()
 
     def upsert(self, events: list[Event]) -> list[str]:
         """Insert/update events. Returns the uids that are newly seen."""
@@ -65,24 +69,24 @@ class Store:
                 new_uids.append(ev.uid)
                 cur.execute(
                     """INSERT INTO events (uid,title,start,end,venue,url,
-                       description,category,source,is_classical,channel,tags,
-                       first_seen,last_seen)
-                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                       description,category,source,is_classical,channel,
+                       all_day,tags,first_seen,last_seen)
+                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                     (ev.uid, ev.title, ev.start.isoformat(),
                      ev.end.isoformat() if ev.end else None, ev.venue, ev.url,
                      ev.description, ev.category, ev.source,
-                     int(bool(ev.is_classical)), ev.channel,
+                     int(bool(ev.is_classical)), ev.channel, int(ev.all_day),
                      ",".join(ev.tags), now, now),
                 )
             else:
                 cur.execute(
                     """UPDATE events SET title=?,start=?,end=?,venue=?,url=?,
                        description=?,category=?,source=?,is_classical=?,
-                       channel=?,tags=?,last_seen=? WHERE uid=?""",
+                       channel=?,all_day=?,tags=?,last_seen=? WHERE uid=?""",
                     (ev.title, ev.start.isoformat(),
                      ev.end.isoformat() if ev.end else None, ev.venue, ev.url,
                      ev.description, ev.category, ev.source,
-                     int(bool(ev.is_classical)), ev.channel,
+                     int(bool(ev.is_classical)), ev.channel, int(ev.all_day),
                      ",".join(ev.tags), now, ev.uid),
                 )
         self.conn.commit()
@@ -156,6 +160,7 @@ def _row_to_event(r: sqlite3.Row) -> Event:
         category=r["category"], source=r["source"],
     )
     ev.is_classical = bool(r["is_classical"])
+    ev.all_day = bool(r["all_day"]) if "all_day" in r.keys() else False
     ev.channel = r["channel"] if "channel" in r.keys() and r["channel"] else "local"
     ev.tags = r["tags"].split(",") if r["tags"] else []
     if "first_seen" in r.keys() and r["first_seen"]:

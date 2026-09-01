@@ -34,9 +34,12 @@ Adapter families, in order of preference:
    Three sources share the Events Calendar adapter; check the platform
    before writing anything new.
 2. **HTML parse** — Symphony, Vesper, Opera Omaha, Lincoln's Symphony,
-   Juilliard. Symphony/Vesper/Opera Omaha selectors were rewritten against
-   the live pages 2026-08-31 and verified (37 / 7 / 9 events); Lincoln's
-   Symphony worked live as written. Juilliard still 403s (see below).
+   Lied Center, Juilliard. Symphony/Vesper/Opera Omaha selectors were
+   rewritten against the live pages 2026-08-31 and verified (37 / 7 / 9
+   events); Lincoln's Symphony worked live as written; Lied Center was
+   built and verified live 2026-09-01 (42 events, day-precision dates →
+   all-day entries, LSO co-listings skipped). Juilliard still 403s (see
+   below).
 3. **LLM extraction** — `LLMPageExtractAdapter` (Omaha Chamber Music),
    `WorldConcertHallAdapter` (Mastodon RSS; retired with the Broadcasts
    channel 2026-09-01). Needs `ANTHROPIC_API_KEY`. Content-hash cached,
