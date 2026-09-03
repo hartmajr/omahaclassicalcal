@@ -133,12 +133,27 @@ class ICSFeedAdapter(Adapter):
                     url=str(comp.get("URL")) if comp.get("URL") else None,
                     description=(str(comp.get("DESCRIPTION")).strip()
                                 if comp.get("DESCRIPTION") else None),
-                    category=(str(comp.get("CATEGORIES")) if comp.get("CATEGORIES")
-                             else None),
+                    category=_categories(comp),
                     source=self.source_label,
                 )
             )
         return events
+
+
+def _categories(comp) -> str | None:
+    """CATEGORIES is multi-valued ("all ages,Events,music for anyone") and
+    icalendar hands it back as a vCategory (or a list of them when repeated);
+    str() on those yields the object repr, which is what leaked into
+    events.db before 2026-09-03. Join the actual names."""
+    raw = comp.get("CATEGORIES")
+    if not raw:
+        return None
+    names: list[str] = []
+    for item in (raw if isinstance(raw, list) else [raw]):
+        cats = getattr(item, "cats", None)
+        names.extend(str(c) for c in cats) if cats is not None else names.append(str(item))
+    names = [n.strip() for n in names if n and n.strip()]
+    return ", ".join(names) or None
 
 
 def _to_dt(value):

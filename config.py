@@ -110,6 +110,7 @@ NON_CLASSICAL_KEYWORDS = {
     "film music", "video game", "deck the halls", "holiday pops",
     "volunteer", "letterpress", "art show", "open mic", "yoga",
     "photography", "book club", "reading series",
+    "trick",   # trick-or-treat events (Conservatory's "Cass St Trick 'R' Treat")
 }
 # Soft vetoes: exclude unless a classical keyword co-occurs
 # (e.g. "Budapest Festival Orchestra" survives, "Family Festival" doesn't).
