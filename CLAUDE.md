@@ -78,6 +78,13 @@ into `events.db`.
 - **Creighton and Oberlin** are disallowed by robots.txt; both are
   commented out / absent with explanation. Only re-enable with a sanctioned
   feed or permission.
+- **KVNO retired 2026-09-03**: kvno.org rewrote its robots.txt into a
+  deliberate policy (feeds, pagination, and all query strings disallowed;
+  AI bots blocked by name), which failed the preflight and the build. Not
+  the generic-boilerplate case the exceptions bar covers. After dedupe it
+  contributed one unique event. Commented out in `SOURCES`; its rows were
+  purged from `events.db`. KVNO is Omaha's classical station — asking them
+  for a sanctioned feed is the path to revival.
 - **Unchecked sources** from Orchestra Omaha's Local Arts Links: Nebraska
   Wind Symphony, Intergeneration Orchestra of Omaha, River City Mixed
   Chorus, Papillion Area Concert Band, Soli Deo Gloria Cantorum, 1st

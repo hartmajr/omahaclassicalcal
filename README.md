@@ -69,7 +69,7 @@ adding a source is just writing one more adapter and adding a line to
 | Source | How | Channel | Status |
 |---|---|---|---|
 | UNO School of Music | Localist JSON API | In Omaha | live adapter |
-| KVNO Arts Calendar | The Events Calendar REST API | In Omaha | live adapter |
+| KVNO Arts Calendar | The Events Calendar REST API | In Omaha | **retired 2026-09-03** — kvno.org's robots.txt now disallows feeds, pagination and all query strings; re-enable only with permission |
 | Omaha Conservatory | The Events Calendar `.ics` export | In Omaha | live adapter (documented robots exception) |
 | Omaha Symphony | season-page HTML parse | In Omaha | live adapter (verified 2026-08-31) |
 | Orchestra Omaha | The Events Calendar REST API | In Omaha | live adapter |

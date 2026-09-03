@@ -42,10 +42,9 @@ from config import ROBOTS_EXCEPTIONS  # noqa: E402
 URLS = [
     ("UNO School of Music (Localist API, as requested)",
      "https://events.unomaha.edu/api/2/events?days=365&pp=100&page=1"),
-    ("KVNO (Events Calendar REST, as requested)",
-     "https://kvno.org/wp-json/tribe/events/v1/events?page=1&per_page=50&start_date=now"),
-    ("KVNO (REST, bare path fallback)",
-     "https://kvno.org/wp-json/tribe/events/v1/events"),
+    # KVNO retired 2026-09-03: kvno.org now disallows all query strings,
+    # feeds and pagination (see pipeline.SOURCES). Its URLs are kept out of
+    # the preflight so the build isn't gated on a source we no longer fetch.
     ("Omaha Conservatory (REST, bare path)",
      "https://omahacm.org/wp-json/tribe/events/v1/events"),
     ("Omaha Conservatory (.ics export -- known blocked by /*?)",

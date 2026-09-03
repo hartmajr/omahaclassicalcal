@@ -44,11 +44,19 @@ SOURCES = [
         group_id=47382944493642,
         type_ids=[39447356775896],
     ),
-    EventsCalendarRest(
-        name="kvno",
-        source_label="KVNO Arts Calendar",
-        base_url="https://kvno.org",
-    ),
+    # KVNO is RETIRED (2026-09-03), not forgotten. kvno.org rewrote its
+    # robots.txt into a deliberate anti-scraping policy: separate sections
+    # disallowing feeds, pagination, and every query string. That is not
+    # the generic-boilerplate case config.ROBOTS_EXCEPTIONS is for, and the
+    # robots-safe bare endpoint returns 6 of ~390 events. After dedupe
+    # against the primary sources KVNO contributed exactly one unique
+    # classical event, so the calendar loses almost nothing. Re-enable only
+    # with KVNO's permission or a feed they sanction.
+    # EventsCalendarRest(
+    #     name="kvno",
+    #     source_label="KVNO Arts Calendar",
+    #     base_url="https://kvno.org",
+    # ),
     # Uses the .ics export. omahacm.org's "Disallow: /*?" catches this URL,
     # but that is a stock SEO rule about parameterised duplicates, not a
     # decision about their calendar feed -- which they publish with a
