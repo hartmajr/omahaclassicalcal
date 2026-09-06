@@ -31,7 +31,7 @@ cross-platform (see `dateformat.py`); no other Windows-specific setup is
 needed.
 
 Outputs land in `public/`: one `.ics` and one RSS feed per channel (`calendar.ics` + `feed.xml`, `lincoln.ics` + `lincoln-feed.xml`, `online.ics` + `online-feed.xml`),
-`feed.xml`, and `index.html` (a tabbed site).
+plus `index.html` (a tabbed site).
 
 The `--offline` flag runs the entire pipeline against the fixtures in
 `fixtures/` so you can develop and see output without hitting the live
