@@ -123,7 +123,7 @@ def _events_html(events: list[Event], pill_label: str | None) -> str:
     return "".join(rows) if rows else "<p>No upcoming events.</p>"
 
 
-def write_site(groups: list[dict], out: Path, *, title: str, rss_name: str,
+def write_site(groups: list[dict], out: Path, *, title: str,
                generated: datetime, demo: bool = False,
                demo_note: str | None = None, unlisted: bool = False) -> Path:
     """groups: list of {id, label, ics, events} in display order."""
@@ -143,7 +143,7 @@ def write_site(groups: list[dict], out: Path, *, title: str, rss_name: str,
             f'<button class="tab" role="tab" aria-selected="{sel}" '
             f'data-panel="p-{g["id"]}">{html.escape(g["label"])} ({len(g["events"])})</button>'
         )
-        rss_link = f'<a href="{rss_name}">RSS</a>' if i == 0 else ""
+        rss_link = f'<a href="{g["rss"]}">RSS</a>' if g.get("rss") else ""
         panels.append(f"""
 <div class="panel{active}" id="p-{g['id']}">
   <p class="subscribe"><a href="{g['ics']}">Subscribe (iCal)</a>{rss_link}</p>

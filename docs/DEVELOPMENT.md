@@ -30,7 +30,7 @@ Running pip through `py -m pip` guarantees they match. Date formatting is
 cross-platform (see `dateformat.py`); no other Windows-specific setup is
 needed.
 
-Outputs land in `public/`: `calendar.ics`, `online.ics`, `broadcasts.ics`,
+Outputs land in `public/`: one `.ics` and one RSS feed per channel (`calendar.ics` + `feed.xml`, `lincoln.ics` + `lincoln-feed.xml`, `online.ics` + `online-feed.xml`),
 `feed.xml`, and `index.html` (a tabbed site).
 
 The `--offline` flag runs the entire pipeline against the fixtures in

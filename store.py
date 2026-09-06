@@ -14,7 +14,7 @@ the GitHub Action carries state between scheduled runs for free.
 from __future__ import annotations
 
 import sqlite3
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from models import Event
@@ -145,6 +145,21 @@ class Store:
         )
         self.conn.commit()
         return cur.rowcount
+
+    def recently_announced(self, channel: str, days: int = 60) -> list[Event]:
+        """Upcoming classical events in a channel first seen within `days`,
+        newest announcement first -- the RSS feed's rolling window. A feed
+        built only from the latest run's new uids was a snapshot that each
+        run overwrote; a reader who missed a week lost that week."""
+        cutoff = (datetime.now(timezone.utc) - timedelta(days=days)).isoformat()
+        rows = self.conn.execute(
+            """SELECT * FROM events WHERE channel = ? AND is_classical = 1
+               AND first_seen >= ? AND start >= ?
+               ORDER BY first_seen DESC, start ASC""",
+            (channel, cutoff, datetime.now().replace(hour=0, minute=0, second=0,
+                                                    microsecond=0).isoformat()),
+        ).fetchall()
+        return [_row_to_event(r) for r in rows]
 
     def by_uids(self, uids: list[str]) -> list[Event]:
         if not uids:

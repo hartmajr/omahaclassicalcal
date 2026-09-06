@@ -2,8 +2,10 @@
 
 Where the .ics answers "what's my whole upcoming calendar", the RSS feed
 answers "what got announced recently" -- so followers find out when a new
-concert is added. We feed it the events the store flagged as newly seen,
-falling back to soonest-upcoming so the feed is never empty on first run.
+concert is added. One feed per channel (feed.xml for Omaha, lincoln-feed.xml,
+...), each a rolling window of events first seen in the last 60 days
+(store.recently_announced), falling back to the soonest upcoming events so
+a feed is never empty on a fresh database.
 """
 
 from __future__ import annotations
@@ -16,25 +18,26 @@ from dateformat import fmt
 from models import Event
 
 
-def write_rss(events: list[Event], out: Path, *, title: str, site_url: str) -> Path:
+def write_rss(events: list[Event], out: Path, *, title: str, site_url: str,
+              description: str = "Newly announced classical concerts") -> Path:
     fg = FeedGenerator()
-    fg.id(site_url)
+    fg.id(f"{site_url}/{out.name}")
     fg.title(title)
     fg.link(href=site_url, rel="alternate")
-    fg.description("Newly announced classical concerts in the Omaha area")
+    fg.description(description)
     fg.language("en")
 
     for ev in events:
         fe = fg.add_entry()
         fe.id(ev.uid)
-        prefix = {"online": "[Online] ", "broadcast": "[Broadcast] "}.get(ev.channel, "")
-        fe.title(f"{prefix}{ev.title} — {fmt(ev.start, '%b %-d, %Y')}")
+        fe.title(f"{ev.title} — {fmt(ev.start, '%b %-d, %Y')}")
         if ev.url:
             fe.link(href=ev.url)
         parts = []
         if ev.venue:
             parts.append(ev.venue)
-        parts.append(fmt(ev.start, "%A, %B %-d, %Y · %-I:%M %p"))
+        parts.append(fmt(ev.start, "%A, %B %-d, %Y") if ev.all_day
+                     else fmt(ev.start, "%A, %B %-d, %Y · %-I:%M %p"))
         if ev.description:
             parts.append(ev.description)
         parts.append(f"Source: {ev.source}")

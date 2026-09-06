@@ -16,7 +16,8 @@ app that accepts an iCal subscription. They update themselves.
 | In Omaha | `https://hartmajr.github.io/omahaclassicalcal/calendar.ics` |
 | In Lincoln | `https://hartmajr.github.io/omahaclassicalcal/lincoln.ics` |
 | Online (streamed) | `https://hartmajr.github.io/omahaclassicalcal/online.ics` |
-| Newly announced (RSS) | `https://hartmajr.github.io/omahaclassicalcal/feed.xml` |
+| Newly announced in Omaha (RSS) | `https://hartmajr.github.io/omahaclassicalcal/feed.xml` |
+| Newly announced in Lincoln (RSS) | `https://hartmajr.github.io/omahaclassicalcal/lincoln-feed.xml` |
 
 Every event links back to the presenter's page for tickets and details.
 

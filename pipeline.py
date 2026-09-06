@@ -30,7 +30,15 @@ from store import Store
 SITE_TITLE = "Omaha Classical Calendar"
 SITE_URL = "https://hartmajr.github.io/omahaclassicalcal"
 OUT_DIR = Path(__file__).resolve().parent / "public"
-RSS_NAME = "feed.xml"
+RSS_NAME = "feed.xml"   # the Omaha channel's feed keeps its original name
+
+
+def _rss_name(ics_name: str) -> str:
+    """calendar.ics -> feed.xml (unchanged for existing subscribers);
+    lincoln.ics -> lincoln-feed.xml, online.ics -> online-feed.xml."""
+    if ics_name == "calendar.ics":
+        return RSS_NAME
+    return ics_name.rsplit(".", 1)[0] + "-feed.xml"
 
 # The source registry. Local Omaha sources feed the "In Omaha" tab; the
 # online sources are configured online_only, so they contribute just their
@@ -188,7 +196,8 @@ def run(offline: bool = False, fail_under: int | None = None,
     for channel_id, label, ics_name in CHANNELS:
         events = store.upcoming(classical_only=True, channel=channel_id)
         groups.append({"id": channel_id, "label": label,
-                       "ics": ics_name, "events": events})
+                       "ics": ics_name, "rss": _rss_name(ics_name),
+                       "events": events})
 
     # Publish gate: abort BEFORE writing anything if the calendar has
     # collapsed. In CI this fails the job, so the previously deployed site
@@ -212,16 +221,22 @@ def run(offline: bool = False, fail_under: int | None = None,
     for g in groups:
         write_ics(g["events"], OUT_DIR / g["ics"], f"{SITE_TITLE} — {g['label']}")
 
-    all_upcoming = [e for g in groups for e in g["events"]]
-    new_events = [e for e in store.by_uids(new_uids) if e.is_classical] or all_upcoming[:15]
-    write_rss(new_events, OUT_DIR / RSS_NAME, title=SITE_TITLE, site_url=SITE_URL)
+    # One RSS feed per channel: everything announced in the last 60 days,
+    # newest first (a rolling window, not just this run's additions). A
+    # fresh database has no announcement history, so fall back to the
+    # soonest upcoming events rather than publish an empty feed.
+    for g in groups:
+        announced = store.recently_announced(g["id"]) or g["events"][:15]
+        write_rss(announced, OUT_DIR / g["rss"],
+                  title=f"{SITE_TITLE} — {g['label']}", site_url=SITE_URL,
+                  description=f"Newly announced classical concerts: {g['label']}")
     import os as _os
     # UNLISTED=1 keeps the site out of search results while leaving the .ics
     # feeds fetchable -- calendar apps cannot authenticate, so a genuinely
     # access-controlled page would break every subscription.
     unlisted = _os.environ.get("UNLISTED") == "1"
     write_site(groups, OUT_DIR / "index.html", title=SITE_TITLE,
-               rss_name=RSS_NAME, generated=generated, demo=offline,
+               generated=generated, demo=offline,
                demo_note=_os.environ.get("SNAPSHOT_NOTE"), unlisted=unlisted)
     (OUT_DIR / "robots.txt").write_text(
         "User-agent: *\nDisallow: /\n" if unlisted
