@@ -15,7 +15,7 @@ needs): fetch the toots, then ask a model to turn each into
 Everything WCH lists is a live broadcast, so these all land in the
 "broadcast" channel (its own tab + broadcasts.ics). The post time is used as
 the broadcast start -- WCH posts around air time -- which is approximate;
-see README caveats.
+see docs/DEVELOPMENT.md caveats.
 
 Live path needs ANTHROPIC_API_KEY in the environment. The offline fixture is
 already-extracted events, so the demo runs without any API call.

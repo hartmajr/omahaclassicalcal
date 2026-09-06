@@ -2,7 +2,7 @@
 
 Aggregates classical-music events across Omaha (and Lincoln) into a
 subscribable `.ics`, an RSS feed, and a static site. Runs free on GitHub
-Actions + Pages. Full detail is in `README.md`; this file is the orientation
+Actions + Pages. Full detail is in `docs/DEVELOPMENT.md`; this file is the orientation
 for picking the work up.
 
 ## How to run

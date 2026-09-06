@@ -17,7 +17,7 @@ don't disambiguate -- repeats are labelled with date *and* time.
 LSO publishes no series labels on this page (unlike the Omaha Symphony's
 Masterworks / LIVE tags), so pops and film nights can only be identified
 from their titles. That is what the film/pops keyword vetoes in config.py
-are for; see the README note about the limits of that.
+are for; see the note in docs/DEVELOPMENT.md about the limits of that.
 
 HONESTY NOTE: live CSS selectors are a documented best-effort; verify
 against page source. The offline fixture holds the real captured season.
