@@ -1,142 +1,683 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
-    <title>Omaha Classical Calendar</title>
+    <title>Omaha Classical Calendar — In Omaha</title>
     <link>https://hartmajr.github.io/omahaclassicalcal</link>
-    <description>Newly announced classical concerts in the Omaha area</description>
+    <description>Newly announced classical concerts: In Omaha</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Sep 2026 04:35:38 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 16:21:08 +0000</lastBuildDate>
     <item>
-      <title>DMA Andrea Troncoso, viola — Sep 13, 2026</title>
-      <link>http://events.unl.edu/music/2026/09/13/202456/</link>
-      <description>Westbrook Music Building Room 130, and online at Webcast - GKSOM YouTube (https://www.youtube.com/@UNLSoMusic/streams)
-Sunday, September 13, 2026 · 3:30 PM
-This event is free and open to the public.
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">f50d849786fee2ff@omaha-classical-calendar</guid>
-      <pubDate>Thu, 03 Sep 2026 04:35:37 +0000</pubDate>
+      <title>Applied Underwriters Presents Beethoven’s Ninth — Jun 4, 2027</title>
+      <link>https://www.omahasymphony.org/concerts/beethovens-ninth</link>
+      <description>Friday, June 4, 2027 · 12:00 AM
+The season concludes with one of the most famous symphonies of all time: Beethoven’s Ninth, ending with the epic Ode to Joy.
+Source: Omaha Symphony</description>
+      <guid isPermaLink="false">ce90e916a4c50212@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
     </item>
     <item>
-      <title>Men's Choral Festival — Oct 5, 2026</title>
-      <link>http://events.unl.edu/music/2026/10/05/200801/</link>
-      <description>Westbrook Music Building Room
-Monday, October 5, 2026 · 8:00 AM
-TBD
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">f4256b6842d28c78@omaha-classical-calendar</guid>
-      <pubDate>Thu, 03 Sep 2026 04:35:37 +0000</pubDate>
+      <title>Beethoven &amp; Haydn — May 23, 2027</title>
+      <link>https://www.omahasymphony.org/concerts/beethoven-haydn</link>
+      <description>Sunday, May 23, 2027 · 12:00 AM
+Haydn, the Grandfather of the Symphony, and his reluctant protégé Beethoven bookend this delightful and dramatic program led by conductor Katharina Wincor.
+Source: Omaha Symphony</description>
+      <guid isPermaLink="false">2582e276d01044ff@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
     </item>
     <item>
-      <title>Flyover New Music I — Oct 23, 2026</title>
-      <link>http://events.unl.edu/music/2026/10/23/200804/</link>
-      <description>Westbrook Music Building Room 130
-Friday, October 23, 2026 · 7:30 PM
-This event is free and open to the public.
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">f2582cc49d5e78fe@omaha-classical-calendar</guid>
-      <pubDate>Thu, 03 Sep 2026 04:35:37 +0000</pubDate>
+      <title>Omaha Chamber Music Society concert — May 16, 2027</title>
+      <link>https://www.omahachambermusic.org/heritage-series</link>
+      <description>Omaha Conservatory of Music
+Sunday, May 16, 2027 · 3:00 PM
+Program TBA
+Source: Omaha Chamber Music Society</description>
+      <guid isPermaLink="false">e9e8accbce84c72e@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
     </item>
     <item>
-      <title>DMA Heather Ryan-Christie, clarinet — Oct 10, 2026</title>
-      <link>http://events.unl.edu/music/2026/10/10/202467/</link>
-      <description>Kimball Recital Hall Room , and online at Webcast - GKSOM YouTube (https://www.youtube.com/@UNLSoMusic/streams)
-Saturday, October 10, 2026 · 3:30 PM
-This event is free and open to the public.
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">f13b9b0d54d5dba7@omaha-classical-calendar</guid>
-      <pubDate>Thu, 03 Sep 2026 04:35:37 +0000</pubDate>
+      <title>Sibelius’ Second — May 7, 2027</title>
+      <link>https://www.omahasymphony.org/concerts/sibelius-second</link>
+      <description>Friday, May 7, 2027 · 12:00 AM
+Sibelius’ popular Second Symphony and Beethoven’s expressive Fourth Piano Concerto transport the audience through the Romantic period in this program led by returning conductor Earl Lee and pianist Janice Carissa.
+Source: Omaha Symphony</description>
+      <guid isPermaLink="false">3ed591f781910075@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
     </item>
     <item>
-      <title>University Singers — Oct 15, 2026</title>
-      <link>http://events.unl.edu/music/2026/10/15/202461/</link>
-      <description>Kimball Recital Hall Room , and online at Webcast (https://arts.unl.edu/music/attend-explore/webcasts/)
-Thursday, October 15, 2026 · 7:30 PM
-This event is free and open to the public.
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">d868318442c1bc60@omaha-classical-calendar</guid>
-      <pubDate>Thu, 03 Sep 2026 04:35:37 +0000</pubDate>
+      <title>Alessandro — Apr 30, 2027</title>
+      <link>https://operaomaha.org/production/alessandro/</link>
+      <description>Holland Performing Arts Center
+Friday, April 30, 2027 · 7:30 PM
+Music by George Frideric Handel.
+Source: Opera Omaha</description>
+      <guid isPermaLink="false">fc47b6373a820a5f@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
     </item>
     <item>
-      <title>Guest Recital - Lindsay Bartlett, Flute and Friends — Sep 25, 2026</title>
-      <link>http://events.unl.edu/music/2026/09/25/202455/</link>
-      <description>Westbrook Music Building Room 130, and online at Webcast - GKSOM YouTube (https://www.youtube.com/@UNLSoMusic/streams)
-Friday, September 25, 2026 · 7:00 PM
-This event is free and open to the public.
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">c25a81e1adbc6072@omaha-classical-calendar</guid>
-      <pubDate>Thu, 03 Sep 2026 04:35:37 +0000</pubDate>
+      <title>Texas Guitar Quartet — Apr 23, 2027</title>
+      <link>https://vesperconcerts.org/texas-guitar-quartet/</link>
+      <description>Presbyterian Church of the Cross
+Friday, April 23, 2027 · 7:00 PM
+Free and open to the public.
+Source: Vesper Concerts</description>
+      <guid isPermaLink="false">aa25c6ea514c5bf2@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
     </item>
     <item>
-      <title>DMA Nehemias Calsin Molleapaza, conducting — Oct 29, 2026</title>
-      <link>http://events.unl.edu/music/2026/10/29/202465/</link>
-      <description>Westbrook Music Building Room 130, and online at Webcast - GKSOM YouTube (https://www.youtube.com/@UNLSoMusic/streams)
-Thursday, October 29, 2026 · 7:30 PM
-This event is free and open to the public.
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">c190bb5a36a89c09@omaha-classical-calendar</guid>
-      <pubDate>Thu, 03 Sep 2026 04:35:37 +0000</pubDate>
+      <title>Stravinsky's Pulcinella — Apr 18, 2027</title>
+      <link>https://www.omahasymphony.org/concerts/stravinskys-pulcinella</link>
+      <description>Sunday, April 18, 2027 · 12:00 AM
+Stravinsky’s mastery of neo-classical composition shines in his gorgeous Pulcinella suite for chamber orchestra.
+Source: Omaha Symphony</description>
+      <guid isPermaLink="false">0f9bfdebfc70cf55@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
     </item>
     <item>
-      <title>Cass St Trick 'R' Treat — Oct 24, 2026</title>
-      <link>https://omahacm.org/calendar/cass-st-trick-r-treat/</link>
-      <description>Omaha Conservatory of Music:, 7023 Cass St, Omaha, NE, 68132, United States
-Saturday, October 24, 2026 · 9:00 AM
-Bring the whole family for a ghoulishly good time at Cass Street Trick ‘R’ Treat – a completely FREE and family-friendly Halloween Carnival presented by Omaha Conservatory of Music, Omaha Community Playhouse, and Omaha Academy of Ballet.
+      <title>Susanna Perry Gilmore Plays Mozart — Apr 2, 2027</title>
+      <link>https://www.omahasymphony.org/concerts/susanna-perry-gilmore-plays-mozart</link>
+      <description>Friday, April 2, 2027 · 12:00 AM
+Concertmaster Susanna Perry Gilmore shines in Mozart’s intimate and elegant Violin Concerto No. 1.
+Source: Omaha Symphony</description>
+      <guid isPermaLink="false">ba217e782048992d@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Ariadne auf Naxos (Mar 21) — Mar 21, 2027</title>
+      <link>https://operaomaha.org/production/ariadne-auf-naxos/</link>
+      <description>Orpheum Theater
+Sunday, March 21, 2027 · 2:00 PM
+Music by Richard Strauss.
+Source: Opera Omaha</description>
+      <guid isPermaLink="false">af4a277566d79837@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Ariadne auf Naxos (Mar 19) — Mar 19, 2027</title>
+      <link>https://operaomaha.org/production/ariadne-auf-naxos/</link>
+      <description>Orpheum Theater
+Friday, March 19, 2027 · 7:30 PM
+Music by Richard Strauss.
+Source: Opera Omaha</description>
+      <guid isPermaLink="false">36109bd131ac7316@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Omaha Chamber Music Society concert — Mar 14, 2027</title>
+      <link>https://www.omahachambermusic.org/heritage-series</link>
+      <description>Omaha Conservatory of Music
+Sunday, March 14, 2027 · 3:00 PM
+Program TBA
+Source: Omaha Chamber Music Society</description>
+      <guid isPermaLink="false">2c19fa373b43d798@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mahler’s Fourth — Feb 26, 2027</title>
+      <link>https://www.omahasymphony.org/concerts/mahlers-fourth</link>
+      <description>Friday, February 26, 2027 · 12:00 AM
+Mozart and Mahler’s soprano-led masterpieces carry the audience through an evening full of opulent melodies.
+Source: Omaha Symphony</description>
+      <guid isPermaLink="false">2182621791d819ed@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mozart’s Symphony No. 25 — Feb 21, 2027</title>
+      <link>https://www.omahasymphony.org/concerts/mozarts-symphony-no.-25</link>
+      <description>Sunday, February 21, 2027 · 12:00 AM
+Mozart’s “Little” G Minor headlines a program led by conductor Jonathan Taylor Rush, "a continually rising talent in the conducting world" (Baltimore Sun) . Principal Trumpet Scott Quackenbush soars in Gregson’s powerful Trumpet Concerto.
+Source: Omaha Symphony</description>
+      <guid isPermaLink="false">c0cf6cc38745a81a@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Christine Beard — Feb 14, 2027</title>
+      <link>https://vesperconcerts.org/christine-beard/</link>
+      <description>Presbyterian Church of the Cross
+Sunday, February 14, 2027 · 3:00 PM
+Free and open to the public.
+Source: Vesper Concerts</description>
+      <guid isPermaLink="false">126684aad00f3ef9@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Dvorak Symphony No. 6 — Feb 6, 2027</title>
+      <link>https://orchestraomaha.org/event/dvorak-symphony-no-6/</link>
+      <description>Simon Concert Hall at the Omaha Conservatory of Music
+Saturday, February 6, 2027 · 7:00 PM
+@ 			
+			
+							
+		
+			
 
 
 
-Play games, win candy, and get your ghastly groove on with our delightfully spooky zombie orchestra. Dress up if you dare – costumes are encouraged! Don’t miss this spectacularly spooky and seriously FUN event. Happy haunts!
+
+
+Orchestra Omaha performs Dvorak’s Symphony No. 6. Doors open at 6:30 PM.
+
+	
+		
+			
+				
+					
+						
+	
+	
+
+						
+							Add to calendar						
+						
+	
+
+					
+					
+						
+															
+									
+										Google Calendar									
+								
+															
+									
+										iCalendar									
+								
+															
+									
+										Outlook 365									
+								
+															
+									
+										Outlook Live									
+								
+													
+					
+				
+			
+		
+	
 
 
 
-WHEREOmaha Conservatory of Music7023 Cass St. Omaha, NE 68132
-WHENOctober 24 from 9 AM–12 PM
-WHOThe whole family!
-Source: Omaha Conservatory of Music</description>
-      <guid isPermaLink="false">b1d951c7c8c8d724@omaha-classical-calendar</guid>
-      <pubDate>Thu, 03 Sep 2026 04:35:37 +0000</pubDate>
+
+	
+	
+
+	
+					Details		
+	
+	
+
+		
+			
+				Date:
+				
+					  
+				
+			
+
+			
+				Time:
+				
+					
+																			CDT
+Source: Orchestra Omaha</description>
+      <guid isPermaLink="false">1efe775118700c08@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
     </item>
     <item>
-      <title>UG Angel Rodriguez-Villalobos, trombone — Oct 24, 2026</title>
-      <link>http://events.unl.edu/music/2026/10/24/202463/</link>
-      <description>Westbrook Music Building Room
-Saturday, October 24, 2026 · 5:30 PM
-This event is free and open to the public.
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">951b8e8385e5d011@omaha-classical-calendar</guid>
-      <pubDate>Thu, 03 Sep 2026 04:35:37 +0000</pubDate>
+      <title>Omaha Chamber Music Society concert — Jan 31, 2027</title>
+      <link>https://www.omahachambermusic.org/heritage-series</link>
+      <description>Omaha Conservatory of Music
+Sunday, January 31, 2027 · 3:00 PM
+Program TBA
+Source: Omaha Chamber Music Society</description>
+      <guid isPermaLink="false">675f6ac765b4c691@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
     </item>
     <item>
-      <title>DMA Xiaotian Hu, voice — Oct 15, 2026</title>
-      <link>http://events.unl.edu/music/2026/10/15/202462/</link>
-      <description>Westbrook Music Building Room 130, and online at Webcast - GKSOM YouTube (https://www.youtube.com/@UNLSoMusic/streams)
-Thursday, October 15, 2026 · 7:30 PM
-This event is free and open to the public.
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">903d59fab7882368@omaha-classical-calendar</guid>
-      <pubDate>Thu, 03 Sep 2026 04:35:37 +0000</pubDate>
+      <title>The Pigeon Keeper (Jan 30) — Jan 30, 2027</title>
+      <link>https://operaomaha.org/production/the-pigeon-keeper/</link>
+      <description>The Rose Theater
+Saturday, January 30, 2027 · 2:00 PM
+Music by David Hanlon.
+Source: Opera Omaha</description>
+      <guid isPermaLink="false">a8ddd07993118e99@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
     </item>
     <item>
-      <title>Faculty Recital - Scott Anderson, trombone — Oct 12, 2026</title>
-      <link>http://events.unl.edu/music/2026/10/12/202460/</link>
-      <description>Kimball Recital Hall Room
-Monday, October 12, 2026 · 7:30 PM
-This event is free and open to the public.
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">8a74a568787bb42b@omaha-classical-calendar</guid>
-      <pubDate>Thu, 03 Sep 2026 04:35:37 +0000</pubDate>
+      <title>The Pigeon Keeper (Jan 29) — Jan 29, 2027</title>
+      <link>https://operaomaha.org/production/the-pigeon-keeper/</link>
+      <description>The Rose Theater
+Friday, January 29, 2027 · 6:30 PM
+Music by David Hanlon.
+Source: Opera Omaha</description>
+      <guid isPermaLink="false">e27f76e55891f807@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
     </item>
     <item>
-      <title>Wind Ensemble — Oct 6, 2026</title>
-      <link>http://events.unl.edu/music/2026/10/06/202459/</link>
-      <description>Kimball Recital Hall Room , and online at Webcast (https://arts.unl.edu/music/attend-explore/webcasts/)
-Tuesday, October 6, 2026 · 7:30 PM
-This event is free and open to the public.
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">8807fba98b3a8da1@omaha-classical-calendar</guid>
-      <pubDate>Thu, 03 Sep 2026 04:35:37 +0000</pubDate>
+      <title>The Pigeon Keeper (Jan 28) — Jan 28, 2027</title>
+      <link>https://operaomaha.org/production/the-pigeon-keeper/</link>
+      <description>The Rose Theater
+Thursday, January 28, 2027 · 6:30 PM
+Music by David Hanlon.
+Source: Opera Omaha</description>
+      <guid isPermaLink="false">8bc500833c3d9b80@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Sterling Elliott — Jan 26, 2027</title>
+      <link>https://vesperconcerts.org/sterling-elliott-cello/</link>
+      <description>Presbyterian Church of the Cross
+Tuesday, January 26, 2027 · 7:00 PM
+Free and open to the public.
+Source: Vesper Concerts</description>
+      <guid isPermaLink="false">9549e1ca2d552bab@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Rachmaninoff’s Symphonic Dances — Jan 15, 2027</title>
+      <link>https://www.omahasymphony.org/concerts/rachmaninoffs-symphonic-dances</link>
+      <description>Friday, January 15, 2027 · 12:00 AM
+The thunder of percussion propels this program from the dance clubs of Mexico, through the smoky haze of Spanish nightlife, to Rachmaninoff’s frenzied Symphonic Dances .
+Source: Omaha Symphony</description>
+      <guid isPermaLink="false">942eabebd1f77504@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Falletta &amp; Mendelssohn's “Italian” — Jan 10, 2027</title>
+      <link>https://www.omahasymphony.org/concerts/falletta-mendelssohns-italian</link>
+      <description>Sunday, January 10, 2027 · 12:00 AM
+Be transported to the Italian countryside in this dynamic and adrenaline-filled program conducted by Maestro JoAnn Falletta.
+Source: Omaha Symphony</description>
+      <guid isPermaLink="false">13b4aef9964d4601@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>﻿A Festival of Christmas Brass — Dec 17, 2026</title>
+      <link>https://www.omahasymphony.org/concerts/christmas-brass</link>
+      <description>Thursday, December 17, 2026 · 12:00 AM
+The Omaha Symphony in collaboration with Saint Cecilia Cathedral, proudly presents A Festival of Christmas Brass!
+Source: Omaha Symphony</description>
+      <guid isPermaLink="false">2c22d31908971c35@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cantus — Dec 1, 2026</title>
+      <link>https://vesperconcerts.org/cantus/</link>
+      <description>Presbyterian Church of the Cross
+Tuesday, December 1, 2026 · 7:00 PM
+Free and open to the public.
+Source: Vesper Concerts</description>
+      <guid isPermaLink="false">c17322cf879e81b8@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Schubert's Symphony No. 4 — Nov 22, 2026</title>
+      <link>https://www.omahasymphony.org/concerts/schuberts-symphony-no.-4</link>
+      <description>Sunday, November 22, 2026 · 12:00 AM
+Schubert’s Symphony No. 4, composed when the prodigy was only nineteen, is led by Maestro José Luis Gómez; Associate Principal Cello Gregory Clinton’s artistry shines in Kabalevsky’s lively Cello Concerto in G Minor.
+Source: Omaha Symphony</description>
+      <guid isPermaLink="false">958822e3077fec4c@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Adam Hu — Nov 15, 2026</title>
+      <link>https://vesperconcerts.org/adam-hu/</link>
+      <description>Presbyterian Church of the Cross
+Sunday, November 15, 2026 · 7:00 PM
+Free and open to the public.
+Source: Vesper Concerts</description>
+      <guid isPermaLink="false">ed99adf842fc0ad2@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>La bohème (Nov 15) — Nov 15, 2026</title>
+      <link>https://operaomaha.org/production/la-boheme/</link>
+      <description>Orpheum Theater
+Sunday, November 15, 2026 · 2:00 PM
+Music by Giacomo Puccini.
+Source: Opera Omaha</description>
+      <guid isPermaLink="false">bf37b36e24a4578e@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>La bohème (Nov 13) — Nov 13, 2026</title>
+      <link>https://operaomaha.org/production/la-boheme/</link>
+      <description>Orpheum Theater
+Friday, November 13, 2026 · 7:30 PM
+Music by Giacomo Puccini.
+Source: Opera Omaha</description>
+      <guid isPermaLink="false">e8025ee81fdf024e@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Scary Stories — Oct 30, 2026</title>
+      <link>https://orchestraomaha.org/event/scary-stories/</link>
+      <description>Simon Concert Hall at the Omaha Conservatory of Music
+Friday, October 30, 2026 · 7:00 PM
+@ 			
+			
+							
+		
+			
+
+
+
+
+
+
+A Halloween-weekend program from Orchestra Omaha. Schubert Erlkonig, Mussorgsky Night on Bald Mountain, Saint-Saens Danse Macabre, selections from Lloyd Webber’s The Phantom of the Opera, Grieg In the Hall of the Mountain King, and Holst Mars from The Planets. Doors open at 6:30 PM.
+
+
+	
+		
+			
+				
+					
+						
+	
+	
+
+						
+							Add to calendar						
+						
+	
+
+					
+					
+						
+															
+									
+										Google Calendar									
+								
+															
+									
+										iCalendar									
+								
+															
+									
+										Outlook 365									
+								
+															
+									
+										Outlook Live									
+								
+													
+					
+				
+			
+		
+	
+
+
+
+
+	
+	
+
+	
+					Details		
+	
+	
+
+		
+			
+				Date:
+				
+					  
+				
+			
+
+			
+				Time:
+				
+					
+																			CDT
+Source: Orchestra Omaha</description>
+      <guid isPermaLink="false">9897258ea922b019@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Dvořák's Seventh — Oct 30, 2026</title>
+      <link>https://www.omahasymphony.org/concerts/dvořáks-seventh</link>
+      <description>Friday, October 30, 2026 · 12:00 AM
+Dvořák’s exuberant Symphony No. 7 takes you on an epic adventure in this program led by Conductor Anna Rakitina and cellist Jaemin Han.
+Source: Omaha Symphony</description>
+      <guid isPermaLink="false">d62af963b2a84822@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>UNO Keyboard Area Project Recital — Oct 26, 2026</title>
+      <link>https://events.unomaha.edu/event/uno-keyboard-area-project-recital-102626</link>
+      <description>Strauss Performing Arts Center
+Monday, October 26, 2026 · 7:30 PM
+This event is free
+
+PARKING: There is open parking (no permit required) after 7:00 p.m. across the Dodge Campus, including all surface lots and the East and West Garages. Click here for more details including a campus map.
+
+Please see Event Website for livestream link.
+Source: UNO School of Music</description>
+      <guid isPermaLink="false">f14420822436c798@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Bartók’s Divertimento — Oct 18, 2026</title>
+      <link>https://www.omahasymphony.org/concerts/divertimento</link>
+      <description>Sunday, October 18, 2026 · 12:00 AM
+The Symphony Joslyn series begins with a program showcasing triumphant 20th century pieces conducted by Lee Mills.
+Source: Omaha Symphony</description>
+      <guid isPermaLink="false">b8440502c7613c03@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>UNO Choirs Concert — Oct 13, 2026</title>
+      <link>https://events.unomaha.edu/event/uno-choirs-concert-101326</link>
+      <description>Strauss Performing Arts Center
+Tuesday, October 13, 2026 · 7:30 PM
+Choose Your Own Ticket Price - $0 and up!!
+
+(For those choosing to pay more than $0, cash and checks will be accepted at the door.)
+
+PARKING: There is open parking (no permit required) after 7:00 p.m. across the Dodge Campus, including all surface lots and the East and West Garages. Click here for more details including a campus map.
+
+See "Event Website" for livestream.
+Source: UNO School of Music</description>
+      <guid isPermaLink="false">21623debd8ba8395@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Handel's Water Music — Oct 10, 2026</title>
+      <link>https://www.omahasymphony.org/concerts/cathedral-baroque</link>
+      <description>Saturday, October 10, 2026 · 12:00 AM
+The Omaha Symphony in collaboration with Saint Cecilia Cathedral, proudly presents Symphony Cathedral Baroque: Handel's Water Music
+Source: Omaha Symphony</description>
+      <guid isPermaLink="false">7372c0fd7f9f4f71@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>PROJECT Trio — Oct 4, 2026</title>
+      <link>https://vesperconcerts.org/project-trio/</link>
+      <description>Presbyterian Church of the Cross
+Sunday, October 4, 2026 · 4:30 PM
+Free and open to the public.
+Source: Vesper Concerts</description>
+      <guid isPermaLink="false">b9a04c9f074915d4@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Will Liverman in Concert — Sep 27, 2026</title>
+      <link>https://operaomaha.org/production/will-liverman-in-concert/</link>
+      <description>Slowdown
+Sunday, September 27, 2026 · 7:00 PM
+Source: Opera Omaha</description>
+      <guid isPermaLink="false">3b99db246b3334f1@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Falletta Conducts Gershwin &amp; Strauss — Sep 25, 2026</title>
+      <link>https://www.omahasymphony.org/concerts/falletta-gershwin-strauss</link>
+      <description>Friday, September 25, 2026 · 12:00 AM
+Maestro JoAnn Falletta and pianist Joyce Yang get jazzy with Gershwin’s Piano Concerto in F in this celebratory season opener.
+Source: Omaha Symphony</description>
+      <guid isPermaLink="false">99fdebb14dc1432a@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Orchestral Idylls — Sep 12, 2026</title>
+      <link>https://orchestraomaha.org/event/orchestral-idylls/</link>
+      <description>Simon Concert Hall at the Omaha Conservatory of Music
+Saturday, September 12, 2026 · 7:00 PM
+@ 			
+			
+							
+		
+			
+
+
+
+
+
+
+Orchestra Omaha opens the Stories in Sound season. 
+
+
+
+Program: 
+
+
+
+
+Symphony No. 6 (Pastoral) Ludwig van Beethoven
+
+
+
+Siegfried Idyll Richard Wagner
+
+
+
+Saga-Drøm (Dream of Saga) Carl Nielsen
+
+
+
+
+Doors open at 6:30 PM.
+
+
+	
+		
+			
+				
+					
+						
+	
+	
+
+						
+							Add to calendar						
+						
+	
+
+					
+					
+						
+															
+									
+										Google Calendar									
+								
+															
+									
+										iCalendar									
+								
+															
+									
+										Outlook 365									
+								
+															
+									
+										Outlook Live									
+								
+													
+					
+				
+			
+		
+	
+
+
+
+
+	
+	
+
+	
+					Details		
+	
+	
+
+		
+			
+				Date:
+				
+					  
+				
+			
+
+			
+				Time:
+				
+					
+																			CDT
+Source: Orchestra Omaha</description>
+      <guid isPermaLink="false">e4f3fb1e75edb12b@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>The Valencia Baryton Project — Sep 10, 2026</title>
+      <link>https://events.unomaha.edu/event/the-valencia-baryton-project</link>
+      <description>Strauss Performing Arts Center
+Thursday, September 10, 2026 · 7:30 PM
+This event is free
+
+PARKING: There is open parking (no permit required) after 7:00 p.m. across the Dodge Campus, including all surface lots and the East and West Garages. Click here for more details including a campus map.
+
+Please see Event Website for livestream link.
+
+ 
+
+The Valencia Baryton Project has dedicated itself to the performance of music written for an ancient and little-known instrument, the baryton. A cross between the viol da gamba and lirone, with 10 resonating and plucked strings down the back of the instrument, the baryton gives the traditional string trio an entirely new dimension.
+
+The Valencia Baryton Project is a collective founded by Valencia-based barytonist Matthew Baker with the vision of performing the nearly 170 works written by Franz Joseph Haydn as well as compositions by other composers, both modern and classical. At the heart of the ensemble is the traditional formation in trio - baryton, viola, and violoncello - for which Haydn wrote 123 works of outstanding beauty during his time as the court composer for the Prince Esterhazy of Austria.
+
+With Matthew Baker, one of only a handful baryton performers in the world, the Valencia Baryton Project have delighted audiences in over 100 concerts throughout North, Central and South America as well as Europe with what is considered to have been the pinnacle of aristocratic instruments of the classical era. Their work has been described as ‘beautifully polished’ (Musicalifeiten) and “delightfully inventive” (The Strad). They have been featured in publications and programs such as Berklee Now (USA), Radio Nacional de España, BBC 3 (UK), Die Welt (Germany), and Classic FM (UK) amongst others. The Valencia Baryton Project’s barytonist - Matthew Baker - was also featured in The Strad in March of 2023 in a full-length article about the instrument.
+Source: UNO School of Music</description>
+      <guid isPermaLink="false">f43ba2f63613246e@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Bach's Lunch with the Valencia Baryton Project — Sep 10, 2026</title>
+      <link>https://events.unomaha.edu/event/bachs-lunch-with-the-valencia-baryton-project</link>
+      <description>Strauss Performing Arts Center
+Thursday, September 10, 2026 · 12:00 PM
+The School of Music’s Bach’s Lunch series gives listeners a preview of the evening’s concert as well as the chance to hear about the musicians, the music, and their instruments. The first 25 students will receive a boxed lunch, available after the Bach’s Lunch at 12:45pm in the Strauss Lobby. There will be a limited number of spots available in the Community Engagement Center lot, adjacent to Strauss.
+
+The Valencia Bryton Project has dedicated itself to the performance of music written for an ancient and little-known instrument, the baryton. A cross between the viol da gamba and lirone, with 10 resonating and plucked strings down the back of the instrument, the baryton gives the traditional string trio an entirely new dimension.The Valencia Baryton Project is a collective founded by Valencia-based barytonist Matthew Baker with the vision of performing the nearly 170 works written by Franz Joseph Haydn as well as compositions by other composers, both modern and classical. At the heart of the ensemble is the traditional formation in trio - baryton, viola, and violoncello - for which Haydn wrote 123 works of outstanding beauty during his time as the court composer for the Prince Esterhazy of Austria.
+
+With Matthew Baker, one of only a handful baryton performers in the world, the Valencia Baryton Project have delighted audiences in over 100 concerts throughout North, Central and South America as well as Europe with what is considered to have been the pinnacle of aristocratic instruments of the classical era. Their work has been described as ‘beautifully polished’ (Musicalifeiten) and “delightfully inventive” (The Strad). They have been featured in publications and programs such as Berklee Now (USA), Radio Nacional de España, BBC 3 (UK), Die Welt (Germany), and Classic FM (UK) amongst others. The Valencia Baryton Project’s barytonist - Matthew Baker - was also featured in The Strad in March of 2023 in a full-length article about the instrument.
+Source: UNO School of Music</description>
+      <guid isPermaLink="false">4ec7d83ade921f75@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Emanuel Ax, piano — Sep 8, 2026</title>
+      <link>https://vesperconcerts.org/emanuel-ax/</link>
+      <description>Presbyterian Church of the Cross
+Tuesday, September 8, 2026 · 7:00 PM
+Free and open to the public.
+Source: Vesper Concerts</description>
+      <guid isPermaLink="false">82ad0734a3bc10f7@omaha-classical-calendar</guid>
+      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
     </item>
     <item>
       <title>Final Fridays @ the Conservatory — Sep 26, 2026</title>
@@ -155,6 +696,46 @@ Entry is free. RSVP here.
 Source: Omaha Conservatory of Music</description>
       <guid isPermaLink="false">54f0a48745c86886@omaha-classical-calendar</guid>
       <pubDate>Thu, 03 Sep 2026 04:35:37 +0000</pubDate>
+    </item>
+    <item>
+      <title>UNO Flute Studio Recital — Oct 27, 2026</title>
+      <link>https://events.unomaha.edu/event/uno-flute-studio-recital</link>
+      <description>Strauss Performing Arts Center
+Tuesday, October 27, 2026 · 7:30 PM
+This event is free
+
+ 
+
+PARKING: There is open parking (no permit required) after 7:00 p.m. across the Dodge Campus, including all surface lots and the East and West Garages. Click here for more details including a campus map.
+
+
+
+Please see Event Website for livestream link.
+Source: UNO School of Music</description>
+      <guid isPermaLink="false">ba2a4dee94ee4e8d@omaha-classical-calendar</guid>
+      <pubDate>Mon, 07 Sep 2026 16:21:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>UNO Symphonic Wind Ensemble &amp; University Band Concert — Oct 8, 2026</title>
+      <link>https://events.unomaha.edu/event/uno-symphonic-wind-ensemble-university-band-concert-1008</link>
+      <description>Strauss Performing Arts Center
+Thursday, October 8, 2026 · 7:30 PM
+Choose Your Own Ticket Price - $0 and up!!
+
+(For those choosing to pay more than $0, cash and checks will be accepted at the door.)
+
+
+The UNO Symphonic Wind Ensemble and University Band will present a joint concert at the Strauss Performing Arts Center Concert Hall.
+
+ 
+
+PARKING: There is open parking (no permit required) after 7:00 p.m. on weekdays across the Dodge Campus, including all surface lots and the East and West Garages. Click here for more details including a campus map.
+ 
+
+Please see Event Website for livestream link.
+Source: UNO School of Music</description>
+      <guid isPermaLink="false">05c180646241a5fd@omaha-classical-calendar</guid>
+      <pubDate>Mon, 07 Sep 2026 16:21:08 +0000</pubDate>
     </item>
   </channel>
 </rss>

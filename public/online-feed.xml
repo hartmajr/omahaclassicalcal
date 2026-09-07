@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Omaha Classical Calendar — Online</title>
+    <link>https://hartmajr.github.io/omahaclassicalcal</link>
+    <description>Newly announced classical concerts: Online</description>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 07 Sep 2026 16:21:08 +0000</lastBuildDate>
+  </channel>
+</rss>
