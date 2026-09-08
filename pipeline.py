@@ -242,7 +242,7 @@ def run(offline: bool = False, fail_under: int | None = None,
         "User-agent: *\nDisallow: /\n" if unlisted
         else "User-agent: *\nAllow: /\n")
 
-    return {
+    summary = {
         "per_source": per_source,
         "collected": len(raw_events),
         "after_dedupe": len(deduped),
@@ -251,3 +251,11 @@ def run(offline: bool = False, fail_under: int | None = None,
         "pruned_cancelled": pruned,
         "out_dir": str(OUT_DIR),
     }
+    # Publish the run summary alongside the site so per-source health can
+    # be checked from the public URL, without Actions-log access.
+    import json as _json
+    (OUT_DIR / "status.json").write_text(_json.dumps(
+        {"generated": generated.isoformat(), "offline": offline,
+         **{k: v for k, v in summary.items() if k != "out_dir"}},
+        indent=1), encoding="utf-8")
+    return summary

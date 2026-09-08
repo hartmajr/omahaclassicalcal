@@ -15,6 +15,7 @@ tested independently, and the same parser runs over live data or fixtures.
 from __future__ import annotations
 
 import json
+import time
 from abc import ABC, abstractmethod
 from pathlib import Path
 from typing import Any
@@ -62,15 +63,34 @@ class Adapter(ABC):
             ev.channel = self.channel
         return events
 
-    # Shared HTTP helper with a polite, identifying User-Agent.
+    # Shared HTTP helper with a polite, identifying User-Agent. Transient
+    # failures (connection errors, timeouts, 429/5xx) are retried a couple
+    # of times with a pause: GitHub's shared runners hit these sporadically
+    # (UNL 2026-09-01; LSO, Orchestra Omaha and UNL 2026-09-07), and at a
+    # weekly cadence one blip costs a source a week. A 401/403 is a refusal,
+    # never retried -- see the message below.
     def _get(self, url: str, **params: Any) -> httpx.Response:
-        resp = httpx.get(
-            url,
-            params=params or None,
-            headers={"User-Agent": USER_AGENT},
-            timeout=30,
-            follow_redirects=True,
-        )
+        delays = (5, 15)
+        for attempt in range(len(delays) + 1):
+            try:
+                resp = httpx.get(
+                    url,
+                    params=params or None,
+                    headers={"User-Agent": USER_AGENT},
+                    timeout=30,
+                    follow_redirects=True,
+                )
+            except httpx.TransportError:
+                if attempt == len(delays):
+                    raise
+                time.sleep(delays[attempt])
+                continue
+            if resp.status_code == 429 or resp.status_code >= 500:
+                if attempt == len(delays):
+                    resp.raise_for_status()
+                time.sleep(delays[attempt])
+                continue
+            break
         if resp.status_code in (401, 403):
             raise PermissionError(
                 f"{self.source_label}: {resp.status_code} for {url}. The site "

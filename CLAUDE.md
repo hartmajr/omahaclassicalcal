@@ -52,7 +52,11 @@ https://hartmajr.github.io/omahaclassicalcal/ (repo
 `hartmajr/omahaclassicalcal`, public; Pages source "GitHub Actions";
 `ANTHROPIC_API_KEY` secret configured; weekly build Mondays 11:00 UTC).
 The workflow commits `events.db`, the LLM caches, and `public/` back to
-the repo each run. The Broadcasts channel + World Concert Hall source
+the repo each run. Each run also publishes `public/status.json` (per-source
+counts or error strings) — check https://hartmajr.github.io/omahaclassicalcal/status.json
+after a run instead of digging through Actions logs. Transient fetch
+failures on GitHub's runners are real (2 of the first 4 runs lost a
+source); `Adapter._get` retries them with backoff, never a 403. The Broadcasts channel + World Concert Hall source
 were retired 2026-09-01 when the build went weekly (same-day broadcast
 picks need a daily build); both are commented out for easy revival.
 
