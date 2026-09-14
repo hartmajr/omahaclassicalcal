@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 07 Sep 2026 16:21:08 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Sep 2026 16:53:48 +0000</lastBuildDate>
     <item>
       <title>Organ Celebration (May 1, 7:30pm) — May 1, 2027</title>
       <link>https://lincolnsymphony.com/organ-celebration/</link>
@@ -78,15 +78,6 @@ Source: Lincoln's Symphony Orchestra</description>
 Friday, October 9, 2026 · 7:30 PM
 Source: Lincoln's Symphony Orchestra</description>
       <guid isPermaLink="false">7b595eb11125f1d1@omaha-classical-calendar</guid>
-      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>Emanuel Ax — Sep 11, 2026</title>
-      <link>https://lincolnsymphony.com/emanuel-ax/</link>
-      <description>Lied Center for Performing Arts
-Friday, September 11, 2026 · 7:30 PM
-Source: Lincoln's Symphony Orchestra</description>
-      <guid isPermaLink="false">0078ea93dfe3a4bf@omaha-classical-calendar</guid>
       <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
     </item>
     <item>
@@ -307,16 +298,6 @@ Friday, September 25, 2026 · 7:00 PM
 This event is free and open to the public.
 Source: UNL Glenn Korff School of Music</description>
       <guid isPermaLink="false">c25a81e1adbc6072@omaha-classical-calendar</guid>
-      <pubDate>Thu, 03 Sep 2026 04:35:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>DMA Andrea Troncoso, viola — Sep 13, 2026</title>
-      <link>http://events.unl.edu/music/2026/09/13/202456/</link>
-      <description>Westbrook Music Building Room 130, and online at Webcast - GKSOM YouTube (https://www.youtube.com/@UNLSoMusic/streams)
-Sunday, September 13, 2026 · 3:30 PM
-This event is free and open to the public.
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">f50d849786fee2ff@omaha-classical-calendar</guid>
       <pubDate>Thu, 03 Sep 2026 04:35:37 +0000</pubDate>
     </item>
   </channel>
