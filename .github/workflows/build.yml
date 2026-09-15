@@ -5,7 +5,10 @@ name: Build calendar
 # deploys public/ to GitHub Pages.
 on:
   schedule:
-    - cron: "0 11 * * 1"   # 11:00 UTC Mondays (~5-6am Central)
+    - cron: "0 11 * * 1"   # 11:00 UTC Mondays. GitHub deprioritizes
+      # scheduled jobs on free runners: runs 7 and 8 actually fired
+      # ~16:20-16:55 UTC (~11am Central). Treat the time as "sometime
+      # Monday", not a deadline.
   workflow_dispatch:
     inputs:
       fail_under:

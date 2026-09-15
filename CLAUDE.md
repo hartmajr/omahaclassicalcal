@@ -63,10 +63,10 @@ picks need a daily build); both are commented out for easy revival.
 A live per-source smoke test on 2026-08-31 exercised every non-LLM source:
 all pass except Juilliard (403, expected). The Symphony, Vesper, and Opera
 Omaha parsers were rewritten against the live HTML that day. The Omaha
-Conservatory feed was *empty* (their REST API confirms 0 upcoming events
-published) — recheck when their fall season posts. Iterate per-source with
-`--only <name>`; it publishes nothing, though it does upsert fetched events
-into `events.db`.
+Conservatory feed was *empty* that day (0 upcoming events published); their
+fall season posted by 2026-09-14 and the source now returns events
+normally. Iterate per-source with `--only <name>`; it publishes nothing,
+though it does upsert fetched events into `events.db`.
 
 ## Open items
 
