@@ -1,26 +1,26 @@
 {
- "generated": "2026-09-14T16:53:48.157136",
+ "generated": "2026-09-21T17:00:14.232254",
  "offline": false,
  "per_source": {
   "UNO School of Music": 8,
-  "Omaha Conservatory of Music": 2,
+  "Omaha Conservatory of Music": "ERROR: Content line could not be parsed into parts: '<!DOCTYPE html>': <!DOCTYPEhtml>",
   "Omaha Symphony": 37,
-  "Orchestra Omaha": 2,
+  "Orchestra Omaha": "ERROR: timed out",
   "Vesper Concerts": 7,
   "Opera Omaha": 9,
   "Omaha Chamber Music Society": 4,
-  "UNL Glenn Korff School of Music": 17,
-  "Lincoln's Symphony Orchestra": 12,
-  "Lied Center for Performing Arts": 44,
+  "UNL Glenn Korff School of Music": 21,
+  "Lincoln's Symphony Orchestra": "ERROR: timed out",
+  "Lied Center for Performing Arts": 43,
   "Juilliard": "ERROR: Juilliard: 403 for https://www.juilliard.edu/stage-beyond/performance/calendar. The site refused our identified bot. Check robots.txt (python scripts/check_robots.py); if it disallows this path, disable the source. If robots.txt permits it, this is likely bot protection -- ask the site for a sanctioned feed or permission. Do NOT disguise the User-Agent as a browser: evading a refusal is exactly what this project avoids."
  },
- "collected": 142,
- "after_dedupe": 142,
+ "collected": 129,
+ "after_dedupe": 128,
  "by_channel": {
   "In Omaha": 40,
   "Online": 0,
-  "In Lincoln": 30
+  "In Lincoln": 36
  },
- "newly_seen": 5,
- "pruned_cancelled": 1
+ "newly_seen": 6,
+ "pruned_cancelled": 0
 }
