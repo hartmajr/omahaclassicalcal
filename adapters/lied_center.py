@@ -36,10 +36,11 @@ crawl-delay, which is why the listing alone was used while the build ran
 daily. Results are cached per event URL (lied_center_cache.json, committed
 like the LLM caches) and pruned to the current listing, so a normal week
 fetches only what was announced since the last run; entries expire after
-CACHE_TTL_DAYS so a corrected hall or time is picked up. A cold start is
-bounded by MAX_DETAIL_FETCHES, and anything not reached -- or an event
-page that fails -- keeps the old all-day-plus-building fallback and is
-retried next run. robots.txt allows event pages.
+CACHE_TTL_DAYS so a corrected hall or time is picked up. A cold start is bounded by
+MAX_DETAIL_FETCHES and written back every CACHE_FLUSH_EVERY pages, so a
+long run that dies part-way keeps what it had. Anything not reached -- or
+an event page that fails -- keeps the old all-day-plus-building fallback
+and is retried next run. robots.txt allows event pages.
 
 Lincoln's Symphony concerts at the Lied are skipped here: LSO's own
 adapter is their source of record (with showtimes), and the Lied lists
@@ -76,7 +77,16 @@ VENUE = "Lied Center for Performing Arts"
 # predictable run; anything not reached keeps the listing-only fallback and
 # is picked up next week.
 DETAIL_DELAY_SECONDS = 10
-MAX_DETAIL_FETCHES = 60
+# Headroom, not a target. Exceeding the cap is silent -- those events fall
+# back to all-day at the building name, which looks exactly like the bug
+# this enrichment fixed and reports nothing. Keep it comfortably above a
+# full season (55 events in 2026-27), since every entry expires on the same
+# day the cache was first warmed and so comes due together.
+MAX_DETAIL_FETCHES = 120
+# Flush part-way through a long run: a cold start or a TTL expiry is ~10
+# minutes of fetching, and losing all of it to one dropped connection means
+# repeating the whole batch next week.
+CACHE_FLUSH_EVERY = 10
 # A venue or showtime can be corrected after we first read it, so entries
 # go stale rather than living forever.
 CACHE_TTL_DAYS = 30
@@ -216,33 +226,43 @@ class LiedCenterAdapter(Adapter):
         cache = self._load_cache()
         fresh = {u: e for u, e in cache.items() if self._is_fresh(e)}
         urls = [r["url"] for r in rows if r.get("url")]
-        fetched = 0
+        # The listing is known up front, so pruning to it is valid at any
+        # point -- which is what lets the cache be written mid-run.
+        keep = set(urls)
+
+        def flush() -> None:
+            pruned = {u: e for u, e in fresh.items() if u in keep}
+            if pruned != cache:
+                self._save_cache(pruned)
+
+        fetched = unsaved = 0
         for url in urls:
-            entry = fresh.get(url)
-            if entry is None:
-                if fetched >= MAX_DETAIL_FETCHES:
-                    continue
-                if fetched:
-                    time.sleep(DETAIL_DELAY_SECONDS)  # robots.txt Crawl-delay
-                try:
-                    entry = self._detail(self._get(url).text)
-                except Exception:
-                    # One unreachable event page must not cost the listing;
-                    # it falls back to all-day + building and retries next run.
-                    continue
-                finally:
-                    fetched += 1
-                entry["fetched"] = datetime.now().date().isoformat()
-                fresh[url] = entry
+            if url in fresh:
+                continue
+            if fetched >= MAX_DETAIL_FETCHES:
+                continue
+            if fetched:
+                time.sleep(DETAIL_DELAY_SECONDS)  # robots.txt Crawl-delay
+            try:
+                entry = self._detail(self._get(url).text)
+            except Exception:
+                # One unreachable event page must not cost the listing;
+                # it falls back to all-day + building and retries next run.
+                continue
+            finally:
+                fetched += 1
+            entry["fetched"] = datetime.now().date().isoformat()
+            fresh[url] = entry
+            unsaved += 1
+            if unsaved >= CACHE_FLUSH_EVERY:
+                flush()
+                unsaved = 0
         for r in rows:
             entry = fresh.get(r.get("url") or "")
             if entry:
                 r["venue"] = entry.get("venue")
                 r["showtimes"] = entry.get("showtimes")
-        # Prune: keep only URLs still on the listing.
-        pruned = {u: e for u, e in fresh.items() if u in set(urls)}
-        if pruned != cache:
-            self._save_cache(pruned)
+        flush()
 
     def _is_fresh(self, entry: Any) -> bool:
         if not isinstance(entry, dict):
