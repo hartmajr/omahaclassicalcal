@@ -48,7 +48,7 @@ URLS = [
     ("Omaha Conservatory (REST, bare path)",
      "https://omahacm.org/wp-json/tribe/events/v1/events"),
     ("Omaha Conservatory (.ics export -- known blocked by /*?)",
-     "https://omahacm.org/events/?ical=1"),
+     "https://omahacm.org/calendar/?ical=1"),
     ("Omaha Symphony (season page)",
      "https://www.omahasymphony.org/season/2026-27-season"),
     ("Orchestra Omaha (REST, as requested)",

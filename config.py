@@ -135,7 +135,7 @@ SOFT_NON_CLASSICAL_KEYWORDS = {
 #   - our access is low-frequency (about once a day) and identified.
 # If any of those fails, do not add it -- ask the site instead.
 ROBOTS_EXCEPTIONS: dict[str, str] = {
-    "https://omahacm.org/events/?ical=1":
+    "https://omahacm.org/calendar/?ical=1":
         "2026-08-30: omahacm.org publishes 'Disallow: /*?', a stock WordPress "
         "SEO rule that blocks all query strings to stop search engines "
         "indexing duplicate parameterised URLs. It incidentally catches this "
@@ -143,5 +143,8 @@ ROBOTS_EXCEPTIONS: dict[str, str] = {
         "and which exists solely to be fetched automatically by calendar "
         "clients. One identified fetch per day is far below the load of a "
         "single human page view. Revisit if omahacm.org adds a rule naming "
-        "this path or a bot directive.",
+        "this path or a bot directive. 2026-09-22: the export moved from "
+        "/events/?ical=1 (now a 302 to an HTML page) to /calendar/?ical=1; "
+        "the reasoning is unchanged and their /calendar/action* rule does "
+        "not cover this path.",
 }

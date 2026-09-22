@@ -73,7 +73,7 @@ SOURCES = [
     ICSFeedAdapter(
         name="omaha_conservatory",
         source_label="Omaha Conservatory of Music",
-        feed_url="https://omahacm.org/events/?ical=1",
+        feed_url="https://omahacm.org/calendar/?ical=1",
     ),
     SymphonyAdapter(),
     # Orchestra Omaha runs The Events Calendar -- the same plugin as KVNO and
