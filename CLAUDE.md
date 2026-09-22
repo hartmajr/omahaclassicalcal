@@ -38,8 +38,11 @@ Adapter families, in order of preference:
    Omaha selectors were
    rewritten against the live pages 2026-08-31 and verified (37 / 7 / 9
    events); Lincoln's Symphony worked live as written; Lied Center was
-   built and verified live 2026-09-01 (42 events, day-precision dates →
-   all-day entries, LSO co-listings skipped). Nebraska Chamber Players was
+   built 2026-09-01 and extended 2026-09-22 to read each event's hall and
+   showtimes from its own page (92 events; venue-per-event matters because
+   the Lied programmes halls it does not contain, e.g. Kimball). One
+   request per event against a 10s crawl-delay, cached in
+   `lied_center_cache.json`; LSO co-listings still skipped. Nebraska Chamber Players was
    built and verified live 2026-09-22 (6 events; Squarespace event list,
    whose URL slugs are recycled between seasons and must never be trusted
    for dates). Juilliard still 403s (see below).
