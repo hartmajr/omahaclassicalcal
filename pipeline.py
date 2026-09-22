@@ -14,6 +14,7 @@ from adapters.events_calendar import EventsCalendarRest, ICSFeedAdapter
 from adapters.juilliard import JuilliardAdapter
 from adapters.llm_extract import LLMPageExtractAdapter
 from adapters.localist import LocalistAdapter
+from adapters.nebraska_chamber_players import NebraskaChamberPlayersAdapter
 from adapters.lied_center import LiedCenterAdapter
 from adapters.lincoln_symphony import LincolnSymphonyAdapter
 from adapters.opera_omaha import OperaOmahaAdapter
@@ -107,6 +108,12 @@ SOURCES = [
         channel="lincoln",
     ),
     LincolnSymphonyAdapter(),
+    # A dedicated chamber ensemble at the Unitarian Church of Lincoln --
+    # a venue no other source covers, so this is new coverage rather than
+    # another view of a Lied/Kimball booking. Their per-event .ics export
+    # is off limits (robots.txt: "Disallow: /*?format=ical"), so we parse
+    # the permitted /calendar page; see the adapter docstring.
+    NebraskaChamberPlayersAdapter(),
     # UNL's presenting venue: touring classical acts mixed with Broadway,
     # comedy, and pop, so the classifier filters hard here (default verdict
     # is non-classical -- see SOURCE_PRIORITY). Day-precision dates publish

@@ -28,6 +28,7 @@ SOURCE_PRIORITY: dict[str, int] = {
     "Omaha Chamber Music Society": 0,
     "UNL Glenn Korff School of Music": 0,
     "Lincoln's Symphony Orchestra": 0,
+    "Nebraska Chamber Players": 0,
     "World Concert Hall": 0,        # curated classical-only broadcasts
     # Mixed presenter (Broadway/comedy/pop alongside classical): nonzero so
     # unmatched events default to NON-classical, and so a dedicated source's

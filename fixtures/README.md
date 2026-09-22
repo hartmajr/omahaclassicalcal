@@ -104,3 +104,15 @@ seven Lincoln's Symphony co-presentations so the adapter's skip rule is
 exercised, plus one card the site itself dates in the past ("Metro Jazz
 Quintet: Hot Latin Nights, January 22-23, 2026" — their typo, kept
 verbatim). The listing page carries no showtimes, so events publish all-day.
+
+**nebraska_chamber_players.json** — All 6 upcoming performances from
+nebraskachamberplayers.org/calendar, captured live September 22, 2026
+(titles, dates, showtimes, venue line, repertoire prose and URLs exactly as
+parsed from the Squarespace event list). Their 30th-anniversary season is
+three programs, each played twice — Friday 7:30pm and Sunday 3:00pm — so
+titles repeat across dates by design. The URLs are the site's own and are
+genuinely misleading: Squarespace reuses event pages between seasons, so
+November 2026's concert still lives at a 2025/10/31 Halloween slug. The
+September 18 & 20, 2026 pair had already been performed at capture time and
+is not included; the page lists past events in a separate section the
+adapter does not read.

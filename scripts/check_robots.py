@@ -63,6 +63,11 @@ URLS = [
      "https://operaomaha.org/26-27-season/"),
     ("UNL Music (official ICS feed)",
      "https://events.unl.edu/music/upcoming/?format=ics&limit=-1"),
+    # Their per-event ".ics" export is disallowed ("Disallow: /*?format=ical")
+    # and is deliberately NOT listed here: this list is what we fetch, and a
+    # blocked entry fails this script and the build. See the adapter docstring.
+    ("Nebraska Chamber Players (calendar page)",
+     "https://nebraskachamberplayers.org/calendar"),
     ("Lincoln's Symphony (season page)",
      "https://lincolnsymphony.com/season-at-a-glance/"),
     ("Lied Center (events listing)",
