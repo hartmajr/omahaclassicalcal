@@ -28,9 +28,9 @@ def write_ics(events: list[Event], out: Path, calendar_name: str) -> Path:
         ie.add("uid", ev.uid)
         ie.add("summary", ev.title)
         if ev.all_day:
-            # Day-precision events (e.g. Lied Center listings, where the
-            # showtime lives behind the linked page). iCalendar all-day
-            # DTEND is exclusive, hence the +1 day.
+            # Day-precision events -- a source that publishes no showtime
+            # at all (some Lied Center lectures), never a guessed midnight.
+            # iCalendar all-day DTEND is exclusive, hence the +1 day.
             ie.add("dtstart", ev.start.date())
             ie.add("dtend", (ev.end or ev.start).date() + timedelta(days=1))
         else:

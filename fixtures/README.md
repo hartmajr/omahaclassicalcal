@@ -97,13 +97,19 @@ pages 3+ could not be captured because the capture tooling collapsed
 (MAX_PAGES=20, ~a full season) and will pick up the October streams. Verify
 with `python main.py --only juilliard`.
 
-**lied_center.json** — All 49 event cards from liedcenter.org/events-page,
-captured live September 1, 2026 (titles, day-precision dates, teaser prose,
-event-type labels and URLs exactly as parsed from the listing). Includes the
-seven Lincoln's Symphony co-presentations so the adapter's skip rule is
-exercised, plus one card the site itself dates in the past ("Metro Jazz
-Quintet: Hot Latin Nights, January 22-23, 2026" — their typo, kept
-verbatim). The listing page carries no showtimes, so events publish all-day.
+**lied_center.json** — All 55 event cards from liedcenter.org/events-page,
+captured live September 22, 2026, each enriched with the hall and showtimes
+read from its own /event/ page (54 carry a venue; 52 carry showtimes, 96 in
+total). Titles, day-precision listing dates, teaser prose, event-type labels
+and URLs are exactly as parsed. Includes the six Lincoln's Symphony
+co-presentations so the adapter's skip rule is exercised, one card with no
+venue published so the building-name fallback is exercised, and three
+E.N. Thompson Forum lectures with no showtimes so the all-day fallback is
+exercised. Nine events are matinee/evening double-headers on a single day
+(Mamma Mia, Hamilton, Clue and others), which is what the time-labelled
+titles are for. This replaces the September 1 capture of 49 cards, which
+predated detail-page enrichment and so carried neither venue nor showtimes;
+the past-dated "Metro Jazz Quintet" card noted there is no longer listed.
 
 **nebraska_chamber_players.json** — All 6 upcoming performances from
 nebraskachamberplayers.org/calendar, captured live September 22, 2026
