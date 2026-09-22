@@ -34,12 +34,15 @@ Adapter families, in order of preference:
    Three sources share the Events Calendar adapter; check the platform
    before writing anything new.
 2. **HTML parse** — Symphony, Vesper, Opera Omaha, Lincoln's Symphony,
-   Lied Center, Juilliard. Symphony/Vesper/Opera Omaha selectors were
+   Lied Center, Nebraska Chamber Players, Juilliard. Symphony/Vesper/Opera
+   Omaha selectors were
    rewritten against the live pages 2026-08-31 and verified (37 / 7 / 9
    events); Lincoln's Symphony worked live as written; Lied Center was
    built and verified live 2026-09-01 (42 events, day-precision dates →
-   all-day entries, LSO co-listings skipped). Juilliard still 403s (see
-   below).
+   all-day entries, LSO co-listings skipped). Nebraska Chamber Players was
+   built and verified live 2026-09-22 (6 events; Squarespace event list,
+   whose URL slugs are recycled between seasons and must never be trusted
+   for dates). Juilliard still 403s (see below).
 3. **LLM extraction** — `LLMPageExtractAdapter` (Omaha Chamber Music),
    `WorldConcertHallAdapter` (Mastodon RSS; retired with the Broadcasts
    channel 2026-09-01). Needs `ANTHROPIC_API_KEY`. Content-hash cached,
@@ -94,6 +97,24 @@ though it does upsert fetched events into `events.db`.
   Chorus, Papillion Area Concert Band, Soli Deo Gloria Cantorum, 1st
   Nebraska Volunteers Brass Band. Omaha Area Youth Orchestra's site is stale
   (2016). Omaha Symphonic Chorus lists only a gala right now.
+- **Lincoln Friends of Chamber Music is deliberately NOT a source.** Checked
+  2026-09-22: LFCM is a presenter, not a venue, and their entire Season 62
+  (4 concerts) already arrives via the Lied Center adapter, which lists all
+  four — including the one LFCM plays at Kimball Recital Hall, and which we
+  therefore label "Lied Center" (that adapter hardcodes its venue, since the
+  listing page publishes none). Their site has no event feed (WordPress, no
+  calendar plugin, empty RSS), so polling them would mean writing an HTML
+  parser for events we already hold. **Recheck
+  when Season 63 posts (expect mid-2027):** the coverage is incidental, so
+  if LFCM books a venue we don't poll, those concerts vanish silently with
+  no error anywhere. Compare lfcm.us against the Lincoln channel then.
+- **LSO and Orchestra Omaha share a host** (both resolve into 35.206.0.0/16
+  with the same nginx/X-Cache-Enabled signature), which is why they time out
+  together rather than independently — 2026-09-07 and 2026-09-21 both lost
+  exactly this pair. Both are sub-second from a residential connection, so
+  this is the host treating GitHub's runner IPs differently, not an outage.
+  If it recurs, the thing to try is spacing the two fetches apart rather
+  than lengthening the timeout again.
 - **Deploy**: done 2026-09-01 (see State above). Nothing left to configure;
   the daily schedule keeps it fresh.
 - **In Lincoln looks thin** (9 of 19 collected events classified classical).
