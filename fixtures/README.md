@@ -122,3 +122,13 @@ November 2026's concert still lives at a 2025/10/31 Halloween slug. The
 September 18 & 20, 2026 pair had already been performed at capture time and
 is not included; the page lists past events in a separate section the
 adapter does not read.
+
+**nebraska_wind_symphony.json** — The season50 page ("50th Anniversary
+Season – 2026-2027") exactly as nebraskawindsymphony.com's WordPress REST API
+returned it on September 23, 2026: slug, link, last-modified stamp
+(2026-09-14) and the rendered content HTML, unaltered. It is what
+`fetch_raw()` returns, so offline runs exercise the full parser: seven dates,
+one with no year ("Sunday, December 6") resolved by its stated weekday, three
+time spellings, a date and time split across two <strong> tags, a "Summer
+Concerts" heading over the two Swingtones dates, and an intro sentence
+("See the flyer for this season's concerts.") that must not become a title.

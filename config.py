@@ -29,6 +29,7 @@ SOURCE_PRIORITY: dict[str, int] = {
     "UNL Glenn Korff School of Music": 0,
     "Lincoln's Symphony Orchestra": 0,
     "Nebraska Chamber Players": 0,
+    "Nebraska Wind Symphony": 0,
     "World Concert Hall": 0,        # curated classical-only broadcasts
     # Mixed presenter (Broadway/comedy/pop alongside classical): nonzero so
     # unmatched events default to NON-classical, and so a dedicated source's
@@ -52,6 +53,9 @@ CHANNELS: list[tuple[str, str, str]] = [
 CLASSICAL_CATEGORIES = {
     "Omaha Symphony": {"Masterworks", "Symphony Joslyn", "Symphony Cathedral"},
     "KVNO Arts Calendar": {"Classical"},
+    # The band's own summer series, included by decision 2026-09-23. The
+    # adapter tags it; this keeps a "swing"/"jazz" blurb from vetoing it.
+    "Nebraska Wind Symphony": {"Swingtones"},
 }
 # HARD: always non-classical, no rescue.
 NON_CLASSICAL_CATEGORIES = {

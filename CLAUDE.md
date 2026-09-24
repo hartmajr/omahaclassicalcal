@@ -45,7 +45,10 @@ Adapter families, in order of preference:
    `lied_center_cache.json`; LSO co-listings still skipped. Nebraska Chamber Players was
    built and verified live 2026-09-22 (6 events; Squarespace event list,
    whose URL slugs are recycled between seasons and must never be trusted
-   for dates). Juilliard still 403s (see below).
+   for dates). Nebraska Wind Symphony (2026-09-23, 7 events) reads its
+   prose season page through WordPress's REST API, because the page's slug
+   changes every season (`season50`, `season51`, …) and a hardcoded URL
+   would silently serve last year. Juilliard still 403s (see below).
 3. **LLM extraction** — `LLMPageExtractAdapter` (Omaha Chamber Music),
    `WorldConcertHallAdapter` (Mastodon RSS; retired with the Broadcasts
    channel 2026-09-01). Needs `ANTHROPIC_API_KEY`. Content-hash cached,
@@ -95,8 +98,8 @@ though it does upsert fetched events into `events.db`.
   contributed one unique event. Commented out in `SOURCES`; its rows were
   purged from `events.db`. KVNO is Omaha's classical station — asking them
   for a sanctioned feed is the path to revival.
-- **Unchecked sources** from Orchestra Omaha's Local Arts Links: Nebraska
-  Wind Symphony, Intergeneration Orchestra of Omaha, River City Mixed
+- **Unchecked sources** from Orchestra Omaha's Local Arts Links:
+  Intergeneration Orchestra of Omaha, River City Mixed
   Chorus, Papillion Area Concert Band, Soli Deo Gloria Cantorum, 1st
   Nebraska Volunteers Brass Band. Omaha Area Youth Orchestra's site is stale
   (2016). Omaha Symphonic Chorus lists only a gala right now.
@@ -118,6 +121,11 @@ though it does upsert fetched events into `events.db`.
   this is the host treating GitHub's runner IPs differently, not an outage.
   If it recurs, the thing to try is spacing the two fetches apart rather
   than lengthening the timeout again.
+- **Possible NWS/UNO duplicate on 2026-12-06.** NWS's December concert is
+  joint with the UNO University Band. If UNO's calendar lists it, the venues
+  are compatible for dedupe, but the copies merge only if UNO's title
+  contains or resembles "Nebraska Wind Symphony". Check the In Omaha list
+  once UNO posts December.
 - **Deploy**: done 2026-09-01 (see State above). Nothing left to configure;
   the daily schedule keeps it fresh.
 - **In Lincoln looks thin** (9 of 19 collected events classified classical).

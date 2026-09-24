@@ -63,6 +63,10 @@ URLS = [
      "https://operaomaha.org/26-27-season/"),
     ("UNL Music (official ICS feed)",
      "https://events.unl.edu/music/upcoming/?format=ics&limit=-1"),
+    ("Nebraska Wind Symphony (WordPress REST, page list)",
+     "https://nebraskawindsymphony.com/wp-json/wp/v2/pages?search=season&per_page=100&_fields=slug"),
+    ("Nebraska Wind Symphony (WordPress REST, season page)",
+     "https://nebraskawindsymphony.com/wp-json/wp/v2/pages?slug=season50&_fields=slug,link,modified,content"),
     # Their per-event ".ics" export is disallowed ("Disallow: /*?format=ical")
     # and is deliberately NOT listed here: this list is what we fetch, and a
     # blocked entry fails this script and the build. See the adapter docstring.

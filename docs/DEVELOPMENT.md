@@ -78,9 +78,11 @@ adding a source is just writing one more adapter and adding a line to
 | Orchestra Omaha | The Events Calendar REST API | In Omaha | live adapter |
 | Vesper Concerts | season-page HTML parse | In Omaha | live adapter (verified 2026-08-31) |
 | Opera Omaha | season-page HTML parse | In Omaha | live adapter (verified 2026-08-31) |
+| Nebraska Wind Symphony | WordPress REST API, season page prose | In Omaha | live adapter (verified 2026-09-23; newest `seasonNN` page picked each run, Swingtones summer concerts included by decision) |
 | UNL Glenn Korff School of Music | official UNL Events `?format=ics` feed | In Lincoln | live adapter |
 | Lincoln's Symphony Orchestra | season-page HTML parse | In Lincoln | live adapter (verified 2026-08-31) |
-| Lied Center for Performing Arts | events-page HTML parse (Drupal Views) | In Lincoln | live adapter (verified 2026-09-01; all-day events, mixed presenter so the classifier filters hard) |
+| Lied Center for Performing Arts | events-page HTML parse (Drupal Views) + per-event pages for hall and showtimes | In Lincoln | live adapter (verified 2026-09-22; detail pages cached in `lied_center_cache.json`; mixed presenter so the classifier filters hard) |
+| Nebraska Chamber Players | Squarespace event-list HTML parse | In Lincoln | live adapter (verified 2026-09-22; `?format=ical` export is robots-disallowed and not used) |
 | Oberlin Conservatory | Localist JSON API (webcast types) | Online | live adapter |
 | Juilliard | Drupal calendar HTML parse (paginated) | Online | live adapter (verify selectors) |
 | World Concert Hall | Mastodon RSS + LLM extraction | Broadcasts | **retired 2026-09-01** — same-day broadcasts don't fit a weekly build |
@@ -95,7 +97,8 @@ adding a source is just writing one more adapter and adding a line to
 | Omaha Chamber Music Society | Squarespace, prose pages | **added** via LLM extraction — 3 dates |
 | Omaha Symphonic Chorus | Wix + Wix Events | wait — only a fundraising gala listed now; concerts page still says 2023-24 |
 | Omaha Area Youth Orchestra | static, **stale** | skip — oayo.org content dates to 2016; find their current home first |
-| Nebraska Wind Symphony, Intergeneration Orchestra, Papillion Area Concert Band, River City Mixed Chorus, Soli Deo Gloria Cantorum, 1st Nebraska Volunteers Brass Band | unchecked | next round |
+| Nebraska Wind Symphony | WordPress, prose season page | **added** 2026-09-23 via REST API — 7 concerts |
+| Intergeneration Orchestra, Papillion Area Concert Band, River City Mixed Chorus, Soli Deo Gloria Cantorum, 1st Nebraska Volunteers Brass Band | unchecked | next round |
 | Omaha Performing Arts / Ticket Omaha | large presenter | high value but mostly non-classical; needs hard filtering |
 | Creighton Fine & Performing Arts | Drupal | blocked by robots.txt (see above) |
 | Playhouse, Rose Theater, Sweet Adelines, Pathfinder Chorus, SING Omaha, Nebraska Arts Council | — | out of scope (drama / barbershop / funder) |

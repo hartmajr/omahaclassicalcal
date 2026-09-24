@@ -15,6 +15,7 @@ from adapters.juilliard import JuilliardAdapter
 from adapters.llm_extract import LLMPageExtractAdapter
 from adapters.localist import LocalistAdapter
 from adapters.nebraska_chamber_players import NebraskaChamberPlayersAdapter
+from adapters.nebraska_wind_symphony import NebraskaWindSymphonyAdapter
 from adapters.lied_center import LiedCenterAdapter
 from adapters.lincoln_symphony import LincolnSymphonyAdapter
 from adapters.opera_omaha import OperaOmahaAdapter
@@ -86,6 +87,10 @@ SOURCES = [
     ),
     VesperAdapter(),
     OperaOmahaAdapter(),
+    # Omaha's community concert band. No feed; the season is prose on a
+    # page whose slug changes yearly, read via WordPress's REST API --
+    # see the adapter docstring.
+    NebraskaWindSymphonyAdapter(),
     # No feed and no regular markup -- concerts live in prose across two
     # series pages -- so this uses the reusable LLM page extractor.
     LLMPageExtractAdapter(
