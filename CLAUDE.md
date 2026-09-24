@@ -79,11 +79,20 @@ though it does upsert fetched events into `events.db`.
 
 ## Open items
 
-- **Juilliard returns 403** to our User-Agent. robots.txt *permits* the path,
-  so this is a WAF, not policy. Do **not** spoof a browser User-Agent — see
-  the note below. The User-Agent now carries a real contact; next step is
-  emailing boxoffice@juilliard.edu for an allowance. Until then the Online
-  channel publishes 0 events (Juilliard is its only enabled source).
+- **Juilliard returns 403 — to our HTTP client, not our User-Agent.**
+  robots.txt *permits* the path. Retested 2026-09-23: `curl` sending our
+  exact User-Agent gets 200 while the adapter's `httpx`, same UA, same
+  machine, gets 403 — so Cloudflare's bot management is fingerprinting the
+  client library (TLS/headers), not reading the UA and not blocking GitHub's
+  IPs. **Do not switch clients or mimic a fingerprint Cloudflare lets
+  through**: that is disguising the client to get past a refusal, the same
+  line as spoofing a browser UA, and it would break on Cloudflare's next
+  update anyway. The fix is permission: a Cloudflare skip rule for our UA,
+  or a feed. Request drafted 2026-09-23 for news@juilliard.edu (the press
+  office handles calendar listings and can route the Cloudflare question
+  to web/IT); page fetches are now spaced 10s apart, as that request
+  promises. Until then the Online channel publishes 0 events (Juilliard is
+  its only enabled source) — left visible by decision.
 - **Placeholders**: resolved 2026-08-31. `USER_AGENT` (`adapters/base.py`)
   carries mailto:omahaadultpianoclub@gmail.com and `SITE_URL` (`pipeline.py`)
   is https://hartmajr.github.io/omahaclassicalcal (GitHub user `hartmajr`,

@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import hashlib
 import re
+import time
 from datetime import datetime
 from typing import Any
 
@@ -34,6 +35,11 @@ CALENDAR_URL = "https://www.juilliard.edu/stage-beyond/performance/calendar"
 STREAMING_VENUES = {"livestream", "streaming event"}
 STREAMING_TYPES = {"live streaming"}
 MAX_PAGES = 20   # ~2.5 weeks per page -> roughly a full season
+# juilliard.edu's robots.txt sets no Crawl-delay, but up to 20 pages back to
+# back is a burst from a site that is already wary of us. Pace them the way
+# the sites that do set one ask for (~3 minutes a week at most) -- and the
+# request for a Cloudflare allowance promises exactly this.
+PAGE_DELAY_SECONDS = 10
 
 
 class JuilliardAdapter(Adapter):
@@ -67,6 +73,8 @@ class JuilliardAdapter(Adapter):
         pages: list[str] = []
         seen_digests: set[str] = set()
         for page in range(MAX_PAGES):
+            if page:
+                time.sleep(PAGE_DELAY_SECONDS)
             url = (self.page_url_template.format(page=page)
                    if self.page_url_template else CALENDAR_URL)
             params = {} if self.page_url_template else ({"page": page} if page else {})

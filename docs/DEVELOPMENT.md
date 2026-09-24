@@ -176,16 +176,22 @@ evidently generic, and access must be low-frequency and identified. The
 preflight reports these separately rather than passing them silently.
 
 **Known issue: juilliard.edu returns 403 to this bot.** A live run currently
-fails with `403 Forbidden` on the calendar URL. The site refuses our
-identified User-Agent, most likely bot protection rather than a stated
-policy — but a refusal is a refusal. The supported responses, in order:
+fails with `403 Forbidden` on the calendar URL. It is not the User-Agent
+that is refused: on 2026-09-23 `curl` sending our exact User-Agent got 200
+from the same machine where the adapter's `httpx` got 403. Juilliard sits
+behind Cloudflare, whose bot management fingerprints the client library.
+That is bot protection rather than a stated policy — but a refusal is a
+refusal, and matching a fingerprint it happens to allow is evasion just as
+much as a fake browser UA would be. The supported responses, in order:
 
 **robots.txt permits this path** — verified with `scripts/check_robots.py`.
 So the 403 is bot protection (a WAF filtering unknown User-Agents), not a
 stated policy against crawling. That makes the situation ambiguous rather
 than a clear refusal, and the honest response is to ask rather than guess:
 
-1. Email Juilliard's box office (boxoffice@juilliard.edu) or web team,
+1. Email Juilliard's press office (news@juilliard.edu — listings are a press
+   function, and they can route a Cloudflare rule to web/IT) rather than the
+   box office,
    describe the project — a free, non-commercial community calendar that
    links every event back to them — and ask whether they can allow the
    User-Agent or offer a feed. They livestream ~700 performances a year
@@ -199,8 +205,9 @@ than a clear refusal, and the honest response is to ask rather than guess:
    other ten sources publish normally, and the prune guard means Juilliard's
    stored events are not deleted.
 
-**What this project will not do:** disguise the User-Agent as a browser to
-get past the 403. Evading an explicit refusal is the same behaviour we
+**What this project will not do:** disguise the client to get past the 403 —
+neither a browser User-Agent nor swapping to an HTTP library whose
+fingerprint Cloudflare lets through. Evading an explicit refusal is the same behaviour we
 declined for Creighton and Oberlin, and doing it here would make the whole
 "be a good citizen" posture meaningless. `ANTHROPIC_...`-style spoofing is
 not a supported configuration. Adding a real contact address to the
