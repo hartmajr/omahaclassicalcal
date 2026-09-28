@@ -27,8 +27,10 @@ def write_rss(events: list[Event], out: Path, *, title: str, site_url: str,
     fg.description(description)
     fg.language("en")
 
+    # order="append": feedgen prepends by default, which would reverse the
+    # caller's newest-announcement-first order in the written file.
     for ev in events:
-        fe = fg.add_entry()
+        fe = fg.add_entry(order="append")
         fe.id(ev.uid)
         fe.title(f"{ev.title} — {fmt(ev.start, '%b %-d, %Y')}")
         if ev.url:
