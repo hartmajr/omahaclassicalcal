@@ -6,13 +6,6 @@
   ],
   "venue": "Kimball Hall"
  },
- "https://www.liedcenter.org/event/angel-stanislav-wang": {
-  "fetched": "2026-09-22",
-  "showtimes": [
-   "2026-09-29T19:30:00"
-  ],
-  "venue": "Lied Center Main Stage"
- },
  "https://www.liedcenter.org/event/carmenmaquia-ballet-hisp%C3%A1nico": {
   "fetched": "2026-09-22",
   "showtimes": [
@@ -74,6 +67,11 @@
    "2026-11-05T19:30:00"
   ],
   "venue": "Carson Theater"
+ },
+ "https://www.liedcenter.org/event/friends-lied-gala-santorini-soiree": {
+  "fetched": "2026-10-05",
+  "showtimes": [],
+  "venue": "Lied Center for Performing Arts"
  },
  "https://www.liedcenter.org/event/girls-night-musical-0": {
   "fetched": "2026-09-22",
@@ -282,6 +280,13 @@
   ],
   "venue": "Carson Theater"
  },
+ "https://www.liedcenter.org/event/pre-performance-dinner-magical-cirque-christmas": {
+  "fetched": "2026-10-05",
+  "showtimes": [
+   "2026-12-03T17:30:00"
+  ],
+  "venue": null
+ },
  "https://www.liedcenter.org/event/revolutionary-ambition-america-250": {
   "fetched": "2026-09-22",
   "showtimes": [
@@ -337,13 +342,6 @@
   "fetched": "2026-09-22",
   "showtimes": [
    "2026-12-04T19:30:00"
-  ],
-  "venue": "Lied Center Main Stage"
- },
- "https://www.liedcenter.org/event/temptations": {
-  "fetched": "2026-09-22",
-  "showtimes": [
-   "2026-10-01T19:30:00"
   ],
   "venue": "Lied Center Main Stage"
  },

@@ -1,28 +1,28 @@
 {
- "generated": "2026-09-28T18:33:19.548035",
+ "generated": "2026-10-05T23:40:40.933111",
  "offline": false,
  "per_source": {
-  "UNO School of Music": 23,
-  "Omaha Conservatory of Music": 3,
+  "UNO School of Music": 22,
+  "Omaha Conservatory of Music": 4,
   "Omaha Symphony": 37,
   "Orchestra Omaha": 2,
   "Vesper Concerts": 7,
   "Opera Omaha": 9,
   "Nebraska Wind Symphony": 7,
-  "Omaha Chamber Music Society": 4,
-  "UNL Glenn Korff School of Music": 20,
+  "Omaha Chamber Music Society": "ERROR: Client error '404 Not Found' for url 'https://www.omahachambermusic.org/heritage-series'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+  "UNL Glenn Korff School of Music": 15,
   "Lincoln's Symphony Orchestra": 11,
   "Nebraska Chamber Players": 6,
   "Lied Center for Performing Arts": 87,
   "Juilliard": "ERROR: Juilliard: 403 for https://www.juilliard.edu/stage-beyond/performance/calendar. The site refused our identified bot. Check robots.txt (python scripts/check_robots.py); if it disallows this path, disable the source. If robots.txt permits it, this is likely bot protection -- ask the site for a sanctioned feed or permission. Do NOT disguise the User-Agent as a browser: evading a refusal is exactly what this project avoids."
  },
- "collected": 216,
- "after_dedupe": 215,
+ "collected": 207,
+ "after_dedupe": 206,
  "by_channel": {
-  "In Omaha": 61,
+  "In Omaha": 60,
   "Online": 0,
-  "In Lincoln": 40
+  "In Lincoln": 35
  },
- "newly_seen": 118,
- "pruned_cancelled": 39
+ "newly_seen": 4,
+ "pruned_cancelled": 0
 }
