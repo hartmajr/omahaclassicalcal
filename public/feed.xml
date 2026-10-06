@@ -7,7 +7,77 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Oct 2026 23:40:40 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 00:54:51 +0000</lastBuildDate>
+    <item>
+      <title>Heritage Series 1: Masters of Piano &amp; Strings — Jan 31, 2027</title>
+      <link>https://www.omahachambermusic.org/concerts-new</link>
+      <description>Omaha Conservatory of Music
+Sunday, January 31, 2027 · 3:00 PM
+Music from master composers for strings, featuring Haydn, Mozart, and Saint-Saëns.
+Source: Omaha Chamber Music Society</description>
+      <guid isPermaLink="false">47e8f3601ff0e113@omaha-classical-calendar</guid>
+      <pubDate>Tue, 06 Oct 2026 00:54:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>Heritage Series 2: Masters of String Quartets — Mar 14, 2027</title>
+      <link>https://www.omahachambermusic.org/concerts-new</link>
+      <description>Omaha Conservatory of Music
+Sunday, March 14, 2027 · 3:00 PM
+The Heritage String Quartet performs Haydn's 'Sun' Quartet alongside works of Beethoven and Saint-Saëns.
+Source: Omaha Chamber Music Society</description>
+      <guid isPermaLink="false">1f7a4ea151d828b8@omaha-classical-calendar</guid>
+      <pubDate>Tue, 06 Oct 2026 00:54:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>Heritage Series 3: Masters of Voice &amp; Strings — May 16, 2027</title>
+      <link>https://www.omahachambermusic.org/concerts-new</link>
+      <description>Omaha Conservatory of Music
+Sunday, May 16, 2027 · 3:00 PM
+Soprano Karina Brazas, pianist Anne Madison, and the Heritage Quartet perform beloved favorites and dazzling works for voice and strings.
+Source: Omaha Chamber Music Society</description>
+      <guid isPermaLink="false">65e4e54707e98453@omaha-classical-calendar</guid>
+      <pubDate>Tue, 06 Oct 2026 00:54:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>2027 Summer Concert Series concert — Jun 6, 2027</title>
+      <link>https://www.omahachambermusic.org/concerts-new</link>
+      <description>7023 Cass St.
+Sunday, June 6, 2027 · 3:00 PM
+Program TBA; part of the 2027 Summer Concert Series.
+Source: Omaha Chamber Music Society</description>
+      <guid isPermaLink="false">c6d2f652f033ffa6@omaha-classical-calendar</guid>
+      <pubDate>Tue, 06 Oct 2026 00:54:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>2027 Summer Concert Series concert — Jun 13, 2027</title>
+      <link>https://www.omahachambermusic.org/concerts-new</link>
+      <description>7023 Cass St.
+Sunday, June 13, 2027 · 3:00 PM
+Program TBA; part of the 2027 Summer Concert Series.
+Source: Omaha Chamber Music Society</description>
+      <guid isPermaLink="false">1b08221602129f26@omaha-classical-calendar</guid>
+      <pubDate>Tue, 06 Oct 2026 00:54:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>2027 Summer Concert Series concert — Jun 20, 2027</title>
+      <link>https://www.omahachambermusic.org/concerts-new</link>
+      <description>7023 Cass St.
+Sunday, June 20, 2027 · 3:00 PM
+Program TBA; part of the 2027 Summer Concert Series.
+Source: Omaha Chamber Music Society</description>
+      <guid isPermaLink="false">7717abebdceee8c0@omaha-classical-calendar</guid>
+      <pubDate>Tue, 06 Oct 2026 00:54:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>2027 Summer Concert Series concert — Jun 27, 2027</title>
+      <link>https://www.omahachambermusic.org/concerts-new</link>
+      <description>7023 Cass St.
+Sunday, June 27, 2027 · 3:00 PM
+Program TBA; part of the 2027 Summer Concert Series.
+Source: Omaha Chamber Music Society</description>
+      <guid isPermaLink="false">c5b86bddffb3a65e@omaha-classical-calendar</guid>
+      <pubDate>Tue, 06 Oct 2026 00:54:51 +0000</pubDate>
+    </item>
     <item>
       <title>Opera Omaha Masterclass with Demetrious Sampson Jr. — Nov 17, 2026</title>
       <link>https://omahacm.org/calendar/opera-omaha-masterclass-with-demetrious-sampson-jr/</link>
@@ -671,16 +741,6 @@ Source: Opera Omaha</description>
       <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
     </item>
     <item>
-      <title>Omaha Chamber Music Society concert — Jan 31, 2027</title>
-      <link>https://www.omahachambermusic.org/heritage-series</link>
-      <description>Omaha Conservatory of Music
-Sunday, January 31, 2027 · 3:00 PM
-Program TBA
-Source: Omaha Chamber Music Society</description>
-      <guid isPermaLink="false">675f6ac765b4c691@omaha-classical-calendar</guid>
-      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
-    </item>
-    <item>
       <title>Dvorak Symphony No. 6 — Feb 6, 2027</title>
       <link>https://orchestraomaha.org/event/dvorak-symphony-no-6/</link>
       <description>Simon Concert Hall at the Omaha Conservatory of Music
@@ -794,16 +854,6 @@ Source: Omaha Symphony</description>
       <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
     </item>
     <item>
-      <title>Omaha Chamber Music Society concert — Mar 14, 2027</title>
-      <link>https://www.omahachambermusic.org/heritage-series</link>
-      <description>Omaha Conservatory of Music
-Sunday, March 14, 2027 · 3:00 PM
-Program TBA
-Source: Omaha Chamber Music Society</description>
-      <guid isPermaLink="false">2c19fa373b43d798@omaha-classical-calendar</guid>
-      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
-    </item>
-    <item>
       <title>Ariadne auf Naxos (Mar 19) — Mar 19, 2027</title>
       <link>https://operaomaha.org/production/ariadne-auf-naxos/</link>
       <description>Orpheum Theater
@@ -868,16 +918,6 @@ Source: Opera Omaha</description>
 Sibelius’ popular Second Symphony and Beethoven’s expressive Fourth Piano Concerto transport the audience through the Romantic period in this program led by returning conductor Earl Lee and pianist Janice Carissa.
 Source: Omaha Symphony</description>
       <guid isPermaLink="false">3ed591f781910075@omaha-classical-calendar</guid>
-      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>Omaha Chamber Music Society concert — May 16, 2027</title>
-      <link>https://www.omahachambermusic.org/heritage-series</link>
-      <description>Omaha Conservatory of Music
-Sunday, May 16, 2027 · 3:00 PM
-Program TBA
-Source: Omaha Chamber Music Society</description>
-      <guid isPermaLink="false">e9e8accbce84c72e@omaha-classical-calendar</guid>
       <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
     </item>
     <item>
