@@ -91,13 +91,17 @@ SOURCES = [
     # page whose slug changes yearly, read via WordPress's REST API --
     # see the adapter docstring.
     NebraskaWindSymphonyAdapter(),
-    # No feed and no regular markup -- concerts live in prose across two
-    # series pages -- so this uses the reusable LLM page extractor.
+    # No feed and no regular markup -- the season is prose on a single
+    # "Events & Tickets" page -- so this uses the reusable LLM page
+    # extractor. The site was restructured between 2026-09-28 and
+    # 2026-10-05: the old /heritage-series and /summer-concert-series pages
+    # now 404 and both series live on /concerts-new (Squarespace; the slug
+    # is what the nav links to, and the sitemap is the place to look if it
+    # moves again).
     LLMPageExtractAdapter(
         name="omaha_chamber_music",
         source_label="Omaha Chamber Music Society",
-        urls=["https://www.omahachambermusic.org/heritage-series",
-              "https://www.omahachambermusic.org/summer-concert-series"],
+        urls=["https://www.omahachambermusic.org/concerts-new"],
         category="Chamber Music",
         series_hint="Omaha Chamber Music Society",
         default_venue="Omaha Conservatory of Music",
