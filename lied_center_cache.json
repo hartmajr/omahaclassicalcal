@@ -109,13 +109,6 @@
   ],
   "venue": "Carson Theater"
  },
- "https://www.liedcenter.org/event/jazz-lincoln-center-orchestra-wynton-marsalis-2": {
-  "fetched": "2026-09-22",
-  "showtimes": [
-   "2026-10-09T19:30:00"
-  ],
-  "venue": "Lied Center Main Stage"
- },
  "https://www.liedcenter.org/event/kodo": {
   "fetched": "2026-09-22",
   "showtimes": [
@@ -286,6 +279,13 @@
    "2026-12-03T17:30:00"
   ],
   "venue": null
+ },
+ "https://www.liedcenter.org/event/price-right-live-stage": {
+  "fetched": "2026-10-12",
+  "showtimes": [
+   "2027-02-09T19:30:00"
+  ],
+  "venue": "Lied Center Main Stage"
  },
  "https://www.liedcenter.org/event/revolutionary-ambition-america-250": {
   "fetched": "2026-09-22",

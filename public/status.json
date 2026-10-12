@@ -1,28 +1,28 @@
 {
- "generated": "2026-10-06T00:54:51.620101",
+ "generated": "2026-10-12T20:12:22.652148",
  "offline": false,
  "per_source": {
-  "UNO School of Music": 22,
-  "Omaha Conservatory of Music": 4,
+  "UNO School of Music": 18,
+  "Omaha Conservatory of Music": 5,
   "Omaha Symphony": 37,
-  "Orchestra Omaha": "ERROR: Expecting value: line 1 column 1 (char 0)",
+  "Orchestra Omaha": 2,
   "Vesper Concerts": 7,
   "Opera Omaha": 9,
   "Nebraska Wind Symphony": 7,
   "Omaha Chamber Music Society": 7,
-  "UNL Glenn Korff School of Music": 15,
-  "Lincoln's Symphony Orchestra": 0,
+  "UNL Glenn Korff School of Music": 11,
+  "Lincoln's Symphony Orchestra": 13,
   "Nebraska Chamber Players": 6,
   "Lied Center for Performing Arts": 87,
   "Juilliard": "ERROR: Juilliard: 403 for https://www.juilliard.edu/stage-beyond/performance/calendar. The site refused our identified bot. Check robots.txt (python scripts/check_robots.py); if it disallows this path, disable the source. If robots.txt permits it, this is likely bot protection -- ask the site for a sanctioned feed or permission. Do NOT disguise the User-Agent as a browser: evading a refusal is exactly what this project avoids."
  },
- "collected": 201,
- "after_dedupe": 200,
+ "collected": 209,
+ "after_dedupe": 208,
  "by_channel": {
-  "In Omaha": 64,
+  "In Omaha": 61,
   "Online": 0,
-  "In Lincoln": 35
+  "In Lincoln": 30
  },
- "newly_seen": 7,
- "pruned_cancelled": 3
+ "newly_seen": 10,
+ "pruned_cancelled": 6
 }

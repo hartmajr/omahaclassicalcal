@@ -92,5 +92,63 @@
    "description": "Program TBA; part of the 2027 Summer Concert Series.",
    "url": "https://www.omahachambermusic.org/concerts-new"
   }
+ ],
+ "cba9c86419d62ef757dff95282a618d32e5d95ff": [
+  {
+   "title": "Heritage Series 1: Masters of Piano & Strings",
+   "date": "2027-01-31",
+   "time": "15:00",
+   "venue": "Omaha Conservatory of Music",
+   "description": "Music from master composers for strings, featuring Haydn, Mozart, and Saint-Sa\u00ebns.",
+   "url": "https://www.omahachambermusic.org/concerts-new"
+  },
+  {
+   "title": "Heritage Series 2: Masters of String Quartets",
+   "date": "2027-03-14",
+   "time": "15:00",
+   "venue": null,
+   "description": "The Heritage String Quartet performs Haydn's 'Sun' Quartet alongside works of Beethoven and Saint-Sa\u00ebns.",
+   "url": "https://www.omahachambermusic.org/concerts-new"
+  },
+  {
+   "title": "Heritage Series 3: Masters of Songs & Strings",
+   "date": "2027-05-16",
+   "time": "15:00",
+   "venue": null,
+   "description": "Soprano Karina Brazas, pianist Anne Madison, and the Heritage Quartet perform beloved vocal favorites and other works.",
+   "url": "https://www.omahachambermusic.org/concerts-new"
+  },
+  {
+   "title": "Summer Concert Series concert",
+   "date": "2027-06-06",
+   "time": "15:00",
+   "venue": "7023 Cass St.",
+   "description": "Program TBA; stay tuned for Summer Series programs.",
+   "url": "https://www.omahachambermusic.org/concerts-new"
+  },
+  {
+   "title": "Summer Concert Series concert",
+   "date": "2027-06-13",
+   "time": "15:00",
+   "venue": "7023 Cass St.",
+   "description": "Program TBA; stay tuned for Summer Series programs.",
+   "url": "https://www.omahachambermusic.org/concerts-new"
+  },
+  {
+   "title": "Summer Concert Series concert",
+   "date": "2027-06-20",
+   "time": "15:00",
+   "venue": "7023 Cass St.",
+   "description": "Program TBA; stay tuned for Summer Series programs.",
+   "url": "https://www.omahachambermusic.org/concerts-new"
+  },
+  {
+   "title": "Summer Concert Series concert",
+   "date": "2027-06-27",
+   "time": "15:00",
+   "venue": "7023 Cass St.",
+   "description": "Program TBA; stay tuned for Summer Series programs.",
+   "url": "https://www.omahachambermusic.org/concerts-new"
+  }
  ]
 }
