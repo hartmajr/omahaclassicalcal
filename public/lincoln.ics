@@ -4,45 +4,10 @@ PRODID:-//Omaha Classical Calendar//EN
 X-WR-CALNAME:Omaha Classical Calendar — In Lincoln
 X-WR-TIMEZONE:America/Chicago
 BEGIN:VEVENT
-SUMMARY:Faculty Recital - Scott Anderson\, trombone
-DTSTART:20261012T193000
-DTEND:20261012T193000
-DTSTAMP:20261012T201222Z
-UID:8a74a568787bb42b@omaha-classical-calendar
-DESCRIPTION:This event is free and open to the public.\n\nSource: UNL Glen
- n Korff School of Music\nhttp://events.unl.edu/music/2026/10/12/202460/
-LOCATION:Kimball Recital Hall Room
-URL:http://events.unl.edu/music/2026/10/12/202460/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:DMA Xiaotian Hu\, voice
-DTSTART:20261015T193000
-DTEND:20261015T193000
-DTSTAMP:20261012T201222Z
-UID:903d59fab7882368@omaha-classical-calendar
-DESCRIPTION:This event is free and open to the public.\n\nSource: UNL Glen
- n Korff School of Music\nhttp://events.unl.edu/music/2026/10/15/202462/
-LOCATION:Westbrook Music Building Room 130\, and online at Webcast - GKSOM
-  YouTube (https://www.youtube.com/@UNLSoMusic/streams)
-URL:http://events.unl.edu/music/2026/10/15/202462/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:University Singers
-DTSTART:20261015T193000
-DTEND:20261015T193000
-DTSTAMP:20261012T201222Z
-UID:d868318442c1bc60@omaha-classical-calendar
-DESCRIPTION:This event is free and open to the public.\n\nSource: UNL Glen
- n Korff School of Music\nhttp://events.unl.edu/music/2026/10/15/202461/
-LOCATION:Kimball Recital Hall Room \, and online at Webcast (https://arts.
- unl.edu/music/attend-explore/webcasts/)
-URL:http://events.unl.edu/music/2026/10/15/202461/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:World Ballet Company: Swan Lake
 DTSTART:20261020T190000
 DTEND:20261020T190000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:c937e9c930707624@omaha-classical-calendar
 CATEGORIES:Rental Event
 DESCRIPTION:The World’s MOST Iconic Ballet - With a LIVE Orchestra!\n\nS
@@ -55,7 +20,7 @@ BEGIN:VEVENT
 SUMMARY:Flyover New Music I
 DTSTART:20261023T193000
 DTEND:20261023T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:f2582cc49d5e78fe@omaha-classical-calendar
 DESCRIPTION:This event is free and open to the public.\n\nSource: UNL Glen
  n Korff School of Music\nhttp://events.unl.edu/music/2026/10/23/200804/
@@ -66,7 +31,7 @@ BEGIN:VEVENT
 SUMMARY:UG Angel Rodriguez-Villalobos\, trombone
 DTSTART:20261024T173000
 DTEND:20261024T173000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:951b8e8385e5d011@omaha-classical-calendar
 DESCRIPTION:This event is free and open to the public.\n\nSource: UNL Glen
  n Korff School of Music\nhttp://events.unl.edu/music/2026/10/24/202463/
@@ -77,7 +42,7 @@ BEGIN:VEVENT
 SUMMARY:An Afternoon of French Romantic Chamber Music
 DTSTART:20261025T160000
 DTEND:20261025T160000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:89f7ed144f67854e@omaha-classical-calendar
 CATEGORIES:Season Event
 DESCRIPTION:Presented by Lincoln Friends of Chamber Music\n\nSource: Lied
@@ -91,7 +56,7 @@ BEGIN:VEVENT
 SUMMARY:DMA Nehemias Calsin Molleapaza\, conducting
 DTSTART:20261029T193000
 DTEND:20261029T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:c190bb5a36a89c09@omaha-classical-calendar
 DESCRIPTION:This event is free and open to the public.\n\nSource: UNL Glen
  n Korff School of Music\nhttp://events.unl.edu/music/2026/10/29/202465/
@@ -103,7 +68,7 @@ BEGIN:VEVENT
 SUMMARY:Violin Fantasy
 DTSTART:20261030T193000
 DTEND:20261030T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:59d17b15f0ac5f7a@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/violin-fantasy/
@@ -114,7 +79,7 @@ BEGIN:VEVENT
 SUMMARY:Cendrillon and Maya and the Magic Ring
 DTSTART:20261106T193000
 DTEND:20261106T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:f36307ce82563021@omaha-classical-calendar
 DESCRIPTION:Source: UNL Glenn Korff School of Music\nhttp://events.unl.edu
  /music/2026/11/06/202859/
@@ -125,7 +90,7 @@ BEGIN:VEVENT
 SUMMARY:Cendrillon and Maya and the Magic Ring
 DTSTART:20261108T140000
 DTEND:20261108T140000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:dc8aec71e9d111b1@omaha-classical-calendar
 DESCRIPTION:Source: UNL Glenn Korff School of Music\nhttp://events.unl.edu
  /music/2026/11/08/202862/
@@ -137,7 +102,7 @@ SUMMARY:November Concert Series - British & American Music for Winds and P
  iano
 DTSTART:20261113T193000
 DTEND:20261113T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:93c94d7b0d898a71@omaha-classical-calendar
 DESCRIPTION:Performed at The Unitarian Church of Lincoln\, 6300 A Street S
  extet - Gordon Jacob Barn Dances - Libby Larsen Landscapes - Daniel Baldwi
@@ -154,7 +119,7 @@ SUMMARY:November Concert Series - British & American Music for Winds and P
  iano
 DTSTART:20261115T150000
 DTEND:20261115T150000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:998a3ee4dde93a87@omaha-classical-calendar
 DESCRIPTION:Performed at The Unitarian Church of Lincoln\, 6300 A Street S
  extet - Gordon Jacob Barn Dances - Libby Larsen Landscapes - Daniel Baldwi
@@ -170,7 +135,7 @@ BEGIN:VEVENT
 SUMMARY:CornHusker Marching Band Highlight Show
 DTSTART:20261201T193000
 DTEND:20261201T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:790f4de9e36ca703@omaha-classical-calendar
 DESCRIPTION:Source: UNL Glenn Korff School of Music\nhttp://events.unl.edu
  /music/2026/12/01/203279/
@@ -181,7 +146,7 @@ BEGIN:VEVENT
 SUMMARY:Amahl and the Night Visitors
 DTSTART:20261212T133000
 DTEND:20261212T133000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:abf48769f6982373@omaha-classical-calendar
 DESCRIPTION:Source: UNL Glenn Korff School of Music\nhttp://events.unl.edu
  /music/2026/12/12/202864/
@@ -192,7 +157,7 @@ BEGIN:VEVENT
 SUMMARY:Tchaikovsky’s Fourth
 DTSTART:20270123T193000
 DTEND:20270123T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:a69fc554c9715ea7@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/tchaikovskys-fourth/
@@ -203,7 +168,7 @@ BEGIN:VEVENT
 SUMMARY:CARMEN.maquia Ballet Hispánico
 DTSTART:20270204T193000
 DTEND:20270204T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:b3d02558a61a99ca@omaha-classical-calendar
 CATEGORIES:Season Event
 DESCRIPTION:Bizet's Carmen has seen countless interpretations over the p
@@ -218,7 +183,7 @@ BEGIN:VEVENT
 SUMMARY:February Concert Series - Katie and Harp
 DTSTART:20270212T193000
 DTEND:20270212T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:3b882d9693d4243d@omaha-classical-calendar
 DESCRIPTION:featuring Katie Wychulis\, Harp with Adrienne C. Dickson\, Mez
  zo Soprano Performed at The Unitarian Church of Lincoln\, 6300 A Street Ah
@@ -234,7 +199,7 @@ BEGIN:VEVENT
 SUMMARY:February Concert Series - Katie and Harp
 DTSTART:20270214T150000
 DTEND:20270214T150000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:80bb82fd98383667@omaha-classical-calendar
 DESCRIPTION:featuring Katie Wychulis\, Harp with Adrienne C. Dickson\, Mez
  zo Soprano Performed at The Unitarian Church of Lincoln\, 6300 A Street Ah
@@ -250,7 +215,7 @@ BEGIN:VEVENT
 SUMMARY:Orpheus Chamber Orchestra
 DTSTART:20270217T193000
 DTEND:20270217T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:00523bf80bc5cbe8@omaha-classical-calendar
 CATEGORIES:Season Event
 DESCRIPTION:GRAMMY® award-winning Orpheus Chamber Orchestra returns to t
@@ -265,7 +230,7 @@ BEGIN:VEVENT
 SUMMARY:Rachmaninoff’s Triumph
 DTSTART:20270305T193000
 DTEND:20270305T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:342578dfefc69c49@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/rachmaninoffs-triumph/
@@ -276,7 +241,7 @@ BEGIN:VEVENT
 SUMMARY:Piano Battle
 DTSTART:20270320T193000
 DTEND:20270320T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:ded0b9e3bccb824f@omaha-classical-calendar
 CATEGORIES:Season Event
 DESCRIPTION:It’s classical music like you’ve never seen it before
@@ -291,7 +256,7 @@ BEGIN:VEVENT
 SUMMARY:Daniil Trifonov
 DTSTART:20270322T193000
 DTEND:20270322T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:ed2b50e4216488a9@omaha-classical-calendar
 CATEGORIES:Season Event
 DESCRIPTION:Praised as “the most astounding pianist of our age” by Lon
@@ -306,7 +271,7 @@ BEGIN:VEVENT
 SUMMARY:Poiesis Quartet
 DTSTART:20270323T193000
 DTEND:20270323T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:3da63fa6105b92bf@omaha-classical-calendar
 CATEGORIES:Rental Event
 DESCRIPTION:Lincoln Friends of Chamber Music present Poiesis Quartet\n\nS
@@ -319,7 +284,7 @@ BEGIN:VEVENT
 SUMMARY:Beethoven’s Ninth
 DTSTART:20270409T193000
 DTEND:20270409T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:6cc9130027e3d229@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/beethovens-ninth-27/
@@ -330,7 +295,7 @@ BEGIN:VEVENT
 SUMMARY:April Concert Series - Spring Grandeur
 DTSTART:20270416T193000
 DTEND:20270416T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:609acc3eb6a0bf72@omaha-classical-calendar
 DESCRIPTION:Performed at The Unitarian Church of Lincoln\, 6300 A Street T
  rio Pathétique - Mikhail Glinka Caprice on Danish and Russian Airs\, Op. 
@@ -346,7 +311,7 @@ BEGIN:VEVENT
 SUMMARY:April Concert Series - Spring Grandeur
 DTSTART:20270418T150000
 DTEND:20270418T150000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:edb80be93f2150e6@omaha-classical-calendar
 DESCRIPTION:Performed at The Unitarian Church of Lincoln\, 6300 A Street T
  rio Pathétique - Mikhail Glinka Caprice on Danish and Russian Airs\, Op. 
@@ -362,7 +327,7 @@ BEGIN:VEVENT
 SUMMARY:Trio Karénine
 DTSTART:20270420T193000
 DTEND:20270420T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:af13d10968d8361c@omaha-classical-calendar
 CATEGORIES:Rental Event
 DESCRIPTION:Lincoln Friends of Chamber Music present Trio Karénine\n\nSo
@@ -375,7 +340,7 @@ BEGIN:VEVENT
 SUMMARY:Organ Celebration (Apr 30\, 7:30pm)
 DTSTART:20270430T193000
 DTEND:20270430T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:3bf9c348378a60e1@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/organ-celebration/
@@ -386,7 +351,7 @@ BEGIN:VEVENT
 SUMMARY:Organ Celebration (May 1\, 7:30pm)
 DTSTART:20270501T193000
 DTEND:20270501T193000
-DTSTAMP:20261012T201222Z
+DTSTAMP:20261019T172619Z
 UID:e65e311c23935c62@omaha-classical-calendar
 DESCRIPTION:Source: Lincoln's Symphony Orchestra\nhttps://lincolnsymphony.
  com/organ-celebration/

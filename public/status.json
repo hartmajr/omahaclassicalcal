@@ -1,28 +1,28 @@
 {
- "generated": "2026-10-12T20:12:22.652148",
+ "generated": "2026-10-19T17:26:19.967611",
  "offline": false,
  "per_source": {
-  "UNO School of Music": 18,
+  "UNO School of Music": "ERROR: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
   "Omaha Conservatory of Music": 5,
   "Omaha Symphony": 37,
-  "Orchestra Omaha": 2,
+  "Orchestra Omaha": "ERROR: Expecting value: line 1 column 1 (char 0)",
   "Vesper Concerts": 7,
   "Opera Omaha": 9,
   "Nebraska Wind Symphony": 7,
   "Omaha Chamber Music Society": 7,
-  "UNL Glenn Korff School of Music": 11,
-  "Lincoln's Symphony Orchestra": 13,
+  "UNL Glenn Korff School of Music": "ERROR: timed out",
+  "Lincoln's Symphony Orchestra": 0,
   "Nebraska Chamber Players": 6,
-  "Lied Center for Performing Arts": 87,
+  "Lied Center for Performing Arts": 81,
   "Juilliard": "ERROR: Juilliard: 403 for https://www.juilliard.edu/stage-beyond/performance/calendar. The site refused our identified bot. Check robots.txt (python scripts/check_robots.py); if it disallows this path, disable the source. If robots.txt permits it, this is likely bot protection -- ask the site for a sanctioned feed or permission. Do NOT disguise the User-Agent as a browser: evading a refusal is exactly what this project avoids."
  },
- "collected": 209,
- "after_dedupe": 208,
+ "collected": 159,
+ "after_dedupe": 159,
  "by_channel": {
-  "In Omaha": 61,
+  "In Omaha": 58,
   "Online": 0,
-  "In Lincoln": 30
+  "In Lincoln": 27
  },
- "newly_seen": 10,
- "pruned_cancelled": 6
+ "newly_seen": 1,
+ "pruned_cancelled": 0
 }
