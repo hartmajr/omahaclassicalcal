@@ -1,28 +1,28 @@
 {
- "generated": "2026-10-19T17:26:19.967611",
+ "generated": "2026-10-26T17:13:15.269154",
  "offline": false,
  "per_source": {
-  "UNO School of Music": "ERROR: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
-  "Omaha Conservatory of Music": 5,
+  "UNO School of Music": 30,
+  "Omaha Conservatory of Music": 4,
   "Omaha Symphony": 37,
-  "Orchestra Omaha": "ERROR: Expecting value: line 1 column 1 (char 0)",
+  "Orchestra Omaha": 2,
   "Vesper Concerts": 7,
   "Opera Omaha": 9,
   "Nebraska Wind Symphony": 7,
   "Omaha Chamber Music Society": 7,
-  "UNL Glenn Korff School of Music": "ERROR: timed out",
-  "Lincoln's Symphony Orchestra": 0,
+  "UNL Glenn Korff School of Music": 37,
+  "Lincoln's Symphony Orchestra": 11,
   "Nebraska Chamber Players": 6,
-  "Lied Center for Performing Arts": 81,
+  "Lied Center for Performing Arts": "ERROR: Lied Center for Performing Arts: 403 for https://www.liedcenter.org/events-page. The site refused our identified bot. Check robots.txt (python scripts/check_robots.py); if it disallows this path, disable the source. If robots.txt permits it, this is likely bot protection -- ask the site for a sanctioned feed or permission. Do NOT disguise the User-Agent as a browser: evading a refusal is exactly what this project avoids.",
   "Juilliard": "ERROR: Juilliard: 403 for https://www.juilliard.edu/stage-beyond/performance/calendar. The site refused our identified bot. Check robots.txt (python scripts/check_robots.py); if it disallows this path, disable the source. If robots.txt permits it, this is likely bot protection -- ask the site for a sanctioned feed or permission. Do NOT disguise the User-Agent as a browser: evading a refusal is exactly what this project avoids."
  },
- "collected": 159,
- "after_dedupe": 159,
+ "collected": 157,
+ "after_dedupe": 153,
  "by_channel": {
-  "In Omaha": 58,
+  "In Omaha": 67,
   "Online": 0,
-  "In Lincoln": 27
+  "In Lincoln": 49
  },
- "newly_seen": 1,
- "pruned_cancelled": 0
+ "newly_seen": 81,
+ "pruned_cancelled": 27
 }

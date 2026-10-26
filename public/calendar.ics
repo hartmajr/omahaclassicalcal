@@ -7,7 +7,7 @@ BEGIN:VEVENT
 SUMMARY:UNO Keyboard Area Project Recital
 DTSTART:20261026T193000
 DTEND:20261026T193000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:f14420822436c798@omaha-classical-calendar
 CATEGORIES:Concert/Performance
 DESCRIPTION:This event is free\n\nPARKING: There is open parking (no permi
@@ -23,7 +23,7 @@ BEGIN:VEVENT
 SUMMARY:Sound Health Series - Percussion
 DTSTART:20261027T120000
 DTEND:20261027T124500
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:d1406459873ddfd9@omaha-classical-calendar
 CATEGORIES:Concert/Performance
 DESCRIPTION:Percussion Area students perform at the Fred & Pamela Buffett 
@@ -38,7 +38,7 @@ BEGIN:VEVENT
 SUMMARY:UNO Flute Studio Recital
 DTSTART:20261027T193000
 DTEND:20261027T193000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:ba2a4dee94ee4e8d@omaha-classical-calendar
 CATEGORIES:Concert/Performance
 DESCRIPTION:This event is free\n\n \n\nPARKING: There is open parking (no 
@@ -53,7 +53,7 @@ BEGIN:VEVENT
 SUMMARY:UNO Maverick Quartet-in-Residence
 DTSTART:20261029T121500
 DTEND:20261029T131500
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:74a01390fed98107@omaha-classical-calendar
 CATEGORIES:Concert/Performance
 DESCRIPTION:The UNO Maverick Quartet\, quartet-in-residence at the Fred & 
@@ -65,11 +65,13 @@ LOCATION:Fred & Pamela Buffett Cancer Center
 URL:https://events.unomaha.edu/event/uno-maverick-quartet-in-residence929
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Dvořák's Seventh
+SUMMARY:Dvořák's SeventhDvořák’s exuberant Symphony No. 7 takes you 
+ on an epic adventure in this program led by Conductor Anna Rakitina and ce
+ llist Jaemin Han.
 DTSTART:20261030T000000
 DTEND:20261031T000000
-DTSTAMP:20261019T172619Z
-UID:d62af963b2a84822@omaha-classical-calendar
+DTSTAMP:20261026T171315Z
+UID:df0070f7c9f29ea7@omaha-classical-calendar
 CATEGORIES:Masterworks
 DESCRIPTION:Dvořák’s exuberant Symphony No. 7 takes you on an epic adv
  enture in this program led by Conductor Anna Rakitina and cellist Jaemin H
@@ -81,7 +83,7 @@ BEGIN:VEVENT
 SUMMARY:October Final Fridays @ the Conservatory
 DTSTART:20261030T120000
 DTEND:20261030T130000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:440e309e1c3e0477@omaha-classical-calendar
 CATEGORIES:all ages\, Events\, music for anyone
 DESCRIPTION:FINAL FRIDAYS @ THE CONSERVATORY \nEnd your month on the right
@@ -97,7 +99,7 @@ BEGIN:VEVENT
 SUMMARY:Scary Stories
 DTSTART:20261030T190000
 DTEND:20261030T210000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:9897258ea922b019@omaha-classical-calendar
 CATEGORIES:Orchestra Omaha
 DESCRIPTION:@ 			\n			\n							\n		\n			\n\n\n\n\n\n\nFriday\, October 30
@@ -109,10 +111,40 @@ LOCATION:Simon Concert Hall at the Omaha Conservatory of Music
 URL:https://orchestraomaha.org/event/scary-stories/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:OAYO Youth Symphony Concert
+DTSTART:20261101T143000
+DTEND:20261101T143000
+DTSTAMP:20261026T171315Z
+UID:95a52a64f49a250e@omaha-classical-calendar
+CATEGORIES:Concert/Performance
+DESCRIPTION:Choose Your Own Ticket Price - $0 and up!!\n\n(For those choos
+ ing to pay more than $0\, cash\, credit card and checks will be accepted a
+ t the door.)\n\nPARKING: There is open parking (no permit required) on wee
+ kends across the Dodge Campus\,…\n\nSource: UNO School of Music\nhttps:/
+ /events.unomaha.edu/event/oayo-youth-symphony-concert-11-1
+LOCATION:Strauss Performing Arts Center
+URL:https://events.unomaha.edu/event/oayo-youth-symphony-concert-11-1
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:UNO New Music Ensemble Concert
+DTSTART:20261101T193000
+DTEND:20261101T193000
+DTSTAMP:20261026T171315Z
+UID:4d6c98d7e8f11d71@omaha-classical-calendar
+CATEGORIES:Concert/Performance
+DESCRIPTION:This event is free\n\n \n\nPARKING: There is open parking (no 
+ permit required) on weekends across the Dodge Campus\, including all surfa
+ ce lots and the East and West Garages. Click here for more details includi
+ ng a campus map.\n\nPlease see Event…\n\nSource: UNO School of Music\nht
+ tps://events.unomaha.edu/event/uno-new-music-ensemble-concert
+LOCATION:Strauss Performing Arts Center
+URL:https://events.unomaha.edu/event/uno-new-music-ensemble-concert
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Sound Health Series - Saxophone
 DTSTART:20261103T120000
 DTEND:20261103T124500
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:109aaa97b7bbc2bc@omaha-classical-calendar
 CATEGORIES:Concert/Performance
 DESCRIPTION:Sax Area students perform at the Fred & Pamela Buffett Cancer 
@@ -124,10 +156,25 @@ LOCATION:Fred & Pamela Buffett Cancer Center
 URL:https://events.unomaha.edu/event/sound-health-series-saxophone26
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:UNO Percussion Ensemble Concert
+DTSTART:20261103T193000
+DTEND:20261103T193000
+DTSTAMP:20261026T171315Z
+UID:0ea225529a78997c@omaha-classical-calendar
+CATEGORIES:Concert/Performance
+DESCRIPTION:Choose Your Own Ticket Price - $0 and up!!\n\n(For those choos
+ ing to pay more than $0\, cash and checks will be accepted at the door.)\n
+ \nPARKING: There is open parking (no permit required) after 7:00 p.m. acro
+ ss the Dodge Campus\, including all…\n\nSource: UNO School of Music\nhtt
+ ps://events.unomaha.edu/event/uno-percussion-ensemble-concert-11-3
+LOCATION:Strauss Performing Arts Center
+URL:https://events.unomaha.edu/event/uno-percussion-ensemble-concert-11-3
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:UNO Maverick Quartet-in-Residence
 DTSTART:20261105T121500
 DTEND:20261105T131500
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:621b263444a99d72@omaha-classical-calendar
 CATEGORIES:Concert/Performance
 DESCRIPTION:The UNO Maverick Quartet\, quartet-in-residence at the Fred & 
@@ -142,7 +189,7 @@ BEGIN:VEVENT
 SUMMARY:UNO Maverick Quartet-in-Residence
 DTSTART:20261110T121500
 DTEND:20261110T131500
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:a6b3f1c2e760cb84@omaha-classical-calendar
 CATEGORIES:Concert/Performance
 DESCRIPTION:The UNO Maverick Quartet\, quartet-in-residence at the Fred & 
@@ -154,10 +201,25 @@ LOCATION:Fred & Pamela Buffett Cancer Center
 URL:https://events.unomaha.edu/event/uno-maverick-quartet-in-residence929
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:UNO Orchestra Concert
+DTSTART:20261110T193000
+DTEND:20261110T193000
+DTSTAMP:20261026T171315Z
+UID:b257ae23cc710699@omaha-classical-calendar
+CATEGORIES:Concert/Performance
+DESCRIPTION:Choose Your Own Ticket Price - $0 and up!!\n\n(For those choos
+ ing to pay more than $0\, cash and checks will be accepted at the door.)\n
+ \nPARKING: There is open parking (no permit required) after 7:00 p.m. acro
+ ss the Dodge Campus\, including all…\n\nSource: UNO School of Music\nhtt
+ ps://events.unomaha.edu/event/uno-orchestra-concert-11-10
+LOCATION:Strauss Performing Arts Center
+URL:https://events.unomaha.edu/event/uno-orchestra-concert-11-10
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:La bohème (Nov 13)
 DTSTART:20261113T193000
 DTEND:20261113T193000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:e8025ee81fdf024e@omaha-classical-calendar
 CATEGORIES:Opera
 DESCRIPTION:Music by Giacomo Puccini.\n\nSource: Opera Omaha\nhttps://oper
@@ -166,10 +228,25 @@ LOCATION:Orpheum Theater
 URL:https://operaomaha.org/production/la-boheme/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Student Recital - Andrew Milburn
+DTSTART:20261114T183000
+DTEND:20261114T183000
+DTSTAMP:20261026T171315Z
+UID:4431ce00f13e91ee@omaha-classical-calendar
+CATEGORIES:Concert/Performance
+DESCRIPTION:On Saturday\, November 14\, at 6:30 Andrew Milburn will perfor
+ m a senior voice recital at the Strauss Performing Arts Center’s Recital
+  Hall on the University of Nebraska at Omaha’s campus. Andrew will perfo
+ rm a variety of classical works.…\n\nSource: UNO School of Music\nhttps:
+ //events.unomaha.edu/event/student-recital-andrew-milburn
+LOCATION:Strauss Performing Arts Center
+URL:https://events.unomaha.edu/event/student-recital-andrew-milburn
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:La bohème (Nov 15)
 DTSTART:20261115T140000
 DTEND:20261115T140000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:bf37b36e24a4578e@omaha-classical-calendar
 CATEGORIES:Opera
 DESCRIPTION:Music by Giacomo Puccini.\n\nSource: Opera Omaha\nhttps://oper
@@ -181,7 +258,7 @@ BEGIN:VEVENT
 SUMMARY:Adam Hu
 DTSTART:20261115T190000
 DTEND:20261115T190000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:ed99adf842fc0ad2@omaha-classical-calendar
 CATEGORIES:Chamber Music
 DESCRIPTION:Free and open to the public.\n\nSource: Vesper Concerts\nhttps
@@ -193,7 +270,7 @@ BEGIN:VEVENT
 SUMMARY:Sound Health Series - Flute Area
 DTSTART:20261117T120000
 DTEND:20261117T124500
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:ba15eb04eaf6c8cb@omaha-classical-calendar
 CATEGORIES:Concert/Performance
 DESCRIPTION:Flute Area students perform at the Fred & Pamela Buffett Cance
@@ -208,7 +285,7 @@ BEGIN:VEVENT
 SUMMARY:Opera Omaha Masterclass with Demetrious Sampson Jr.
 DTSTART:20261117T190000
 DTEND:20261117T193000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:c04b1542174b586b@omaha-classical-calendar
 DESCRIPTION:Demetrious Sampson Jr.\, who will sings the role of Rudolfo in
   Opera Omaha’s upcoming production of La bohème\, be giving a free mast
@@ -221,11 +298,29 @@ URL:https://omahacm.org/calendar/opera-omaha-masterclass-with-demetrious-s
  ampson-jr/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Schubert's Symphony No. 4
+SUMMARY:UNO Guitar Studio Recital
+DTSTART:20261117T193000
+DTEND:20261117T193000
+DTSTAMP:20261026T171315Z
+UID:79a2b9e584cdf371@omaha-classical-calendar
+CATEGORIES:Concert/Performance
+DESCRIPTION:This event is free of charge\n\nPARKING: There is open parking
+  (no permit required) after 7PM across the Dodge Campus\, including all su
+ rface lots and the East and West Garages. Click here for more details incl
+ uding a campus map.\n\nSource: UNO School of Music\nhttps://events.unomaha
+ .edu/event/uno-guitar-studio-recital-11-17
+LOCATION:Strauss Performing Arts Center
+URL:https://events.unomaha.edu/event/uno-guitar-studio-recital-11-17
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Schubert's Symphony No. 4Schubert’s Symphony No. 4\, composed wh
+ en the prodigy was only nineteen\, is led by Maestro José Luis Gómez\; A
+ ssociate Principal Cello Gregory Clinton’s artistry shines in Kabalevsky
+ ’s lively Cello Concerto in G Minor.
 DTSTART:20261122T000000
 DTEND:20261122T000000
-DTSTAMP:20261019T172619Z
-UID:958822e3077fec4c@omaha-classical-calendar
+DTSTAMP:20261026T171315Z
+UID:9802c21bc7c48381@omaha-classical-calendar
 CATEGORIES:Symphony Joslyn
 DESCRIPTION:Schubert’s Symphony No. 4\, composed when the prodigy was on
  ly nineteen\, is led by Maestro José Luis Gómez\; Associate Principal Ce
@@ -235,10 +330,41 @@ DESCRIPTION:Schubert’s Symphony No. 4\, composed when the prodigy was on
 URL:https://www.omahasymphony.org/concerts/schuberts-symphony-no.-4
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Faculty Recital: Dr. Season Cowley\, Clarinet
+DTSTART:20261124T193000
+DTEND:20261124T193000
+DTSTAMP:20261026T171315Z
+UID:89134f4cad18dd0d@omaha-classical-calendar
+CATEGORIES:Concert/Performance
+DESCRIPTION:This event is free\n\nPARKING: There is open parking after 7PM
+  (no permit required) across the Dodge Campus\, including all surface lots
+  and the East and West Garage. Click here for more details including a cam
+ pus map.\n\nPlease see "Event…\n\nSource: UNO School of Music\nhttps://e
+ vents.unomaha.edu/event/faculty-recital-dr-season-cowley-clarinet
+LOCATION:Strauss Performing Arts Center
+URL:https://events.unomaha.edu/event/faculty-recital-dr-season-cowley-clar
+ inet
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:UNO Keyboard Area Recital
+DTSTART:20261130T193000
+DTEND:20261130T193000
+DTSTAMP:20261026T171315Z
+UID:da6f55a01ebb1573@omaha-classical-calendar
+CATEGORIES:Concert/Performance
+DESCRIPTION:This event is free\n\nPARKING: There is open parking (no permi
+ t required) after 7:00 p.m. across the Dodge Campus\, including all surfac
+ e lots and the East and West Garages. Click here for more details includin
+ g a campus map.\n\nPlease see…\n\nSource: UNO School of Music\nhttps://e
+ vents.unomaha.edu/event/uno-keyboard-area-recital-11-30
+LOCATION:Strauss Performing Arts Center
+URL:https://events.unomaha.edu/event/uno-keyboard-area-recital-11-30
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:UNO Maverick Quartet-in-Residence
 DTSTART:20261201T121500
 DTEND:20261201T131500
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:6facf2b04b0c5ea4@omaha-classical-calendar
 CATEGORIES:Concert/Performance
 DESCRIPTION:The UNO Maverick Quartet\, quartet-in-residence at the Fred & 
@@ -253,7 +379,7 @@ BEGIN:VEVENT
 SUMMARY:Cantus
 DTSTART:20261201T190000
 DTEND:20261201T190000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:c17322cf879e81b8@omaha-classical-calendar
 CATEGORIES:Chamber Music
 DESCRIPTION:Free and open to the public.\n\nSource: Vesper Concerts\nhttps
@@ -262,10 +388,25 @@ LOCATION:Presbyterian Church of the Cross
 URL:https://vesperconcerts.org/cantus/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:UNO Choirs Concert
+DTSTART:20261201T193000
+DTEND:20261201T193000
+DTSTAMP:20261026T171315Z
+UID:8835549085ead53f@omaha-classical-calendar
+CATEGORIES:Concert/Performance
+DESCRIPTION:Choose Your Own Ticket Price - $0 and up!!\n\n(For those choos
+ ing to pay more than $0\, cash and checks will be accepted at the door.)\n
+ \nPARKING: There is open parking (no permit required) after 7:00 p.m. acro
+ ss the Dodge Campus\, including all…\n\nSource: UNO School of Music\nhtt
+ ps://events.unomaha.edu/event/uno-choirs-concert-101326
+LOCATION:Strauss Performing Arts Center
+URL:https://events.unomaha.edu/event/uno-choirs-concert-101326
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:UNO Maverick Quartet-in-Residence
 DTSTART:20261203T121500
 DTEND:20261203T131500
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:37f6ea30a6285599@omaha-classical-calendar
 CATEGORIES:Concert/Performance
 DESCRIPTION:The UNO Maverick Quartet\, quartet-in-residence at the Fred & 
@@ -280,7 +421,7 @@ BEGIN:VEVENT
 SUMMARY:UNO String Area Recital
 DTSTART:20261205T140000
 DTEND:20261205T140000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:726ee0fbd718b249@omaha-classical-calendar
 CATEGORIES:Concert/Performance
 DESCRIPTION:This event is free\n\nPARKING: There is open parking on weeken
@@ -292,23 +433,27 @@ LOCATION:Strauss Performing Arts Center
 URL:https://events.unomaha.edu/event/uno-string-area-recital26
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Nebraska Wind Symphony
+SUMMARY:UNO University Band and Nebraska Wind Symphony Concert
 DTSTART:20261206T150000
 DTEND:20261206T150000
-DTSTAMP:20261019T172619Z
-UID:b898d5d70706488a@omaha-classical-calendar
-DESCRIPTION:Premier of flute concerto by Erika Svanoe with guest flutist C
- hristie Beard\; This is a joint concert with the UNO University Band\n\nSo
- urce: Nebraska Wind Symphony\nhttps://nebraskawindsymphony.com/seasons/sea
- son50/
-LOCATION:UNO Strauss Performing Arts Center
-URL:https://nebraskawindsymphony.com/seasons/season50/
+DTSTAMP:20261026T171315Z
+UID:94f2305b5cf91e9a@omaha-classical-calendar
+CATEGORIES:Concert/Performance
+DESCRIPTION:Choose Your Own Ticket Price - $0 and up!!\n\n(For those choos
+ ing to pay more than $0\, cash and checks will be accepted at the door.)\n
+ \nPARKING: There is open parking (no permit required) on weekends across t
+ he Dodge Campus\, including all…\n\nSource: UNO School of Music\nhttps:/
+ /events.unomaha.edu/event/uno-university-band-and-nebraska-wind-symphony-c
+ oncert-1207
+LOCATION:Strauss Performing Arts Center
+URL:https://events.unomaha.edu/event/uno-university-band-and-nebraska-wind
+ -symphony-concert-1207
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Sound Health Series - Strings
 DTSTART:20261208T120000
 DTEND:20261208T124500
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:1ecb61d54fcf8011@omaha-classical-calendar
 CATEGORIES:Concert/Performance
 DESCRIPTION:String Area students perform at the Fred & Pamela Buffett Canc
@@ -323,7 +468,7 @@ BEGIN:VEVENT
 SUMMARY:UNO Maverick Quartet-in-Residence
 DTSTART:20261210T121500
 DTEND:20261210T131500
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:5ec201658bd90c0b@omaha-classical-calendar
 CATEGORIES:Concert/Performance
 DESCRIPTION:The UNO Maverick Quartet\, quartet-in-residence at the Fred & 
@@ -338,7 +483,7 @@ BEGIN:VEVENT
 SUMMARY:UNO Maverick Quartet-in-Residence
 DTSTART:20261215T121500
 DTEND:20261215T131500
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:bb7b5908b6964daa@omaha-classical-calendar
 CATEGORIES:Concert/Performance
 DESCRIPTION:The UNO Maverick Quartet\, quartet-in-residence at the Fred & 
@@ -350,11 +495,13 @@ LOCATION:Fred & Pamela Buffett Cancer Center
 URL:https://events.unomaha.edu/event/uno-maverick-quartet-in-residence929
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:A Festival of Christmas Brass
+SUMMARY:A Festival of Christmas BrassThe Omaha Symphony in collaboration w
+ ith Saint Cecilia Cathedral\, proudly presents A Festival of Christmas Bra
+ ss!
 DTSTART:20261217T000000
 DTEND:20261220T000000
-DTSTAMP:20261019T172619Z
-UID:2c22d31908971c35@omaha-classical-calendar
+DTSTAMP:20261026T171315Z
+UID:573a0224cef0c8c6@omaha-classical-calendar
 CATEGORIES:Symphony Cathedral
 DESCRIPTION:The Omaha Symphony in collaboration with Saint Cecilia Cathedr
  al\, proudly presents A Festival of Christmas Brass!\n\nSource: Omaha Symp
@@ -362,11 +509,13 @@ DESCRIPTION:The Omaha Symphony in collaboration with Saint Cecilia Cathedr
 URL:https://www.omahasymphony.org/concerts/christmas-brass
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Falletta & Mendelssohn's “Italian”
+SUMMARY:Falletta & Mendelssohn's “Italian”Be transported to the Italia
+ n countryside in this dynamic and adrenaline-filled program conducted by M
+ aestro JoAnn Falletta.
 DTSTART:20270110T000000
 DTEND:20270110T000000
-DTSTAMP:20261019T172619Z
-UID:13b4aef9964d4601@omaha-classical-calendar
+DTSTAMP:20261026T171315Z
+UID:4848488335b16821@omaha-classical-calendar
 CATEGORIES:Symphony Joslyn
 DESCRIPTION:Be transported to the Italian countryside in this dynamic and 
  adrenaline-filled program conducted by Maestro JoAnn Falletta.\n\nSource: 
@@ -375,11 +524,13 @@ DESCRIPTION:Be transported to the Italian countryside in this dynamic and
 URL:https://www.omahasymphony.org/concerts/falletta-mendelssohns-italian
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Rachmaninoff’s Symphonic Dances
+SUMMARY:Rachmaninoff’s Symphonic DancesThe thunder of percussion propels
+  this program from the dance clubs of Mexico\, through the smoky haze of S
+ panish nightlife\, to Rachmaninoff’s frenziedSymphonic Dances.
 DTSTART:20270115T000000
 DTEND:20270116T000000
-DTSTAMP:20261019T172619Z
-UID:942eabebd1f77504@omaha-classical-calendar
+DTSTAMP:20261026T171315Z
+UID:3f1cfe5271b65da3@omaha-classical-calendar
 CATEGORIES:Masterworks
 DESCRIPTION:The thunder of percussion propels this program from the dance 
  clubs of Mexico\, through the smoky haze of Spanish nightlife\, to Rachman
@@ -391,7 +542,7 @@ BEGIN:VEVENT
 SUMMARY:Sterling Elliott
 DTSTART:20270126T190000
 DTEND:20270126T190000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:9549e1ca2d552bab@omaha-classical-calendar
 CATEGORIES:Chamber Music
 DESCRIPTION:Free and open to the public.\n\nSource: Vesper Concerts\nhttps
@@ -403,7 +554,7 @@ BEGIN:VEVENT
 SUMMARY:The Pigeon Keeper (Jan 28)
 DTSTART:20270128T183000
 DTEND:20270128T183000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:8bc500833c3d9b80@omaha-classical-calendar
 CATEGORIES:Opera
 DESCRIPTION:Music by David Hanlon.\n\nSource: Opera Omaha\nhttps://operaom
@@ -415,7 +566,7 @@ BEGIN:VEVENT
 SUMMARY:January Final Fridays @ the Conservatory
 DTSTART:20270129T120000
 DTEND:20270129T130000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:12497416d96225e7@omaha-classical-calendar
 CATEGORIES:all ages\, Events\, music for anyone
 DESCRIPTION:FINAL FRIDAYS @ THE CONSERVATORY \n\n\n\nEnd your month on the
@@ -431,7 +582,7 @@ BEGIN:VEVENT
 SUMMARY:The Pigeon Keeper (Jan 29)
 DTSTART:20270129T183000
 DTEND:20270129T183000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:e27f76e55891f807@omaha-classical-calendar
 CATEGORIES:Opera
 DESCRIPTION:Music by David Hanlon.\n\nSource: Opera Omaha\nhttps://operaom
@@ -443,7 +594,7 @@ BEGIN:VEVENT
 SUMMARY:The Pigeon Keeper (Jan 30)
 DTSTART:20270130T140000
 DTEND:20270130T140000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:a8ddd07993118e99@omaha-classical-calendar
 CATEGORIES:Opera
 DESCRIPTION:Music by David Hanlon.\n\nSource: Opera Omaha\nhttps://operaom
@@ -455,7 +606,7 @@ BEGIN:VEVENT
 SUMMARY:Heritage Series 1: Masters of Piano & Strings
 DTSTART:20270131T150000
 DTEND:20270131T150000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:47e8f3601ff0e113@omaha-classical-calendar
 CATEGORIES:Chamber Music
 DESCRIPTION:Music from master composers for strings\, featuring Haydn\, Mo
@@ -468,7 +619,7 @@ BEGIN:VEVENT
 SUMMARY:Dvorak Symphony No. 6
 DTSTART:20270206T190000
 DTEND:20270206T210000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:1efe775118700c08@omaha-classical-calendar
 CATEGORIES:Orchestra Omaha
 DESCRIPTION:@ 			\n			\n							\n		\n			\n\n\n\n\n\nOrchestra Omaha perfor
@@ -482,7 +633,7 @@ BEGIN:VEVENT
 SUMMARY:Christine Beard
 DTSTART:20270214T150000
 DTEND:20270214T150000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:126684aad00f3ef9@omaha-classical-calendar
 CATEGORIES:Chamber Music
 DESCRIPTION:Free and open to the public.\n\nSource: Vesper Concerts\nhttps
@@ -491,11 +642,14 @@ LOCATION:Presbyterian Church of the Cross
 URL:https://vesperconcerts.org/christine-beard/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Mozart’s Symphony No. 25
+SUMMARY:Mozart’s Symphony No. 25Mozart’s “Little” G Minor headline
+ s a program led by conductor Jonathan Taylor Rush\, "a continually rising 
+ talent in the conducting world"(Baltimore Sun). Principal Trumpet Scott Qu
+ ackenbush soars in Gregson’s powerful Trumpet Concerto.
 DTSTART:20270221T000000
 DTEND:20270221T000000
-DTSTAMP:20261019T172619Z
-UID:c0cf6cc38745a81a@omaha-classical-calendar
+DTSTAMP:20261026T171315Z
+UID:a682c8e80f50057a@omaha-classical-calendar
 CATEGORIES:Symphony Joslyn
 DESCRIPTION:Mozart’s “Little” G Minor headlines a program led by con
  ductor Jonathan Taylor Rush\, "a continually rising talent in the conducti
@@ -505,11 +659,12 @@ DESCRIPTION:Mozart’s “Little” G Minor headlines a program led by con
 URL:https://www.omahasymphony.org/concerts/mozarts-symphony-no.-25
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Mahler’s Fourth
+SUMMARY:Mahler’s FourthMozart and Mahler’s soprano-led masterpieces ca
+ rry the audience through an evening full of opulent melodies.
 DTSTART:20270226T000000
 DTEND:20270227T000000
-DTSTAMP:20261019T172619Z
-UID:2182621791d819ed@omaha-classical-calendar
+DTSTAMP:20261026T171315Z
+UID:15689bb9b5d16956@omaha-classical-calendar
 CATEGORIES:Masterworks
 DESCRIPTION:Mozart and Mahler’s soprano-led masterpieces carry the audie
  nce through an evening full of opulent melodies.\n\nSource: Omaha Symphony
@@ -520,7 +675,7 @@ BEGIN:VEVENT
 SUMMARY:February Final Fridays @ the Conservatory
 DTSTART:20270226T120000
 DTEND:20270226T130000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:68760e9bfaa41805@omaha-classical-calendar
 CATEGORIES:all ages\, Events\, music for anyone
 DESCRIPTION:Free lunch-time concert at the Conservatory. Enjoy coffee\, an
@@ -536,7 +691,7 @@ BEGIN:VEVENT
 SUMMARY:Nebraska Wind Symphony
 DTSTART:20270227T193000
 DTEND:20270227T193000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:420c645402b23990@omaha-classical-calendar
 DESCRIPTION:featuring our first NWS Middle School All Star Honor Band\; Pr
  emiering a new composition for Middle School Band by William Owens\n\nSour
@@ -549,7 +704,7 @@ BEGIN:VEVENT
 SUMMARY:Heritage Series 2: Masters of String Quartets
 DTSTART:20270314T150000
 DTEND:20270314T150000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:1f7a4ea151d828b8@omaha-classical-calendar
 CATEGORIES:Chamber Music
 DESCRIPTION:The Heritage String Quartet performs Haydn's 'Sun' Quartet alo
@@ -562,7 +717,7 @@ BEGIN:VEVENT
 SUMMARY:Ariadne auf Naxos (Mar 19)
 DTSTART:20270319T193000
 DTEND:20270319T193000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:36109bd131ac7316@omaha-classical-calendar
 CATEGORIES:Opera
 DESCRIPTION:Music by Richard Strauss.\n\nSource: Opera Omaha\nhttps://oper
@@ -574,7 +729,7 @@ BEGIN:VEVENT
 SUMMARY:Ariadne auf Naxos (Mar 21)
 DTSTART:20270321T140000
 DTEND:20270321T140000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:af4a277566d79837@omaha-classical-calendar
 CATEGORIES:Opera
 DESCRIPTION:Music by Richard Strauss.\n\nSource: Opera Omaha\nhttps://oper
@@ -583,11 +738,12 @@ LOCATION:Orpheum Theater
 URL:https://operaomaha.org/production/ariadne-auf-naxos/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Susanna Perry Gilmore Plays Mozart
+SUMMARY:Susanna Perry Gilmore Plays MozartConcertmaster Susanna Perry Gilm
+ ore shines in Mozart’s intimate and elegant Violin Concerto No. 1.
 DTSTART:20270402T000000
 DTEND:20270403T000000
-DTSTAMP:20261019T172619Z
-UID:ba217e782048992d@omaha-classical-calendar
+DTSTAMP:20261026T171315Z
+UID:c24526aeb33ee767@omaha-classical-calendar
 CATEGORIES:Masterworks
 DESCRIPTION:Concertmaster Susanna Perry Gilmore shines in Mozart’s intim
  ate and elegant Violin Concerto No. 1.\n\nSource: Omaha Symphony\nhttps://
@@ -596,11 +752,12 @@ URL:https://www.omahasymphony.org/concerts/susanna-perry-gilmore-plays-moz
  art
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Stravinsky's Pulcinella
+SUMMARY:Stravinsky's PulcinellaStravinsky’s mastery of neo-classical com
+ position shines in his gorgeousPulcinellasuite for chamber orchestra.
 DTSTART:20270418T000000
 DTEND:20270418T000000
-DTSTAMP:20261019T172619Z
-UID:0f9bfdebfc70cf55@omaha-classical-calendar
+DTSTAMP:20261026T171315Z
+UID:c83b959850870c93@omaha-classical-calendar
 CATEGORIES:Symphony Joslyn
 DESCRIPTION:Stravinsky’s mastery of neo-classical composition shines in 
  his gorgeous Pulcinella suite for chamber orchestra.\n\nSource: Omaha Symp
@@ -611,7 +768,7 @@ BEGIN:VEVENT
 SUMMARY:Texas Guitar Quartet
 DTSTART:20270423T190000
 DTEND:20270423T190000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:aa25c6ea514c5bf2@omaha-classical-calendar
 CATEGORIES:Chamber Music
 DESCRIPTION:Free and open to the public.\n\nSource: Vesper Concerts\nhttps
@@ -623,7 +780,7 @@ BEGIN:VEVENT
 SUMMARY:Nebraska Wind Symphony
 DTSTART:20270425T193000
 DTEND:20270425T193000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:166f35eefd66db43@omaha-classical-calendar
 DESCRIPTION:Premier of new composition for advanced concert band by local 
  composer and former NWS Associate Director Keith Michael Davis\n\nSource: 
@@ -635,7 +792,7 @@ BEGIN:VEVENT
 SUMMARY:Alessandro
 DTSTART:20270430T193000
 DTEND:20270430T193000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:fc47b6373a820a5f@omaha-classical-calendar
 CATEGORIES:Opera
 DESCRIPTION:Music by George Frideric Handel.\n\nSource: Opera Omaha\nhttps
@@ -647,7 +804,7 @@ BEGIN:VEVENT
 SUMMARY:Nebraska Wind Symphony Small Ensembles
 DTSTART:20270502T150000
 DTEND:20270502T150000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:de1f9b59f1518940@omaha-classical-calendar
 DESCRIPTION:NWS Small Ensembles concert\; Experience the variety of talent
   within our playing membership\n\nSource: Nebraska Wind Symphony\nhttps://
@@ -656,11 +813,14 @@ LOCATION:Lord of Love Lutheran Church\, 10405 Fort Street
 URL:https://nebraskawindsymphony.com/seasons/season50/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Sibelius’ Second
+SUMMARY:Sibelius’ SecondSibelius’ popular Second Symphony and Beethove
+ n’s expressive Fourth Piano Concerto transport the audience through the 
+ Romantic period in this program led by returning conductor Earl Lee and pi
+ anist Janice Carissa.
 DTSTART:20270507T000000
 DTEND:20270508T000000
-DTSTAMP:20261019T172619Z
-UID:3ed591f781910075@omaha-classical-calendar
+DTSTAMP:20261026T171315Z
+UID:f84393bfeacce44c@omaha-classical-calendar
 CATEGORIES:Masterworks
 DESCRIPTION:Sibelius’ popular Second Symphony and Beethoven’s expressi
  ve Fourth Piano Concerto transport the audience through the Romantic perio
@@ -673,7 +833,7 @@ BEGIN:VEVENT
 SUMMARY:Heritage Series 3: Masters of Songs & Strings
 DTSTART:20270516T150000
 DTEND:20270516T150000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:4116df136ee8b286@omaha-classical-calendar
 CATEGORIES:Chamber Music
 DESCRIPTION:Soprano Karina Brazas\, pianist Anne Madison\, and the Heritag
@@ -683,11 +843,13 @@ LOCATION:Omaha Conservatory of Music
 URL:https://www.omahachambermusic.org/concerts-new
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Beethoven & Haydn
+SUMMARY:Beethoven & HaydnHaydn\, the Grandfather of the Symphony\, and his
+  reluctant protégé Beethoven bookend this delightful and dramatic progra
+ m led by conductor Katharina Wincor.
 DTSTART:20270523T000000
 DTEND:20270523T000000
-DTSTAMP:20261019T172619Z
-UID:2582e276d01044ff@omaha-classical-calendar
+DTSTAMP:20261026T171315Z
+UID:91549dd8eb58c2e8@omaha-classical-calendar
 CATEGORIES:Symphony Joslyn
 DESCRIPTION:Haydn\, the Grandfather of the Symphony\, and his reluctant pr
  otégé Beethoven bookend this delightful and dramatic program led by cond
@@ -696,11 +858,13 @@ DESCRIPTION:Haydn\, the Grandfather of the Symphony\, and his reluctant pr
 URL:https://www.omahasymphony.org/concerts/beethoven-haydn
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Applied Underwriters Presents Beethoven’s Ninth
+SUMMARY:Applied Underwriters Presents Beethoven’s NinthThe season conclu
+ des with one of the most famous symphonies of all time: Beethoven’s Nint
+ h\, ending with the epic Ode to Joy.
 DTSTART:20270604T000000
 DTEND:20270605T000000
-DTSTAMP:20261019T172619Z
-UID:ce90e916a4c50212@omaha-classical-calendar
+DTSTAMP:20261026T171315Z
+UID:ff9501610e0cf306@omaha-classical-calendar
 CATEGORIES:Masterworks
 DESCRIPTION:The season concludes with one of the most famous symphonies of
   all time: Beethoven’s Ninth\, ending with the epic Ode to Joy.\n\nSourc
@@ -711,7 +875,7 @@ BEGIN:VEVENT
 SUMMARY:Summer Concert Series concert
 DTSTART:20270606T150000
 DTEND:20270606T150000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:90870adee8707357@omaha-classical-calendar
 CATEGORIES:Chamber Music
 DESCRIPTION:Program TBA\; stay tuned for Summer Series programs.\n\nSource
@@ -724,7 +888,7 @@ BEGIN:VEVENT
 SUMMARY:Summer Concert with the Nebraska Wind Symphony Swingtones
 DTSTART:20270606T180000
 DTEND:20270606T180000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:85386fd9483f3e76@omaha-classical-calendar
 CATEGORIES:Swingtones
 DESCRIPTION:Source: Nebraska Wind Symphony\nhttps://nebraskawindsymphony.c
@@ -736,7 +900,7 @@ BEGIN:VEVENT
 SUMMARY:Summer Concert Series concert
 DTSTART:20270613T150000
 DTEND:20270613T150000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:4b18fddbc1b2edd4@omaha-classical-calendar
 CATEGORIES:Chamber Music
 DESCRIPTION:Program TBA\; stay tuned for Summer Series programs.\n\nSource
@@ -749,7 +913,7 @@ BEGIN:VEVENT
 SUMMARY:Summer Concert Series concert
 DTSTART:20270620T150000
 DTEND:20270620T150000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:459125bd8438c279@omaha-classical-calendar
 CATEGORIES:Chamber Music
 DESCRIPTION:Program TBA\; stay tuned for Summer Series programs.\n\nSource
@@ -762,7 +926,7 @@ BEGIN:VEVENT
 SUMMARY:Summer Concert Series concert
 DTSTART:20270627T150000
 DTEND:20270627T150000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:6dbd3245a9b1ea6a@omaha-classical-calendar
 CATEGORIES:Chamber Music
 DESCRIPTION:Program TBA\; stay tuned for Summer Series programs.\n\nSource
@@ -775,7 +939,7 @@ BEGIN:VEVENT
 SUMMARY:Summer Concert with the Nebraska Wind Symphony Swingtones
 DTSTART:20270702T190000
 DTEND:20270702T190000
-DTSTAMP:20261019T172619Z
+DTSTAMP:20261026T171315Z
 UID:006c0dd4fb071d4c@omaha-classical-calendar
 CATEGORIES:Swingtones
 DESCRIPTION:Source: Nebraska Wind Symphony\nhttps://nebraskawindsymphony.c
