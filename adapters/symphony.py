@@ -74,14 +74,16 @@ class SymphonyAdapter(Adapter):
         return events
 
     def _parse_html(self, html: str) -> list[Event]:
-        # Verified against the live page 2026-08-31. The site is Craft CMS
+        # Verified against the live page 2026-08-31, and again 2026-10-27
+        # after the blurb moved inside the heading. The site is Craft CMS
         # styled with Tachyons utility classes, so there are no semantic
         # class names to hook on. Each concert is an <article>:
         #   <article class="ph2-ns pb3 h-100">
         #     <span>Masterworks</span>              <- series: bare, class-less
         #     <span class="db f5 tc">September 25 - September 26, 2026</span>
-        #     <h1 class="pn-ec ...">Falletta Conducts Gershwin & Strauss</h1>
-        #     <span class="db pn f5">blurb...</span>
+        #     <h3 class="pn-ec ...">Dvořák's Seventh
+        #       <span class="db pn f5">blurb...</span>   <- was a sibling until 2026-10
+        #     </h3>
         #     <a href=".../concerts/<slug>">Read More</a>
         soup = BeautifulSoup(html, "html.parser")
         events: list[Event] = []
@@ -113,13 +115,20 @@ class SymphonyAdapter(Adapter):
                     url = a["href"]
                     break
             desc_el = card.select_one("span.pn")
+            description = desc_el.get_text(" ", strip=True) if desc_el else None
+            # By 2026-10-26 the blurb moved INSIDE the heading, which glued
+            # it onto every title (and so changed every uid). Detach any
+            # span.pn from the heading before reading the title; a no-op
+            # when the blurb is a sibling.
+            for sp in title_el.select("span.pn"):
+                sp.extract()
             events.append(
                 Event(
                     title=re.sub(r"\s+", " ", title_el.get_text(strip=True)),
                     start=start,
                     end=end,
                     url=url,
-                    description=desc_el.get_text(" ", strip=True) if desc_el else None,
+                    description=description,
                     category=series,
                     source=self.source_label,
                 )
