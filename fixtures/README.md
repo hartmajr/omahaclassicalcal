@@ -123,6 +123,17 @@ September 18 & 20, 2026 pair had already been performed at capture time and
 is not included; the page lists past events in a separate section the
 adapter does not read.
 
+**gallery_1516.html** — gallery1516.org/calendar-of-events exactly as our
+client received it on October 27, 2026, unaltered (the whole Squarespace
+page, hence its size). It is what `fetch_raw()` returns, so offline runs
+exercise the full parser: five upcoming "Bagels & Sometimes Bach" Sunday
+concerts (Oct 25 – Nov 22, 2026), each with year-less dates resolved by
+weekday and separate doors/performance times, followed by a PAST EVENTS
+section (March – October 2026 concerts, plus receptions, artist talks and
+a book launch) that the adapter must not read. The weekday window is
+relative to today, so these dates stop resolving after 2027 -- recapture
+then rather than hand-editing.
+
 **nebraska_wind_symphony.json** — The season50 page ("50th Anniversary
 Season – 2026-2027") exactly as nebraskawindsymphony.com's WordPress REST API
 returned it on September 23, 2026: slug, link, last-modified stamp

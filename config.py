@@ -30,6 +30,11 @@ SOURCE_PRIORITY: dict[str, int] = {
     "Lincoln's Symphony Orchestra": 0,
     "Nebraska Chamber Players": 0,
     "Nebraska Wind Symphony": 0,
+    # Presenter of its own series, and the only copy that carries the
+    # series category: UNO's copies of its faculty's appearances name
+    # "Gallery 1516" in their prose, which trips the "gallery" veto, so if
+    # the two merge in dedupe this one must be the survivor.
+    "Gallery 1516": -1,
     "World Concert Hall": 0,        # curated classical-only broadcasts
     # Mixed presenter (Broadway/comedy/pop alongside classical): nonzero so
     # unmatched events default to NON-classical, and so a dedicated source's
@@ -56,6 +61,9 @@ CLASSICAL_CATEGORIES = {
     # The band's own summer series, included by decision 2026-09-23. The
     # adapter tags it; this keeps a "swing"/"jazz" blurb from vetoing it.
     "Nebraska Wind Symphony": {"Swingtones"},
+    # "Bagels & Sometimes Bach", included by decision 2026-10-27. Every
+    # blurb names the venue, and "gallery" is a firm veto below.
+    "Gallery 1516": {"Bagels & Sometimes Bach"},
 }
 # HARD: always non-classical, no rescue.
 NON_CLASSICAL_CATEGORIES = {

@@ -59,6 +59,8 @@ URLS = [
      "https://vesperconcerts.org/"),
     ("Omaha Chamber Music (Events & Tickets page)",
      "https://www.omahachambermusic.org/concerts-new"),
+    ("Gallery 1516 (calendar page)",
+     "https://www.gallery1516.org/calendar-of-events"),
     ("Opera Omaha (season page)",
      "https://operaomaha.org/26-27-season/"),
     ("UNL Music (official ICS feed)",

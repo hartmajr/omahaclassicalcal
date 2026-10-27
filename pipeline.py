@@ -11,6 +11,7 @@ from datetime import datetime
 from pathlib import Path
 
 from adapters.events_calendar import EventsCalendarRest, ICSFeedAdapter
+from adapters.gallery_1516 import Gallery1516Adapter
 from adapters.juilliard import JuilliardAdapter
 from adapters.llm_extract import LLMPageExtractAdapter
 from adapters.localist import LocalistAdapter
@@ -106,6 +107,10 @@ SOURCES = [
         series_hint="Omaha Chamber Music Society",
         default_venue="Omaha Conservatory of Music",
     ),
+    # An art gallery's free Sunday-morning chamber series. Hand-typed text
+    # blocks with year-less dates on a plain Squarespace page; only the
+    # music series is read -- see the adapter docstring.
+    Gallery1516Adapter(),
 
     # --- Lincoln (about an hour down I-80) ---
     # UNL publishes an official ICS feed, so the generic feed adapter serves
