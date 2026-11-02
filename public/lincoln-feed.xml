@@ -7,17 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 26 Oct 2026 17:13:15 +0000</lastBuildDate>
-    <item>
-      <title>Faculty Recital - Emily Salgado, percussion — Nov 1, 2026</title>
-      <link>http://events.unl.edu/music/2026/11/01/202466/</link>
-      <description>Westbrook Music Building Room 116
-Sunday, November 1, 2026 · 3:30 PM
-This event is free and open to the public.
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">3d50032d88da8651@omaha-classical-calendar</guid>
-      <pubDate>Mon, 26 Oct 2026 17:13:15 +0000</pubDate>
-    </item>
+    <lastBuildDate>Mon, 02 Nov 2026 20:41:26 +0000</lastBuildDate>
     <item>
       <title>Nebraska Trombone Ensemble — Nov 2, 2026</title>
       <link>http://events.unl.edu/music/2026/11/02/200805/</link>
@@ -407,70 +397,6 @@ Saturday, December 12, 2026 · 1:30 PM
 Source: UNL Glenn Korff School of Music</description>
       <guid isPermaLink="false">abf48769f6982373@omaha-classical-calendar</guid>
       <pubDate>Mon, 21 Sep 2026 17:00:13 +0000</pubDate>
-    </item>
-    <item>
-      <title>DMA Nehemias Calsin Molleapaza, conducting — Oct 29, 2026</title>
-      <link>http://events.unl.edu/music/2026/10/29/202465/</link>
-      <description>Westbrook Music Building Room 130, and online at Webcast - GKSOM YouTube (https://www.youtube.com/@UNLSoMusic/streams)
-Thursday, October 29, 2026 · 7:30 PM
-This event is free and open to the public.
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">c190bb5a36a89c09@omaha-classical-calendar</guid>
-      <pubDate>Thu, 03 Sep 2026 04:35:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>Violin Fantasy — Oct 30, 2026</title>
-      <link>https://lincolnsymphony.com/violin-fantasy/</link>
-      <description>Lied Center for Performing Arts
-Friday, October 30, 2026 · 7:30 PM
-Source: Lincoln's Symphony Orchestra</description>
-      <guid isPermaLink="false">59d17b15f0ac5f7a@omaha-classical-calendar</guid>
-      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>Tchaikovsky’s Fourth — Jan 23, 2027</title>
-      <link>https://lincolnsymphony.com/tchaikovskys-fourth/</link>
-      <description>Lied Center for Performing Arts
-Saturday, January 23, 2027 · 7:30 PM
-Source: Lincoln's Symphony Orchestra</description>
-      <guid isPermaLink="false">a69fc554c9715ea7@omaha-classical-calendar</guid>
-      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>Rachmaninoff’s Triumph — Mar 5, 2027</title>
-      <link>https://lincolnsymphony.com/rachmaninoffs-triumph/</link>
-      <description>Lied Center for Performing Arts
-Friday, March 5, 2027 · 7:30 PM
-Source: Lincoln's Symphony Orchestra</description>
-      <guid isPermaLink="false">342578dfefc69c49@omaha-classical-calendar</guid>
-      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>Beethoven’s Ninth — Apr 9, 2027</title>
-      <link>https://lincolnsymphony.com/beethovens-ninth-27/</link>
-      <description>Lied Center for Performing Arts
-Friday, April 9, 2027 · 7:30 PM
-Source: Lincoln's Symphony Orchestra</description>
-      <guid isPermaLink="false">6cc9130027e3d229@omaha-classical-calendar</guid>
-      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>Organ Celebration (Apr 30, 7:30pm) — Apr 30, 2027</title>
-      <link>https://lincolnsymphony.com/organ-celebration/</link>
-      <description>First-Plymouth Church
-Friday, April 30, 2027 · 7:30 PM
-Source: Lincoln's Symphony Orchestra</description>
-      <guid isPermaLink="false">3bf9c348378a60e1@omaha-classical-calendar</guid>
-      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
-    </item>
-    <item>
-      <title>Organ Celebration (May 1, 7:30pm) — May 1, 2027</title>
-      <link>https://lincolnsymphony.com/organ-celebration/</link>
-      <description>First-Plymouth Church
-Saturday, May 1, 2027 · 7:30 PM
-Source: Lincoln's Symphony Orchestra</description>
-      <guid isPermaLink="false">e65e311c23935c62@omaha-classical-calendar</guid>
-      <pubDate>Tue, 01 Sep 2026 00:03:38 +0000</pubDate>
     </item>
   </channel>
 </rss>
