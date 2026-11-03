@@ -5,10 +5,11 @@ Classifier design (shaped by real captured data):
      KVNO's Classical).
   2. HARD non-classical categories always lose (Family, Community, Forte).
   3. SOFT non-classical categories (the Symphony's LIVE series) lose UNLESS
-     a canonical composer name appears -- real data showed LIVE is a mixed
-     bag: mostly film/pops nights, but also Carmina Burana. "Orff" rescues
-     Carmina; "John Williams" is deliberately NOT a rescue signal, so film
-     nights stay out.
+     a canonical composer name (or a work that names one, CLASSICAL_WORKS)
+     appears -- real data showed LIVE is a mixed bag: mostly film/pops
+     nights, but also Carmina Burana, which the title itself now rescues;
+     "John Williams" is deliberately NOT a rescue signal, so film nights
+     stay out.
   4. Firm keyword vetoes, then soft keyword vetoes (festival), then
      positive keywords (instruments/forms/composers), then source default.
 """
@@ -99,6 +100,12 @@ COMPOSER_KEYWORDS = {
     "philip glass", "john adams", "pärt", "arvo part", "messiaen", "ligeti",
     "britten", "copland",
 }
+# Works that name their composer as surely as a surname does, for blurbs
+# that name only the piece. Live data 2026-11-02: the Symphony's LIVE blurb
+# for Carmina Burana stopped saying "Orff", which silently dropped it from
+# the classical feed. Only titles no film or pops night would share.
+CLASSICAL_WORKS = {"carmina burana"}
+COMPOSER_KEYWORDS |= CLASSICAL_WORKS
 
 # Instrument/form keywords -- positive signal (cannot rescue SOFT categories).
 CLASSICAL_KEYWORDS = {
