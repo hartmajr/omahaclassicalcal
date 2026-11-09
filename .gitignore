@@ -9,3 +9,10 @@ venv/
 # Never commit credentials
 .env
 .env.*
+
+# Permission-request email drafts: name recipients and private details.
+# Kept local only; the public repo documents the policy, not the letters.
+docs/REQUESTS.md
+
+# Claude Code per-user permissions; can hold approved commands verbatim.
+.claude/settings.local.json
