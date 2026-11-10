@@ -79,6 +79,7 @@ adding a source is just writing one more adapter and adding a line to
 | Vesper Concerts | season-page HTML parse | In Omaha | live adapter (verified 2026-08-31) |
 | Opera Omaha | season-page HTML parse | In Omaha | live adapter (verified 2026-08-31) |
 | Nebraska Wind Symphony | WordPress REST API, season page prose | In Omaha | live adapter (verified 2026-09-23; newest `seasonNN` page picked each run, Swingtones summer concerts included by decision) |
+| Gallery 1516 | Squarespace page HTML parse (hand-typed text blocks, year-less dates) | In Omaha | live adapter (verified 2026-10-27; "Bagels & Sometimes Bach" Sunday series only, classical by category since every blurb says "gallery") |
 | UNL Glenn Korff School of Music | official UNL Events `?format=ics` feed | In Lincoln | live adapter |
 | Lincoln's Symphony Orchestra | season-page HTML parse | In Lincoln | live adapter (verified 2026-08-31) |
 | Lied Center for Performing Arts | events-page HTML parse (Drupal Views) + per-event pages for hall and showtimes | In Lincoln | live adapter (verified 2026-09-22; detail pages cached in `lied_center_cache.json`; mixed presenter so the classifier filters hard) |
@@ -213,6 +214,30 @@ declined for Creighton and Oberlin, and doing it here would make the whole
 not a supported configuration. Adding a real contact address to the
 User-Agent in `adapters/base.py` is encouraged — that helps a site decide to
 allow you.
+
+**Past issue: lincolnsymphony.com and orchestraomaha.org returned 403 to
+this bot (2026-10-05, lifted on its own by 2026-10-12).** The two sites share one SiteGround account
+(identical `Host-Header` hash, both in 35.206.0.0/16 on Google Cloud), which
+is why they have always failed as a pair. Through September they only timed
+out together on GitHub's runners while answering instantly from a home
+connection. On 2026-10-05 the host served a static nginx
+`403 - Forbidden` page to our identified client for *every* URL on both
+domains, robots.txt included, while a real browser from the same IP loads
+them normally. The symptom in `status.json` is a JSON decode error for
+Orchestra Omaha (the REST endpoint returns the HTML error page) and `0` for
+Lincoln's Symphony (the parser finds no concerts in the error page).
+
+This is the Juilliard case again -- a refusal aimed at the client, not a
+robots.txt policy -- and the same rules apply: do not disguise the client,
+ask for permission. Drafted requests to both organisations are in
+`docs/REQUESTS.md`, a gitignored local file (it names recipients and the
+repo is public); they were not needed, but are kept in case it recurs.
+The run degraded cleanly while it lasted: Orchestra Omaha errored, LSO
+returned `[]`, and the prune guard trusted neither, so the stored events
+stayed published and simply aged. By the 2026-10-12 run every URL answered
+200 to our UA again. If the runner-only timeouts return instead, the fix
+to try is spacing the two fetches apart rather than lengthening the
+timeout.
 
 ### Classifier note: sources without series labels
 

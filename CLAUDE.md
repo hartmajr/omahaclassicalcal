@@ -48,7 +48,10 @@ Adapter families, in order of preference:
    for dates). Nebraska Wind Symphony (2026-09-23, 7 events) reads its
    prose season page through WordPress's REST API, because the page's slug
    changes every season (`season50`, `season51`, …) and a hardcoded URL
-   would silently serve last year. Juilliard still 403s (see below).
+   would silently serve last year. Gallery 1516 (2026-10-27, 5 events)
+   reads only its "Bagels & Sometimes Bach" Sunday series off a page of
+   hand-typed text blocks; dates carry no year, so the stated weekday picks
+   it. Juilliard still 403s (see below).
 3. **LLM extraction** — `LLMPageExtractAdapter` (Omaha Chamber Music),
    `WorldConcertHallAdapter` (Mastodon RSS; retired with the Broadcasts
    channel 2026-09-01). Needs `ANTHROPIC_API_KEY`. Content-hash cached,
@@ -93,6 +96,19 @@ though it does upsert fetched events into `events.db`.
   to web/IT); page fetches are now spaced 10s apart, as that request
   promises. Until then the Online channel publishes 0 events (Juilliard is
   its only enabled source) — left visible by decision.
+- **Lied Center blocked by a Cloudflare challenge since 2026-10-26.** Every
+  URL, robots.txt included, answers our client with a 403 "Just a
+  moment..." page — from GitHub's runners and, retested 2026-11-02, from a
+  residential connection too, so it is the site, not the runners'
+  IPs (`check_robots.py` reports UNKNOWN because robots.txt itself is
+  challenged). The 2026-10-19 run was the last good fetch. The prune guard
+  is holding the 6 classical Lied events seen that day, so they stay
+  published, but new Lied listings are missed and a cancellation would not
+  be pruned. Same rule as Juilliard: ask, don't disguise. Request sent
+  2026-11-02 to the Lied's press office and general inbox, asking for a
+  Cloudflare skip rule for our UA or an events feed; recipients and text
+  in `docs/REQUESTS.md`. A skip rule needs no code change (the next Monday's
+  `status.json` shows a count again); a feed means reworking the adapter.
 - **Placeholders**: resolved 2026-08-31. `USER_AGENT` (`adapters/base.py`)
   carries mailto:omahaadultpianoclub@gmail.com and `SITE_URL` (`pipeline.py`)
   is https://hartmajr.github.io/omahaclassicalcal (GitHub user `hartmajr`,
@@ -123,13 +139,28 @@ though it does upsert fetched events into `events.db`.
   when Season 63 posts (expect mid-2027):** the coverage is incidental, so
   if LFCM books a venue we don't poll, those concerts vanish silently with
   no error anywhere. Compare lfcm.us against the Lincoln channel then.
-- **LSO and Orchestra Omaha share a host** (both resolve into 35.206.0.0/16
-  with the same nginx/X-Cache-Enabled signature), which is why they time out
-  together rather than independently — 2026-09-07 and 2026-09-21 both lost
-  exactly this pair. Both are sub-second from a residential connection, so
-  this is the host treating GitHub's runner IPs differently, not an outage.
-  If it recurs, the thing to try is spacing the two fetches apart rather
-  than lengthening the timeout again.
+- **LSO and Orchestra Omaha share a host, and it blocked us once
+  (2026-10-05 to by 2026-10-12, lifted on its own).** Both sites sit on the
+  same SiteGround account (same `Host-Header` hash, both in 35.206.0.0/16
+  on Google Cloud; LSO's contact page even leaks a `*.sg-host.com` staging
+  address), so they fail together. Through 2026-09 the pair only *timed
+  out* together on GitHub's runners (2026-09-07, 2026-09-21) while
+  answering sub-second from a residential connection. On 2026-10-05 the
+  23:40 UTC run still got 11 + 2 events, but the 00:54 UTC run 75 minutes
+  later got a non-JSON reply and 0 events, and from a residential
+  connection every URL on both domains -- robots.txt and homepages
+  included -- returned a static nginx 403 ("Access to this page is
+  forbidden") to our identified client while a real browser from the same
+  IP loaded them fine: the host refusing the client, the Juilliard
+  situation. The prune guard held (LSO's `[]` untrusted, Orchestra Omaha
+  errored), so their stored events stayed published. By the 2026-10-12
+  scheduled run the block was gone (13 + 2 events), and that day every URL
+  answered 200 to our UA from both curl and httpx, residential connection.
+  Requests drafted 2026-10-05 in `docs/REQUESTS.md` (gitignored; names
+  recipients; maintainer's machine only) were not needed -- keep them in
+  case it recurs. If it does: a 403 to our client means ask, don't
+  disguise; a timeout of the pair on the runners means try spacing the two
+  fetches apart, not lengthening the timeout.
 - **Possible NWS/UNO duplicate on 2026-12-06.** NWS's December concert is
   joint with the UNO University Band. If UNO's calendar lists it, the venues
   are compatible for dedupe, but the copies merge only if UNO's title
