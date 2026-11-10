@@ -78,7 +78,11 @@ NON_CLASSICAL_CATEGORIES = {
 }
 # SOFT: non-classical unless a composer name appears (see module docstring).
 SOFT_NON_CLASSICAL_CATEGORIES = {
-    "Omaha Symphony": {"LIVE with the Omaha Symphony"},
+    # "Special Concerts" first appeared 2026-11-09 with Jeff Goldblum and the
+    # Mildred Snitzer Orchestra (a jazz night), which "orchestra" + the
+    # Symphony's name filed as classical. Star-guest nights like LIVE: a
+    # named composer still rescues a genuinely classical special concert.
+    "Omaha Symphony": {"LIVE with the Omaha Symphony", "Special Concerts"},
 }
 
 # Canonical classical composers -- a strong positive signal, and the only

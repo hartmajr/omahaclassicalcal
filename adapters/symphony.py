@@ -69,6 +69,7 @@ class SymphonyAdapter(Adapter):
                     description=r.get("description"),
                     category=r.get("series"),
                     source=self.source_label,
+                    all_day=True,   # see _dates
                 )
             )
         return events
@@ -131,11 +132,15 @@ class SymphonyAdapter(Adapter):
                     description=description,
                     category=series,
                     source=self.source_label,
+                    all_day=True,   # see _dates
                 )
             )
         return events
 
     def _dates(self, date_text: str, _title: str) -> tuple[datetime | None, datetime | None]:
+        """Day-precision dates only: the season page publishes no showtimes,
+        so every Symphony event is all-day. Until 2026-11-09 they went out
+        as zero-length midnight events ("12:00 AM" in calendar apps)."""
         m = _DATE_RANGE.search(date_text.replace("\n", " "))
         if not m:
             return None, None
