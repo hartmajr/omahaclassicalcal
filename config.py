@@ -30,6 +30,7 @@ SOURCE_PRIORITY: dict[str, int] = {
     "UNL Glenn Korff School of Music": 0,
     "Lincoln's Symphony Orchestra": 0,
     "Nebraska Chamber Players": 0,
+    "Lincoln Friends of Chamber Music": 0,
     "Nebraska Wind Symphony": 0,
     # Presenter of its own series, and the only copy that carries the
     # series category: UNO's copies of its faculty's appearances name
@@ -65,6 +66,10 @@ CLASSICAL_CATEGORIES = {
     # "Bagels & Sometimes Bach", included by decision 2026-10-27. Every
     # blurb names the venue, and "gallery" is a firm veto below.
     "Gallery 1516": {"Bagels & Sometimes Bach"},
+    # A presenter that programmes nothing but chamber music (added
+    # 2026-11-10). By category, so an ensemble whose name carries no
+    # keyword ("Wingra", "Poiesis") can't fall through.
+    "Lincoln Friends of Chamber Music": {"Lincoln Friends of Chamber Music"},
 }
 # HARD: always non-classical, no rescue.
 NON_CLASSICAL_CATEGORIES = {

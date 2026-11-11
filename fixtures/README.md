@@ -97,19 +97,25 @@ pages 3+ could not be captured because the capture tooling collapsed
 (MAX_PAGES=20, ~a full season) and will pick up the October streams. Verify
 with `python main.py --only juilliard`.
 
-**lied_center.json** — All 55 event cards from liedcenter.org/events-page,
-captured live September 22, 2026, each enriched with the hall and showtimes
-read from its own /event/ page (54 carry a venue; 52 carry showtimes, 96 in
-total). Titles, day-precision listing dates, teaser prose, event-type labels
-and URLs are exactly as parsed. Includes the six Lincoln's Symphony
-co-presentations so the adapter's skip rule is exercised, one card with no
-venue published so the building-name fallback is exercised, and three
-E.N. Thompson Forum lectures with no showtimes so the all-day fallback is
-exercised. Nine events are matinee/evening double-headers on a single day
-(Mamma Mia, Hamilton, Clue and others), which is what the time-labelled
-titles are for. This replaces the September 1 capture of 49 cards, which
-predated detail-page enrichment and so carried neither venue nor showtimes;
-the past-dated "Metro Jazz Quintet" card noted there is no longer listed.
+**lied_center.json** — The Lied's own calendar on UNL Events,
+`events.unl.edu/Lied_Center/upcoming/?format=json&limit=-1`, captured live
+November 10, 2026: 53 performances, 2026-11-13 to 2027-04-18. Two edits
+only: the JSON is re-indented, and each event's `PublicEventContacts`
+(a named Lied staff member's email and phone, which the adapter never
+reads) is removed so the public repo doesn't carry it. Every other field
+is as UNL served it. Several
+shows are matinee/evening double-headers on one day (Mamma Mia, Hamilton,
+Clue, Shucked, Water for Elephants, Riverdance), which is what the
+time-labelled titles are for. It contains no Lincoln's Symphony
+co-presentations, so the adapter's LSO skip rule is not exercised offline.
+This replaces the September 22 capture of liedcenter.org/events-page plus
+its event pages, which the adapter no longer reads (Cloudflare; see the
+adapter docstring).
+
+**lfcm.html** — The lfcm.us homepage, captured live November 10, 2026,
+unedited. It lists all four Season 62 concerts, two of them already past
+(Sept 22 and Oct 25), one with a performer line before its date (the
+Pacifica Quartet concert) so the title-joining rule is exercised.
 
 **nebraska_chamber_players.json** — All 6 upcoming performances from
 nebraskachamberplayers.org/calendar, captured live September 22, 2026

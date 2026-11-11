@@ -32,17 +32,17 @@ Adapter families, in order of preference:
 1. **Official feed** — `ICSFeedAdapter` (UNL, Omaha Conservatory),
    `EventsCalendarRest` (KVNO, Orchestra Omaha), `LocalistAdapter` (UNO).
    Three sources share the Events Calendar adapter; check the platform
-   before writing anything new.
+   before writing anything new. The Lied Center reads its own calendar on
+   UNL Events (`events.unl.edu/Lied_Center`, JSON for the link back to
+   each Lied event page) since 2026-11-10; see Open items for why.
 2. **HTML parse** — Symphony, Vesper, Opera Omaha, Lincoln's Symphony,
-   Lied Center, Nebraska Chamber Players, Juilliard. Symphony/Vesper/Opera
-   Omaha selectors were
+   Nebraska Chamber Players, Lincoln Friends of Chamber Music, Juilliard.
+   Symphony/Vesper/Opera Omaha selectors were
    rewritten against the live pages 2026-08-31 and verified (37 / 7 / 9
-   events); Lincoln's Symphony worked live as written; Lied Center was
-   built 2026-09-01 and extended 2026-09-22 to read each event's hall and
-   showtimes from its own page (92 events; venue-per-event matters because
-   the Lied programmes halls it does not contain, e.g. Kimball). One
-   request per event against a 10s crawl-delay, cached in
-   `lied_center_cache.json`; LSO co-listings still skipped. Nebraska Chamber Players was
+   events); Lincoln's Symphony worked live as written. LFCM (2026-11-10,
+   4 concerts) reads its homepage, which carries the whole current season;
+   the season's own page moves every year (`/2026-2027-season/`), so it is
+   never hardcoded. Nebraska Chamber Players was
    built and verified live 2026-09-22 (6 events; Squarespace event list,
    whose URL slugs are recycled between seasons and must never be trusted
    for dates). Nebraska Wind Symphony (2026-09-23, 7 events) reads its
@@ -96,19 +96,27 @@ though it does upsert fetched events into `events.db`.
   to web/IT); page fetches are now spaced 10s apart, as that request
   promises. Until then the Online channel publishes 0 events (Juilliard is
   its only enabled source) — left visible by decision.
-- **Lied Center blocked by a Cloudflare challenge since 2026-10-26.** Every
-  URL, robots.txt included, answers our client with a 403 "Just a
-  moment..." page — from GitHub's runners and, retested 2026-11-02, from a
-  residential connection too, so it is the site, not the runners'
-  IPs (`check_robots.py` reports UNKNOWN because robots.txt itself is
-  challenged). The 2026-10-19 run was the last good fetch. The prune guard
-  is holding the 6 classical Lied events seen that day, so they stay
-  published, but new Lied listings are missed and a cancellation would not
-  be pruned. Same rule as Juilliard: ask, don't disguise. Request sent
-  2026-11-02 to the Lied's press office and general inbox, asking for a
-  Cloudflare skip rule for our UA or an events feed; recipients and text
-  in `docs/REQUESTS.md`. A skip rule needs no code change (the next Monday's
-  `status.json` shows a count again); a feed means reworking the adapter.
+- **Lied Center: liedcenter.org is off limits; read from UNL Events since
+  2026-11-10.** From 2026-10-26 every liedcenter.org URL, robots.txt
+  included, answered our client with a Cloudflare 403 "Just a moment..."
+  page (runners and residential alike); 2026-10-19 was the last good
+  fetch. We asked (2026-11-02, text in `docs/REQUESTS.md`); the Lied's
+  press office replied that after a hosting change they cannot allow
+  particular crawlers, and pointed us to `/events-feed`, an RSS view that
+  is challenged too and lists only the 10 latest-posted events with no
+  performance dates. Ask, don't disguise: we stopped reading their site.
+  The Lied's marketing office posts its own season to UNL's events
+  calendar (`Lied_Center`, case-sensitive short name; lowercase
+  `liedcenter` is an empty calendar), which serves us normally, so the
+  adapter reads that. It carries real showtimes and halls but **no rental
+  events** — which is how LFCM's concerts used to arrive (see below).
+  Hall names match the old adapter's, so 47 of 53 event uids carried over
+  (of the classical ones only CARMEN.maquia changed: UNL drops the accent
+  in "Hispánico"). LFCM's "Johnny Carson Theater at the Lied" is published
+  as "Carson Theater" for the same reason.
+  A thank-you to the press office saying we'll use the UNL listing, and
+  asking whether it is kept current all season, is drafted in
+  `docs/REQUESTS.md`.
 - **Placeholders**: resolved 2026-08-31. `USER_AGENT` (`adapters/base.py`)
   carries mailto:omahaadultpianoclub@gmail.com and `SITE_URL` (`pipeline.py`)
   is https://hartmajr.github.io/omahaclassicalcal (GitHub user `hartmajr`,
@@ -128,17 +136,15 @@ though it does upsert fetched events into `events.db`.
   Chorus, Papillion Area Concert Band, Soli Deo Gloria Cantorum, 1st
   Nebraska Volunteers Brass Band. Omaha Area Youth Orchestra's site is stale
   (2016). Omaha Symphonic Chorus lists only a gala right now.
-- **Lincoln Friends of Chamber Music is deliberately NOT a source.** Checked
-  2026-09-22: LFCM is a presenter, not a venue, and their entire Season 62
-  (4 concerts) already arrives via the Lied Center adapter, which lists all
-  four — including the one LFCM plays at Kimball Recital Hall, and which we
-  therefore label "Lied Center" (that adapter hardcodes its venue, since the
-  listing page publishes none). Their site has no event feed (WordPress, no
-  calendar plugin, empty RSS), so polling them would mean writing an HTML
-  parser for events we already hold. **Recheck
-  when Season 63 posts (expect mid-2027):** the coverage is incidental, so
-  if LFCM books a venue we don't poll, those concerts vanish silently with
-  no error anywhere. Compare lfcm.us against the Lincoln channel then.
+- **Lincoln Friends of Chamber Music became a source 2026-11-10.** Until
+  then it was deliberately not one: its concerts arrived incidentally via
+  the Lied's own listing. The Lied's UNL calendar carries no rentals, so
+  that coverage ended exactly the way this note used to warn it might —
+  silently. `adapters/lfcm.py` reads the lfcm.us homepage (WordPress page
+  builder, no feed, stock robots.txt), one column per concert, classical
+  by category. **When Season 63 posts (expect mid-2027)**, check the
+  homepage still carries the whole season in the same layout; the
+  per-concert pages move to a new `/YYYY-YYYY-season/` path each year.
 - **LSO and Orchestra Omaha share a host, and it blocked us once
   (2026-10-05 to by 2026-10-12, lifted on its own).** Both sites sit on the
   same SiteGround account (same `Host-Header` hash, both in 35.206.0.0/16

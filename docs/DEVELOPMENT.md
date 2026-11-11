@@ -82,7 +82,8 @@ adding a source is just writing one more adapter and adding a line to
 | Gallery 1516 | Squarespace page HTML parse (hand-typed text blocks, year-less dates) | In Omaha | live adapter (verified 2026-10-27; "Bagels & Sometimes Bach" Sunday series only, classical by category since every blurb says "gallery") |
 | UNL Glenn Korff School of Music | official UNL Events `?format=ics` feed | In Lincoln | live adapter |
 | Lincoln's Symphony Orchestra | season-page HTML parse | In Lincoln | live adapter (verified 2026-08-31) |
-| Lied Center for Performing Arts | events-page HTML parse (Drupal Views) + per-event pages for hall and showtimes | In Lincoln | live adapter (verified 2026-09-22; detail pages cached in `lied_center_cache.json`; mixed presenter so the classifier filters hard) |
+| Lied Center for Performing Arts | the Lied's own UNL Events calendar (`events.unl.edu/Lied_Center`, JSON) | In Lincoln | live adapter (switched 2026-11-10 from liedcenter.org, which challenges every bot and cannot exempt one; JSON for the link back to each Lied event page; no rental events; mixed presenter so the classifier filters hard) |
+| Lincoln Friends of Chamber Music | homepage HTML parse (WordPress page builder, one column per concert) | In Lincoln | live adapter (verified 2026-11-10; added because UNL Events carries no Lied rentals, which is how LFCM's concerts used to arrive; classical by category) |
 | Nebraska Chamber Players | Squarespace event-list HTML parse | In Lincoln | live adapter (verified 2026-09-22; `?format=ical` export is robots-disallowed and not used) |
 | Oberlin Conservatory | Localist JSON API (webcast types) | Online | live adapter |
 | Juilliard | Drupal calendar HTML parse (paginated) | Online | live adapter (verify selectors) |

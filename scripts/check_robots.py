@@ -76,8 +76,12 @@ URLS = [
      "https://nebraskachamberplayers.org/calendar"),
     ("Lincoln's Symphony (season page)",
      "https://lincolnsymphony.com/season-at-a-glance/"),
-    ("Lied Center (events listing)",
-     "https://www.liedcenter.org/events-page"),
+    # The Lied's own site is no longer fetched (Cloudflare challenge, no
+    # exemptions possible); its season comes from its posts on UNL Events.
+    ("Lied Center (its UNL Events calendar, JSON)",
+     "https://events.unl.edu/Lied_Center/upcoming/?format=json&limit=-1"),
+    ("Lincoln Friends of Chamber Music (homepage)",
+     "https://lfcm.us/"),
     ("Juilliard (calendar, as requested)",
      "https://www.juilliard.edu/stage-beyond/performance/calendar?page=1"),
     ("World Concert Hall (Mastodon RSS)",

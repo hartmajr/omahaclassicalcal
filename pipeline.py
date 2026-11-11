@@ -17,6 +17,7 @@ from adapters.llm_extract import LLMPageExtractAdapter
 from adapters.localist import LocalistAdapter
 from adapters.nebraska_chamber_players import NebraskaChamberPlayersAdapter
 from adapters.nebraska_wind_symphony import NebraskaWindSymphonyAdapter
+from adapters.lfcm import LFCMAdapter
 from adapters.lied_center import LiedCenterAdapter
 from adapters.lincoln_symphony import LincolnSymphonyAdapter
 from adapters.opera_omaha import OperaOmahaAdapter
@@ -130,10 +131,15 @@ SOURCES = [
     NebraskaChamberPlayersAdapter(),
     # UNL's presenting venue: touring classical acts mixed with Broadway,
     # comedy, and pop, so the classifier filters hard here (default verdict
-    # is non-classical -- see SOURCE_PRIORITY). Day-precision dates publish
-    # as all-day events; LSO co-presentations are skipped in favour of
-    # LSO's own adapter.
+    # is non-classical -- see SOURCE_PRIORITY). Read from the Lied's own
+    # posts on UNL Events since 2026-11-10: liedcenter.org challenges every
+    # bot and cannot exempt one (see the adapter docstring). LSO
+    # co-presentations are skipped in favour of LSO's own adapter.
     LiedCenterAdapter(),
+    # A chamber-music presenter renting Lied and Kimball halls. Its concerts
+    # used to arrive via the Lied's listing; UNL Events carries no rentals,
+    # so LFCM is read from its own homepage.
+    LFCMAdapter(),
 
     # --- Online (streamed institutional performances) ---
     # Oberlin is DISABLED, not forgotten: calendar.oberlin.edu's robots.txt
@@ -186,6 +192,14 @@ def run(offline: bool = False, fail_under: int | None = None,
                     f"{len(evs)} events -- WARNING: source reports {warn[1]} "
                     f"but query-free mode fetched only {warn[0]}. Robots.txt "
                     "forbids pagination here; ask the site for a feed.")
+            # A parser that recognized an entry but could not date it says
+            # so here, rather than losing one concert silently while the
+            # rest of the source looks healthy.
+            unparsed = getattr(adapter, "unparsed", None)
+            if unparsed:
+                per_source[adapter.source_label] = (
+                    f"{len(evs)} events -- WARNING: could not read a date for "
+                    + "; ".join(unparsed[:5]) + ". The page layout may have changed.")
             # Only a source that returned events counts as healthy. A broken
             # parser returns [] WITHOUT raising -- if that counted as "ok",
             # pruning would silently delete every event the source had.
