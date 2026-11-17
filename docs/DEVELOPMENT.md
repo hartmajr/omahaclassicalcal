@@ -144,8 +144,20 @@ python main.py --only juilliard        # live, just this adapter
 The loop also **stops as soon as a page returns content it has already
 seen**. That guard matters: if Juilliard ever changes the parameter, the
 adapter stops after two fetches instead of re-parsing identical HTML a dozen
-times and hammering their server. `page_url_template` is available as an
-override if the endpoint ever moves.
+times and hammering their server. It likewise stops at the first page with
+no `/event/` links (past the season's end, or not the calendar at all).
+`page_url_template` is available as an override if the endpoint ever moves.
+
+**Diagnostics.** Each live run publishes `diagnostics.Juilliard` in
+`status.json`: per page, the HTTP status, final URL, size, `<title>`, and
+count of `/event/` links, plus why the loop stopped; then what the parser
+saw (date headings, event links, links with no date before them, undatable
+events, events tagged as streamed, events kept) and the first three event
+blocks as the regexes see them. A `0` can therefore be told apart from "no
+streams this month", "selectors don't match", and "not the calendar". Page 0
+is also saved as `debug/juilliard-page0.html` (gitignored), which the
+workflow uploads as the `debug-samples` artifact for 7 days, so the
+selectors can be checked against markup the runner actually got.
 
 There is no separate livestream feed — `juilliard.edu/live` is an
 information page whose own FAQ confirms streamed performances are listed in

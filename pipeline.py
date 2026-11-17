@@ -174,6 +174,7 @@ def run(offline: bool = False, fail_under: int | None = None,
     # 1. Collect from every source (resilient: one bad source can't sink the run).
     raw_events = []
     per_source = {}
+    diagnostics = {}
     sources_ok: list[str] = []
     sources = SOURCES
     if only:
@@ -210,6 +211,8 @@ def run(offline: bool = False, fail_under: int | None = None,
             raw_events.extend(evs)
         except Exception as exc:  # noqa: BLE001
             per_source[adapter.source_label] = f"ERROR: {exc}"
+        if getattr(adapter, "diagnostics", None):
+            diagnostics[adapter.source_label] = adapter.diagnostics
 
     # 2. Dedupe across sources, then 3. classify classical-vs-other.
     deduped = dedupe(raw_events)
@@ -248,6 +251,7 @@ def run(offline: bool = False, fail_under: int | None = None,
         return {
             "mode": "diagnostic (--only): no files written",
             "per_source": per_source,
+            "diagnostics": diagnostics,
             "collected": len(raw_events),
             "after_dedupe": len(deduped),
             "by_channel": {g["label"]: len(g["events"]) for g in groups},
@@ -284,6 +288,7 @@ def run(offline: bool = False, fail_under: int | None = None,
         "by_channel": {g["label"]: len(g["events"]) for g in groups},
         "newly_seen": len(new_uids),
         "pruned_cancelled": pruned,
+        "diagnostics": diagnostics,
         "out_dir": str(OUT_DIR),
     }
     # Publish the run summary alongside the site so per-source health can

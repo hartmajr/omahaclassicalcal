@@ -14,5 +14,8 @@ venv/
 # Kept local only; the public repo documents the policy, not the letters.
 docs/REQUESTS.md
 
+# Raw page samples adapters save for selector debugging (see build.yml).
+debug/
+
 # Claude Code per-user permissions; can hold approved commands verbatim.
 .claude/settings.local.json

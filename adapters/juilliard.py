@@ -23,6 +23,7 @@ import hashlib
 import re
 import time
 from datetime import datetime
+from pathlib import Path
 from typing import Any
 
 from bs4 import BeautifulSoup
@@ -40,6 +41,7 @@ MAX_PAGES = 20   # ~2.5 weeks per page -> roughly a full season
 # the sites that do set one ask for (~3 minutes a week at most) -- and the
 # request for a Cloudflare allowance promises exactly this.
 PAGE_DELAY_SECONDS = 10
+DEBUG_DIR = Path(__file__).resolve().parent.parent / "debug"
 
 
 class JuilliardAdapter(Adapter):
@@ -56,7 +58,8 @@ class JuilliardAdapter(Adapter):
         self.page_url_template = page_url_template
 
     def fetch_raw(self) -> Any:
-        """Fetch calendar pages, stopping as soon as one adds nothing new.
+        """Fetch calendar pages, stopping as soon as one adds nothing new
+        (a repeat of an earlier page, or a page with no event links).
 
         The calendar's "Load More" is JavaScript. Whether `?page=N` also
         works server-side could not be confirmed, so this must handle BOTH
@@ -71,21 +74,47 @@ class JuilliardAdapter(Adapter):
         that pattern as `page_url_template` (it takes `{page}`).
         """
         pages: list[str] = []
-        seen_digests: set[str] = set()
+        seen_digests: dict[str, int] = {}
+        log: list[dict] = []
+        # Published in status.json: until 2026-11-16 Juilliard only ever
+        # 403'd, so its live HTML has never been checked against the parser.
+        # Registered before fetching so a refusal mid-run still shows the
+        # pages that came back first.
+        self.diagnostics["fetch"] = {"pages": log,
+                                     "stopped": "error -- see per_source"}
+        stop = f"reached MAX_PAGES ({MAX_PAGES})"
         for page in range(MAX_PAGES):
             if page:
                 time.sleep(PAGE_DELAY_SECONDS)
             url = (self.page_url_template.format(page=page)
                    if self.page_url_template else CALENDAR_URL)
             params = {} if self.page_url_template else ({"page": page} if page else {})
-            html = self._get(url, **params).text
+            resp = self._get(url, **params)
+            html = resp.text
             digest = hashlib.sha1(html.encode()).hexdigest()
+            title = re.search(r"<title[^>]*>(.*?)</title>", html, re.S | re.I)
+            links = len(re.findall(r'href="[^"]*/event/', html))
+            log.append({"page": page, "status": resp.status_code,
+                        "url": str(resp.url), "bytes": len(html),
+                        "title": " ".join(title.group(1).split())[:100] if title else None,
+                        "event_links": links, "sha1": digest[:10]})
+            if page == 0:
+                _save_sample(html)
             if digest in seen_digests:
                 # Server ignored the page parameter -- further fetches would
                 # return the same HTML. Stop rather than hammering the site.
+                stop = f"page {page} repeats page {seen_digests[digest]}"
                 break
-            seen_digests.add(digest)
+            seen_digests[digest] = page
+            if not links:
+                # Past the end of the season -- or not the calendar at all
+                # (a challenge or error page served as 200). Either way more
+                # pages won't help. On 2026-11-16 the runner's build took
+                # ~4 extra minutes -- likely all 20 pages -- for 0 events.
+                stop = f"page {page} has no /event/ links"
+                break
             pages.append(html)
+        self.diagnostics["fetch"]["stopped"] = stop
         return "\n".join(pages)
 
     def parse(self, raw: Any) -> list[Event]:
@@ -107,17 +136,32 @@ class JuilliardAdapter(Adapter):
         soup = BeautifulSoup(html, "html.parser")
         events: list[Event] = []
         current_date = None
+        # Each stage of the walk is counted, so a 0 in status.json says
+        # *where* the events went: no date headings, links without a date
+        # before them, undatable, or simply none tagged as streamed.
+        n = {"date_headings": 0, "event_links": 0, "links_before_any_date": 0,
+             "undated": 0, "online": 0, "kept": 0}
+        samples: list[str] = []
         # Each date is an <h2>/<h3> like "Jul 09 Thu"; events follow as
         # links to /event/. This walks the list, tracking the last date seen.
         for el in soup.find_all(["h2", "h3", "a"]):
             text = el.get_text(" ", strip=True)
             if el.name in {"h2", "h3"} and re.match(r"[A-Z][a-z]{2}\s+\d{1,2}", text):
                 current_date = text
+                n["date_headings"] += 1
                 continue
             href = el.get("href", "") if el.name == "a" else ""
+            if "/event/" in href:
+                n["event_links"] += 1
+                if not current_date:
+                    n["links_before_any_date"] += 1
             if "/event/" in href and current_date:
                 block = el.find_parent(["li", "article", "div"])
                 btext = block.get_text(" ", strip=True) if block else text
+                if len(samples) < 3:
+                    # The text the venue/type/time regexes actually see --
+                    # if the nearest block is too small, this shows it.
+                    samples.append(f"[{current_date}] {btext}"[:200])
                 types = [t.lower() for t in re.findall(
                     r"(Live Streaming|Orchestra|Chamber Music|Recital|Opera / Voice|"
                     r"Historical Performance|Contemporary / New Work|Jazz|Music)", btext)]
@@ -126,14 +170,18 @@ class JuilliardAdapter(Adapter):
                 time_m = re.search(r"(\d{1,2}:\d{2}\s*[AP]M)", btext)
                 start = self._date(current_date, time_m.group(1) if time_m else "7:00PM")
                 if not start:
+                    n["undated"] += 1
                     continue
                 online = self._is_online(venue, types)
+                n["online"] += online
                 if self.online_only and not online:
                     continue
                 events.append(self._build({
                     "title": text, "url": href, "venue": venue,
                     "types": types, "start": start.isoformat(),
                 }, online))
+        n["kept"] = len(events)
+        self.diagnostics["parse"] = {**n, "samples": samples}
         return events
 
     # Type tags ranked by how much they say about the music. "Live Streaming",
@@ -184,6 +232,14 @@ class JuilliardAdapter(Adapter):
             return dtparse.parse(f"{month} {day} {year} {time_text}")
         except (ValueError, OverflowError):
             return None
+
+
+def _save_sample(html: str) -> None:
+    # Page 0 as the server sent it, for checking the selectors against real
+    # markup. Written to debug/ (gitignored, never published); the workflow
+    # uploads it as a short-lived build artifact.
+    DEBUG_DIR.mkdir(exist_ok=True)
+    (DEBUG_DIR / "juilliard-page0.html").write_text(html, encoding="utf-8")
 
 
 def _season_year(month_abbr: str) -> int:

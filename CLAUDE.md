@@ -96,6 +96,17 @@ though it does upsert fetched events into `events.db`.
   to web/IT); page fetches are now spaced 10s apart, as that request
   promises. Until then the Online channel publishes 0 events (Juilliard is
   its only enabled source) — left visible by decision.
+  **2026-11-16: the runner got through.** `status.json` showed a clean `0`
+  instead of the 403 error, and the build step ran 4m20s instead of ~30s,
+  which suggests many pages answered 200 at the 10s spacing. A residential
+  fetch the next day still got 403, so this is not a UA allowance; more
+  likely Cloudflare scoring runner IPs differently. The parser, never
+  checked against live HTML, kept nothing. The adapter now publishes
+  `diagnostics.Juilliard` in `status.json` (per-page status/title/link
+  counts, parse-stage counts, sample blocks) and uploads page 0 as the
+  `debug-samples` artifact (7 days; download needs a GitHub sign-in), and
+  it stops at the first page with no event links. Read the next run's
+  diagnostics before touching the selectors.
 - **Lied Center: liedcenter.org is off limits; read from UNL Events since
   2026-11-10.** From 2026-10-26 every liedcenter.org URL, robots.txt
   included, answered our client with a Cloudflare 403 "Just a moment..."

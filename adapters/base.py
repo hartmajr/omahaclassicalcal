@@ -56,6 +56,9 @@ class Adapter(ABC):
         return json.loads(text) if self.fixture_ext == "json" else text
 
     def collect(self, offline: bool = False) -> list[Event]:
+        # Optional per-run detail an adapter wants in status.json (pages
+        # fetched, what the parser saw). Empty dicts are left out.
+        self.diagnostics: dict[str, Any] = {}
         raw = self.load_fixture() if offline else self.fetch_raw()
         events = self.parse(raw)
         for ev in events:

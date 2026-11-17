@@ -55,6 +55,19 @@ jobs:
           # Omaha Chamber Music Society).
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
+      # Raw page samples some adapters save for checking their selectors
+      # against live markup (debug/, gitignored, never deployed). Kept as a
+      # short-lived artifact rather than committed: it is the source's page,
+      # not ours to republish. Runs even when the build fails.
+      - name: Upload debug samples
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: debug-samples
+          path: debug/
+          retention-days: 7
+          if-no-files-found: ignore
+
       - name: Commit state (events.db, cache, outputs)
         run: |
           git config user.name "calendar-bot"
