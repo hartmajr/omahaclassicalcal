@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Nov 2026 20:57:08 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 22:34:38 +0000</lastBuildDate>
     <item>
       <title>CARMEN.maquia Ballet Hispanico — Feb 4, 2027</title>
       <link>https://www.liedcenter.org/event/carmenmaquia-ballet-hisp%C3%A1nico</link>
@@ -26,62 +26,6 @@ Saturday, April 10, 2027 · 7:30 PM
 Source: UNL Glenn Korff School of Music</description>
       <guid isPermaLink="false">3348388b38f51db3@omaha-classical-calendar</guid>
       <pubDate>Wed, 11 Nov 2026 02:35:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>Flyover New Music II — Nov 16, 2026</title>
-      <link>http://events.unl.edu/music/2026/11/16/200807/</link>
-      <description>Westbrook Music Building Room 130
-Monday, November 16, 2026 · 7:30 PM
-This event is free and open to the public.
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">9a4e8da9175cc956@omaha-classical-calendar</guid>
-      <pubDate>Mon, 26 Oct 2026 17:13:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>Wind Ensemble — Nov 17, 2026</title>
-      <link>http://events.unl.edu/music/2026/11/17/203558/</link>
-      <description>Kimball Recital Hall Room
-Tuesday, November 17, 2026 · 7:30 PM
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">c08a96e9af7b13e1@omaha-classical-calendar</guid>
-      <pubDate>Mon, 26 Oct 2026 17:13:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>UG Zachary Jacobsen, piano — Nov 17, 2026</title>
-      <link>http://events.unl.edu/music/2026/11/17/203559/</link>
-      <description>Westbrook Performance Hall Room
-Tuesday, November 17, 2026 · 7:30 PM
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">182310076d1d1dc0@omaha-classical-calendar</guid>
-      <pubDate>Mon, 26 Oct 2026 17:13:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>UG Cyrus Zgud, composition — Nov 22, 2026</title>
-      <link>http://events.unl.edu/music/2026/11/22/203560/</link>
-      <description>Grace Lutheran Church Room
-Sunday, November 22, 2026 · 5:30 PM
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">a9e3c7083ec45da8@omaha-classical-calendar</guid>
-      <pubDate>Mon, 26 Oct 2026 17:13:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>Chamberfest 1 — Nov 22, 2026</title>
-      <link>http://events.unl.edu/music/2026/11/22/200809/</link>
-      <description>Kimball Recital Hall Room
-Sunday, November 22, 2026 · 7:30 PM
-This event is free and open to the public.
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">622b81661ad8c4c8@omaha-classical-calendar</guid>
-      <pubDate>Mon, 26 Oct 2026 17:13:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>Fall Percussion Ensemble Concert — Nov 22, 2026</title>
-      <link>http://events.unl.edu/music/2026/11/22/203561/</link>
-      <description>Westbrook Performance Hall Room
-Sunday, November 22, 2026 · 7:30 PM
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">bb12d72d63a2f64a@omaha-classical-calendar</guid>
-      <pubDate>Mon, 26 Oct 2026 17:13:15 +0000</pubDate>
     </item>
     <item>
       <title>Horn and Trumpet Ensembles — Nov 23, 2026</title>
@@ -275,15 +219,6 @@ Tuesday, April 20, 2027 · 7:30 PM
 Source: Lincoln Friends of Chamber Music</description>
       <guid isPermaLink="false">af13d10968d8361c@omaha-classical-calendar</guid>
       <pubDate>Mon, 28 Sep 2026 18:33:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>Amahl and the Night Visitors — Dec 12, 2026</title>
-      <link>http://events.unl.edu/music/2026/12/12/202864/</link>
-      <description>Temple Building Room Studio Theater
-Saturday, December 12, 2026 · 1:30 PM
-Source: UNL Glenn Korff School of Music</description>
-      <guid isPermaLink="false">abf48769f6982373@omaha-classical-calendar</guid>
-      <pubDate>Mon, 21 Sep 2026 17:00:13 +0000</pubDate>
     </item>
   </channel>
 </rss>
